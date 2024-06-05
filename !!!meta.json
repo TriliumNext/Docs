@@ -1,0 +1,5742 @@
+{
+	"formatVersion": 2,
+	"appVersion": "0.63.6",
+	"files": [
+		{
+			"noteId": "B1uwZAQD5SQd",
+			"notePath": [
+				"B1uwZAQD5SQd"
+			],
+			"isClone": false,
+			"title": "Wiki",
+			"notePosition": 100230,
+			"prefix": null,
+			"isExpanded": false,
+			"type": "text",
+			"mime": "text/html",
+			"format": "markdown",
+			"dirFileName": "Wiki",
+			"noImport": false,
+			"attributes": [],
+			"attachments": [],
+			"children": [
+				{
+					"noteId": "kh6ExmUBz5Cq",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"kh6ExmUBz5Cq"
+					],
+					"isClone": false,
+					"title": "Advanced showcases",
+					"notePosition": 10,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Advanced showcases.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "LYqMgTTO1kmB",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kL7aVMR4FjHx",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "e41yyQIFJb0h",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "3Pd3O6bf5QV8",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "B2h3F4lYqpba",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 70
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "GzRVfp4HFdNe",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"GzRVfp4HFdNe"
+					],
+					"isClone": false,
+					"title": "Anonymized database",
+					"notePosition": 20,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Anonymized database.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Nz5ReVCxbzpy",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RXoLEQNPVGZL",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "6xlCeQKRHt4v",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"6xlCeQKRHt4v"
+					],
+					"isClone": false,
+					"title": "Apache proxy setup",
+					"notePosition": 30,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Apache proxy setup.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "FBRAL6Ep7Ide",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"FBRAL6Ep7Ide"
+					],
+					"isClone": false,
+					"title": "Archived-notes",
+					"notePosition": 40,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Archived-notes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "V95V4LPLMjnm",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Tf0cc2e7EESz",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "VN1HmU9w8QZ4",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "PL3OprCaIIqk",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"PL3OprCaIIqk"
+					],
+					"isClone": false,
+					"title": "Attachments",
+					"notePosition": 50,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Attachments.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "V95V4LPLMjnm",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"V95V4LPLMjnm"
+					],
+					"isClone": false,
+					"title": "Attribute inheritance",
+					"notePosition": 60,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Attribute inheritance.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "cHK4UywywEeA",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "FgpyZLk1gtmT",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"FgpyZLk1gtmT"
+					],
+					"isClone": false,
+					"title": "Attributes",
+					"notePosition": 70,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Attributes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "K7xC6ILu8Rqz",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "V95V4LPLMjnm",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "B2h3F4lYqpba",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Rodu5nL6hhME",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "cHK4UywywEeA",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "zIoQC9FGzNEm",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Wy75ZIsifoVp",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "v6tx5Ps6En4l",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kL7aVMR4FjHx",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Fw0tIS0ebqvZ",
+							"isInheritable": false,
+							"position": 100
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "diokwskxxKD0",
+							"isInheritable": false,
+							"position": 110
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "bXk2P90IBcmF",
+							"isInheritable": false,
+							"position": 120
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "jgMw7npX4B0M",
+							"isInheritable": false,
+							"position": 130
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "WCSGqEBlloW7",
+							"isInheritable": false,
+							"position": 140
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Tf0cc2e7EESz",
+							"isInheritable": false,
+							"position": 150
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "e41yyQIFJb0h",
+							"isInheritable": false,
+							"position": 160
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "Hllh7YjIur58",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Hllh7YjIur58"
+					],
+					"isClone": false,
+					"title": "Backup",
+					"notePosition": 80,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Backup.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RXoLEQNPVGZL",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "7XdBqeK1kCcE",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "BRpnYL7K0hcD",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"BRpnYL7K0hcD"
+					],
+					"isClone": false,
+					"title": "Book note",
+					"notePosition": 90,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Book note.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "OopRUVrrXv3B",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "i1TraI4QJvC0",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "z8tdN5VDib2W",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "v6tx5Ps6En4l",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"v6tx5Ps6En4l"
+					],
+					"isClone": false,
+					"title": "Bookmarks",
+					"notePosition": 100,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Bookmarks.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "35GPm6qoJWqX",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "XedorAooSPRR",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "1WQf13r8uDEw",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"1WQf13r8uDEw"
+					],
+					"isClone": false,
+					"title": "Canvas-note",
+					"notePosition": 110,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Canvas-note.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": [
+						{
+							"attachmentId": "4CcgBkDmUO38",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Canvas-note_image.png"
+						}
+					]
+				},
+				{
+					"noteId": "Bc1qvt05hQEQ",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Bc1qvt05hQEQ"
+					],
+					"isClone": false,
+					"title": "Cloning notes",
+					"notePosition": 120,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Cloning notes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "9Tyer5XEUfl8",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "OudyBkHYeXTR",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "pimEKQkgm5m1",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"pimEKQkgm5m1"
+					],
+					"isClone": false,
+					"title": "Code-notes",
+					"notePosition": 130,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Code-notes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "tU6KGfyvnh4o",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "8wLqZEEbEAtk",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "bXk2P90IBcmF",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"bXk2P90IBcmF"
+					],
+					"isClone": false,
+					"title": "Custom request handler",
+					"notePosition": 140,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Custom request handler.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "AflRbOrrfsID",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "diokwskxxKD0",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"diokwskxxKD0"
+					],
+					"isClone": false,
+					"title": "Custom-widget",
+					"notePosition": 150,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Custom-widget.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": [
+						{
+							"attachmentId": "iQC5RWbNptB3",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Custom-widget_image.png"
+						}
+					]
+				},
+				{
+					"noteId": "RXoLEQNPVGZL",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"RXoLEQNPVGZL"
+					],
+					"isClone": false,
+					"title": "Data-directory",
+					"notePosition": 160,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Data-directory.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Hllh7YjIur58",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "qxoKOEJyTN8E",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "kL7aVMR4FjHx",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"kL7aVMR4FjHx"
+					],
+					"isClone": false,
+					"title": "Day-notes",
+					"notePosition": 170,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Day-notes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "5eO7WPg0UvBi",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "3Pd3O6bf5QV8",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "B2h3F4lYqpba",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "e41yyQIFJb0h",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "cHK4UywywEeA",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": [
+						{
+							"attachmentId": "akp7ocRTObE3",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Day-notes_image.png"
+						}
+					]
+				},
+				{
+					"noteId": "Wy75ZIsifoVp",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Wy75ZIsifoVp"
+					],
+					"isClone": false,
+					"title": "Default-note-title",
+					"notePosition": 180,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Default-note-title.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "cHK4UywywEeA",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "lVEAiuX7wWcO",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"lVEAiuX7wWcO"
+					],
+					"isClone": false,
+					"title": "Desktop-installation",
+					"notePosition": 190,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Desktop-installation.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "7XdBqeK1kCcE",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RXoLEQNPVGZL",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "1Tt7TgvbRnnS",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"1Tt7TgvbRnnS"
+					],
+					"isClone": false,
+					"title": "Docker-server-installation",
+					"notePosition": 200,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Docker-server-installation.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "Vz5yw3WJVDyJ",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Vz5yw3WJVDyJ"
+					],
+					"isClone": false,
+					"title": "Document",
+					"notePosition": 210,
+					"prefix": null,
+					"isExpanded": true,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Document.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "LYqMgTTO1kmB",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kL7aVMR4FjHx",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "3Pd3O6bf5QV8",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "jgMw7npX4B0M",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "e41yyQIFJb0h",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RXoLEQNPVGZL",
+							"isInheritable": false,
+							"position": 70
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "4n479xAUupgf",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"4n479xAUupgf"
+					],
+					"isClone": false,
+					"title": "ETAPI",
+					"notePosition": 220,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "ETAPI.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "mhPWGzxN7r6L",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"mhPWGzxN7r6L"
+					],
+					"isClone": false,
+					"title": "Error-logs",
+					"notePosition": 230,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Error-logs.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RXoLEQNPVGZL",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "6pwGTJGlzqgR",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "w0c6RyEyUF1h",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "GzRVfp4HFdNe",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Cbhmgg10UqNe",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "zIoQC9FGzNEm",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"zIoQC9FGzNEm"
+					],
+					"isClone": false,
+					"title": "Events",
+					"notePosition": 240,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Events.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "tsGOxiLyZCIh",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"tsGOxiLyZCIh"
+					],
+					"isClone": false,
+					"title": "Evernote-import",
+					"notePosition": 250,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Evernote-import.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "vVfhZeCZdgfi",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"vVfhZeCZdgfi"
+					],
+					"isClone": false,
+					"title": "FAQ",
+					"notePosition": 260,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "FAQ.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RXoLEQNPVGZL",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "7XdBqeK1kCcE",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Bc1qvt05hQEQ",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "viHDbbVE9wKA",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 70
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "J6jhT3D7yXKc",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"J6jhT3D7yXKc"
+					],
+					"isClone": false,
+					"title": "Frontend-Basics",
+					"notePosition": 270,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Frontend-Basics.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "AflRbOrrfsID",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "52imz4MGLfGg",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "KUPw0GltoXvH",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"KUPw0GltoXvH"
+					],
+					"isClone": false,
+					"title": "Home",
+					"notePosition": 280,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Home.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "lVEAiuX7wWcO",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "11AvHlZHxK9a",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Dpu7lfiysuCn",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "7XdBqeK1kCcE",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "z8tdN5VDib2W",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Rec7aAUrdss0",
+							"isInheritable": false,
+							"position": 60
+						}
+					],
+					"attachments": [
+						{
+							"attachmentId": "2O2wJ2vSm3ue",
+							"title": "button.svg",
+							"role": "image",
+							"mime": "image/svg+xml",
+							"position": 10,
+							"dataFileName": "Home_button.svg"
+						}
+					]
+				},
+				{
+					"noteId": "ciYNf5VlY8Ho",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"ciYNf5VlY8Ho"
+					],
+					"isClone": false,
+					"title": "Images",
+					"notePosition": 290,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Images.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "BmoOqlbwCeKx",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "hv5Fhhi0ztcz",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "PL3OprCaIIqk",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "xY2pB1vj2Din",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "OudyBkHYeXTR",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"OudyBkHYeXTR"
+					],
+					"isClone": false,
+					"title": "Keyboard-shortcuts",
+					"notePosition": 300,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Keyboard-shortcuts.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "YljIwhgeTML8",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Bc1qvt05hQEQ",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "yqCKbHeviQNA",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "aIqWEXFQpyti",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Tf0cc2e7EESz",
+							"isInheritable": false,
+							"position": 70
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "kSjfPCZ5uxyL",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"kSjfPCZ5uxyL"
+					],
+					"isClone": false,
+					"title": "Kubernetes-server-installation",
+					"notePosition": 310,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Kubernetes-server-installation.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "RRbjSgX1dZvs",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"RRbjSgX1dZvs"
+					],
+					"isClone": false,
+					"title": "Link-map",
+					"notePosition": 320,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Link-map.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "aIqWEXFQpyti",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"aIqWEXFQpyti"
+					],
+					"isClone": false,
+					"title": "Links",
+					"notePosition": 330,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Links.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "uGu9hdGZKnkB",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "TEbvcDt2CpId",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "viHDbbVE9wKA",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "2qyVqIwaErI3",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"2qyVqIwaErI3"
+					],
+					"isClone": false,
+					"title": "Manual-server-installation",
+					"notePosition": 340,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Manual-server-installation.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "w0dkLe4UjoUj",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "DKFKeOo6MhQ7",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"DKFKeOo6MhQ7"
+					],
+					"isClone": false,
+					"title": "Markdown",
+					"notePosition": 350,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Markdown.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Y0eZPZ83EzKl",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "k9bBzgYd9G64",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "sxD7eWlt5YIU",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "AtphKMEUTNNJ",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "Dpu7lfiysuCn",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Dpu7lfiysuCn"
+					],
+					"isClone": false,
+					"title": "Mobile-frontend",
+					"notePosition": 360,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Mobile-frontend.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "11AvHlZHxK9a",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "LvH5LAl8XuzR",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "zXXpN9sIPiTk",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "jZjsCPtTA89h",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "Xp4L70WrNEuL",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Xp4L70WrNEuL"
+					],
+					"isClone": false,
+					"title": "Nginx-proxy-setup",
+					"notePosition": 370,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Nginx-proxy-setup.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "1L4blowcXnBQ",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"1L4blowcXnBQ"
+					],
+					"isClone": false,
+					"title": "NixOS-server-installation",
+					"notePosition": 380,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "NixOS-server-installation.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "QExHpjOkv4uR",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"QExHpjOkv4uR"
+					],
+					"isClone": false,
+					"title": "Note hoisting",
+					"notePosition": 390,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Note hoisting.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Fw0tIS0ebqvZ",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "YljIwhgeTML8",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "CFCnTNUTWzSY",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "viHDbbVE9wKA",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"viHDbbVE9wKA"
+					],
+					"isClone": false,
+					"title": "Note map",
+					"notePosition": 400,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Note map.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "wD1SmlhieKZF",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "vvSmMuYBQLoH",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "LYqMgTTO1kmB",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "YljIwhgeTML8",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"YljIwhgeTML8"
+					],
+					"isClone": false,
+					"title": "Note navigation",
+					"notePosition": 410,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Note navigation.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "V1oIMpgWDre3",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "FlNqQoEnN7tc",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "5JAvLPMcEWnb",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "azAHB7oGR6Vo",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"azAHB7oGR6Vo"
+					],
+					"isClone": false,
+					"title": "Note revisions",
+					"notePosition": 420,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Note revisions.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "uucFLBUI87SU",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "z8tdN5VDib2W",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"z8tdN5VDib2W"
+					],
+					"isClone": false,
+					"title": "Note",
+					"notePosition": 430,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Note.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "yqCKbHeviQNA",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "qbPFPtedodl1",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "LYqMgTTO1kmB",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "BRpnYL7K0hcD",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "1WQf13r8uDEw",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Bc1qvt05hQEQ",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Hllh7YjIur58",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "opsTDBYIo1y8",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 100
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "gqzOuDGeA5tR",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"gqzOuDGeA5tR"
+					],
+					"isClone": false,
+					"title": "Onenote",
+					"notePosition": 440,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Onenote.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "NQqx77k681c9",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"NQqx77k681c9"
+					],
+					"isClone": false,
+					"title": "Packaged server installation",
+					"notePosition": 450,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Packaged server installation.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "w0dkLe4UjoUj",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "11AvHlZHxK9a",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "qNnEkTzAUSd5",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"qNnEkTzAUSd5"
+					],
+					"isClone": false,
+					"title": "Patterns-of-personal-knowledge-base",
+					"notePosition": 460,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Patterns-of-personal-knowledge.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "TLJG2ADwU8DS",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "5qG7Hrb1tm2P",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"5qG7Hrb1tm2P"
+					],
+					"isClone": false,
+					"title": "Privacy-policy",
+					"notePosition": 470,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Privacy-policy.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "B2h3F4lYqpba",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"B2h3F4lYqpba"
+					],
+					"isClone": false,
+					"title": "Promoted attributes",
+					"notePosition": 480,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Promoted attributes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "pR7hktRs96D9",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "vu84xHzMpzYh",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "V95V4LPLMjnm",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "jZjsCPtTA89h",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"jZjsCPtTA89h"
+					],
+					"isClone": false,
+					"title": "Protected-notes",
+					"notePosition": 490,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Protected-notes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "RqrNb0OmJU7X",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "opsTDBYIo1y8",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"opsTDBYIo1y8"
+					],
+					"isClone": false,
+					"title": "Read only note",
+					"notePosition": 500,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Read only note.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "yqCKbHeviQNA",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "LYqMgTTO1kmB",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"LYqMgTTO1kmB"
+					],
+					"isClone": false,
+					"title": "Relation-map",
+					"notePosition": 510,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Relation-map.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "KpPfbbl50829",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "YvZXSKH0Ws6C",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "xY2pB1vj2Din",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "TLJG2ADwU8DS",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "BPBOOfez2Wm5",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "B2h3F4lYqpba",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "viHDbbVE9wKA",
+							"isInheritable": false,
+							"position": 90
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "kIcwQQS1YV8s",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"kIcwQQS1YV8s"
+					],
+					"isClone": false,
+					"title": "Release notes v0.48",
+					"notePosition": 520,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Release notes v0.48.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "IKNKQLr73XOb",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "0GV4Q1Atx50a",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "NKS9XVOQxbeR",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "1IQhyrS5Bhyq",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "uc86DbSi388E",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "qbPFPtedodl1",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"qbPFPtedodl1"
+					],
+					"isClone": false,
+					"title": "Saved-search",
+					"notePosition": 530,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Saved-search.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": [
+						{
+							"attachmentId": "FIMTZeinSKFe",
+							"title": "image.gif",
+							"role": "image",
+							"mime": "image/gif",
+							"position": 10,
+							"dataFileName": "Saved-search_image.gif"
+						}
+					]
+				},
+				{
+					"noteId": "Rec7aAUrdss0",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Rec7aAUrdss0"
+					],
+					"isClone": false,
+					"title": "Screenshot tour",
+					"notePosition": 540,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Screenshot tour.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Wtb17bzq5kR1",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "n1j7DOyMvZFd",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "jgMw7npX4B0M",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "tU6KGfyvnh4o",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Ja1W0HDp7Evr",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "B2h3F4lYqpba",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "TLJG2ADwU8DS",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "LYqMgTTO1kmB",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "vvSmMuYBQLoH",
+							"isInheritable": false,
+							"position": 100
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RRbjSgX1dZvs",
+							"isInheritable": false,
+							"position": 110
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "5eO7WPg0UvBi",
+							"isInheritable": false,
+							"position": 120
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kL7aVMR4FjHx",
+							"isInheritable": false,
+							"position": 130
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Nc1DcsUbzN4c",
+							"isInheritable": false,
+							"position": 140
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "e41yyQIFJb0h",
+							"isInheritable": false,
+							"position": 150
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "fzRYCnCZKt7a",
+							"isInheritable": false,
+							"position": 160
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "3Pd3O6bf5QV8",
+							"isInheritable": false,
+							"position": 170
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "uucFLBUI87SU",
+							"isInheritable": false,
+							"position": 180
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "azAHB7oGR6Vo",
+							"isInheritable": false,
+							"position": 190
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "LvH5LAl8XuzR",
+							"isInheritable": false,
+							"position": 200
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "zXXpN9sIPiTk",
+							"isInheritable": false,
+							"position": 220
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Dpu7lfiysuCn",
+							"isInheritable": false,
+							"position": 230
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "AflRbOrrfsID",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"AflRbOrrfsID"
+					],
+					"isClone": false,
+					"title": "Script API",
+					"notePosition": 550,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Script API.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "F7XaE3s6G7dq",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"F7XaE3s6G7dq"
+					],
+					"isClone": false,
+					"title": "Scripts",
+					"notePosition": 560,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Scripts.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "AflRbOrrfsID",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "aA4BDddWAS07",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kh6ExmUBz5Cq",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "zIoQC9FGzNEm",
+							"isInheritable": false,
+							"position": 70
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "Tf0cc2e7EESz",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Tf0cc2e7EESz"
+					],
+					"isClone": false,
+					"title": "Search",
+					"notePosition": 570,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Search.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "OudyBkHYeXTR",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "qbPFPtedodl1",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Bc1qvt05hQEQ",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "11AvHlZHxK9a",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"11AvHlZHxK9a"
+					],
+					"isClone": false,
+					"title": "Server-installation",
+					"notePosition": 580,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Server-installation.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "7XdBqeK1kCcE",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "1Tt7TgvbRnnS",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "NQqx77k681c9",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "2qyVqIwaErI3",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kSjfPCZ5uxyL",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "1L4blowcXnBQ",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Dpu7lfiysuCn",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "w0dkLe4UjoUj",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RXoLEQNPVGZL",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 100
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "6xlCeQKRHt4v",
+							"isInheritable": false,
+							"position": 110
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "Rodu5nL6hhME",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Rodu5nL6hhME"
+					],
+					"isClone": false,
+					"title": "Sharing",
+					"notePosition": 590,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Sharing.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "kBm0GG4thG8E",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "UPVyQSR1duQC",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "laeDtAj5VypU",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "MTm3GhriQqS8",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "11AvHlZHxK9a",
+							"isInheritable": false,
+							"position": 60
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "WCSGqEBlloW7",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"WCSGqEBlloW7"
+					],
+					"isClone": false,
+					"title": "Sorting",
+					"notePosition": 600,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Sorting.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "7XdBqeK1kCcE",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"7XdBqeK1kCcE"
+					],
+					"isClone": false,
+					"title": "Synchronization",
+					"notePosition": 610,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Synchronization.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Vy3l286PfXgK",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "11AvHlZHxK9a",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "oBLNSRRSA89b",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "tjXU2i0orP7C",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "xpP3JFMFHIbS",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "azAHB7oGR6Vo",
+							"isInheritable": false,
+							"position": 60
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "w0dkLe4UjoUj",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"w0dkLe4UjoUj"
+					],
+					"isClone": false,
+					"title": "TLS-configuration",
+					"notePosition": 620,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "TLS-configuration.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "3Pd3O6bf5QV8",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"3Pd3O6bf5QV8"
+					],
+					"isClone": false,
+					"title": "Task-manager",
+					"notePosition": 630,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Task-manager.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "B2h3F4lYqpba",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "fzRYCnCZKt7a",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kL7aVMR4FjHx",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Bc1qvt05hQEQ",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "xY2pB1vj2Din",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "V95V4LPLMjnm",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "zIoQC9FGzNEm",
+							"isInheritable": false,
+							"position": 100
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 110
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "cHK4UywywEeA",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"cHK4UywywEeA"
+					],
+					"isClone": false,
+					"title": "Template",
+					"notePosition": 640,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Template.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "2dbgV4vqc2nD",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "V88V0A5eitLc",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "V95V4LPLMjnm",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "B2h3F4lYqpba",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Fw0tIS0ebqvZ",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "LYqMgTTO1kmB",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "3Pd3O6bf5QV8",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kL7aVMR4FjHx",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Wy75ZIsifoVp",
+							"isInheritable": false,
+							"position": 100
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "yqCKbHeviQNA",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"yqCKbHeviQNA"
+					],
+					"isClone": false,
+					"title": "Text-notes",
+					"notePosition": 650,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Text-notes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "vDLTW1CQH9mV",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "bZOXGTdsZSF7",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "rlPsaFWPfG3p",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "aCormOajMfkS",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "0uIZG9uuICk0",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": [
+						{
+							"attachmentId": "7R2Do0Jo3KF3",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Text-notes_image.png"
+						}
+					]
+				},
+				{
+					"noteId": "EtLQuoEQwyX7",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"EtLQuoEQwyX7"
+					],
+					"isClone": false,
+					"title": "Theme-Gallery",
+					"notePosition": 660,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Theme-Gallery.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": [
+						{
+							"attachmentId": "AhwFwy0ppHK2",
+							"title": "screenshot2.png",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_screenshot2.png"
+						},
+						{
+							"attachmentId": "S2zkmtw1kyV2",
+							"title": "trilium-velvet2.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_trilium-velvet2."
+						},
+						{
+							"attachmentId": "kYUTwxGuFFy1",
+							"title": "Screenshot.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_Screenshot.png"
+						},
+						{
+							"attachmentId": "sp7AJsZNSKxE",
+							"title": "bear-dark.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_bear-dark.png"
+						},
+						{
+							"attachmentId": "tv0va6a7bUZW",
+							"title": "bear-white.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_bear-white.png"
+						},
+						{
+							"attachmentId": "w0BAGcSizr34",
+							"title": "Trilium_theme_coder_dark.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_Trilium_theme_co.png"
+						},
+						{
+							"attachmentId": "84o1b3L6hXDZ",
+							"title": "midnight.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_midnight.png"
+						},
+						{
+							"attachmentId": "HZYdIZ5mEQaz",
+							"title": "Neon_Dark_Demo_v3.jpg",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_Neon_Dark_Demo_v.jpg"
+						},
+						{
+							"attachmentId": "eNu20lieSWhK",
+							"title": "screenshot1.png",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_screenshot1.png"
+						},
+						{
+							"attachmentId": "7lqCBTPebQ2e",
+							"title": "lightslategray.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_lightslategray.p"
+						},
+						{
+							"attachmentId": "htipT1Dv1vtW",
+							"title": "scrn4_01.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_scrn4_01.png"
+						},
+						{
+							"attachmentId": "G5xgQk2yuIMV",
+							"title": "preview.jpg",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_preview.jpg"
+						},
+						{
+							"attachmentId": "bcEyjcaaFni6",
+							"title": "image.jpg",
+							"role": "image",
+							"mime": "image/jpg",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_image.jpg"
+						},
+						{
+							"attachmentId": "LJyD8KxFpMDv",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Theme-Gallery_image.png"
+						},
+						{
+							"attachmentId": "zGHiZQ3wCBpD",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "1_Theme-Gallery_image.png"
+						},
+						{
+							"attachmentId": "Q907lRBuEcha",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "2_Theme-Gallery_image.png"
+						}
+					]
+				},
+				{
+					"noteId": "jgMw7npX4B0M",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"jgMw7npX4B0M"
+					],
+					"isClone": false,
+					"title": "Themes",
+					"notePosition": 670,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Themes.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "n1j7DOyMvZFd",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "bXk2P90IBcmF",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "pJU2qdCt4OBA",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "3BQhpLDwZUoT",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "3Pd3O6bf5QV8",
+							"isInheritable": false,
+							"position": 90
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "EtLQuoEQwyX7",
+							"isInheritable": false,
+							"position": 100
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "cHK4UywywEeA",
+							"isInheritable": false,
+							"position": 110
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "xY2pB1vj2Din",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"xY2pB1vj2Din"
+					],
+					"isClone": false,
+					"title": "Tree concepts",
+					"notePosition": 680,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Tree concepts.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "z8tdN5VDib2W",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Bc1qvt05hQEQ",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "Yyo3Ff2HeiJO",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Yyo3Ff2HeiJO"
+					],
+					"isClone": false,
+					"title": "Tree manipulation",
+					"notePosition": 690,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Tree manipulation.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "6uEnNED6hEle",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "OudyBkHYeXTR",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "sMGqNXeoA9yK",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "BqUsnX5gx83T",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"BqUsnX5gx83T"
+					],
+					"isClone": false,
+					"title": "Troubleshooting",
+					"notePosition": 700,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Troubleshooting.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "mhPWGzxN7r6L",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "diokwskxxKD0",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Hllh7YjIur58",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "RXoLEQNPVGZL",
+							"isInheritable": false,
+							"position": 50
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "rxJpzAAtGSKi",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"rxJpzAAtGSKi"
+					],
+					"isClone": false,
+					"title": "Upgrading Trilium",
+					"notePosition": 710,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Upgrading Trilium.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "7XdBqeK1kCcE",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Hllh7YjIur58",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "1Tt7TgvbRnnS",
+							"isInheritable": false,
+							"position": 40
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "nNtE2n7C9ksa",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"nNtE2n7C9ksa"
+					],
+					"isClone": false,
+					"title": "Web-clipper",
+					"notePosition": 720,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Web-clipper.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kL7aVMR4FjHx",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "11AvHlZHxK9a",
+							"isInheritable": false,
+							"position": 30
+						}
+					],
+					"attachments": [
+						{
+							"attachmentId": "jGdl52Y14S76",
+							"title": "chrome-trilium-web-clipper.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Web-clipper_chrome-trilium-web.png"
+						}
+					]
+				},
+				{
+					"noteId": "e41yyQIFJb0h",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"e41yyQIFJb0h"
+					],
+					"isClone": false,
+					"title": "Weight-tracker",
+					"notePosition": 730,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Weight-tracker.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "AflRbOrrfsID",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "Vz5yw3WJVDyJ",
+							"isInheritable": false,
+							"position": 20
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "kL7aVMR4FjHx",
+							"isInheritable": false,
+							"position": 30
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "B2h3F4lYqpba",
+							"isInheritable": false,
+							"position": 40
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "cHK4UywywEeA",
+							"isInheritable": false,
+							"position": 50
+						},
+						{
+							"type": "relation",
+							"name": "imageLink",
+							"value": "Nc1DcsUbzN4c",
+							"isInheritable": false,
+							"position": 60
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "F7XaE3s6G7dq",
+							"isInheritable": false,
+							"position": 70
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "FgpyZLk1gtmT",
+							"isInheritable": false,
+							"position": 80
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "pimEKQkgm5m1",
+							"isInheritable": false,
+							"position": 90
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "52imz4MGLfGg",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"52imz4MGLfGg"
+					],
+					"isClone": false,
+					"title": "Widget-Basics",
+					"notePosition": 740,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Widget-Basics.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "J6jhT3D7yXKc",
+							"isInheritable": false,
+							"position": 10
+						},
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "AflRbOrrfsID",
+							"isInheritable": false,
+							"position": 20
+						}
+					],
+					"attachments": []
+				},
+				{
+					"noteId": "Fw0tIS0ebqvZ",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"Fw0tIS0ebqvZ"
+					],
+					"isClone": false,
+					"title": "Workspace",
+					"notePosition": 750,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Workspace.md",
+					"noImport": false,
+					"attributes": [
+						{
+							"type": "relation",
+							"name": "internalLink",
+							"value": "QExHpjOkv4uR",
+							"isInheritable": false,
+							"position": 10
+						}
+					],
+					"attachments": [
+						{
+							"attachmentId": "ZumTo3S5S5ZW",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "Workspace_image.png"
+						},
+						{
+							"attachmentId": "DQKg2mlmSBgG",
+							"title": "image.png",
+							"role": "image",
+							"mime": "image/png",
+							"position": 10,
+							"dataFileName": "1_Workspace_image.png"
+						}
+					]
+				},
+				{
+					"noteId": "5pstHh8iMeRm",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"5pstHh8iMeRm"
+					],
+					"isClone": false,
+					"title": "Footer",
+					"notePosition": 760,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/markdown",
+					"format": "markdown",
+					"dataFileName": "Footer.md",
+					"noImport": false,
+					"attributes": [],
+					"attachments": []
+				},
+				{
+					"noteId": "xX8OwHoKg1JC",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"xX8OwHoKg1JC"
+					],
+					"isClone": false,
+					"title": "gifs",
+					"notePosition": 780,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "markdown",
+					"dirFileName": "gifs",
+					"noImport": false,
+					"attributes": [],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "rlPsaFWPfG3p",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"rlPsaFWPfG3p"
+							],
+							"isClone": false,
+							"title": "autoformat.gif",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "autoformat.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "autoformat.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "V1oIMpgWDre3",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"V1oIMpgWDre3"
+							],
+							"isClone": false,
+							"title": "back-and-forwards.gif",
+							"notePosition": 20,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "back-and-forwards.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "back-and-forwards.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "35GPm6qoJWqX",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"35GPm6qoJWqX"
+							],
+							"isClone": false,
+							"title": "bookmarks.gif",
+							"notePosition": 30,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "bookmarks.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "bookmarks.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "9Tyer5XEUfl8",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"9Tyer5XEUfl8"
+							],
+							"isClone": false,
+							"title": "create-clone.gif",
+							"notePosition": 40,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "create-clone.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "create-clone.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "uGu9hdGZKnkB",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"uGu9hdGZKnkB"
+							],
+							"isClone": false,
+							"title": "create-external-link.gif",
+							"notePosition": 50,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "create-external-link.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "create-external-link.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "TEbvcDt2CpId",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"TEbvcDt2CpId"
+							],
+							"isClone": false,
+							"title": "create-link-to-note.gif",
+							"notePosition": 60,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "create-link-to-note.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "create-link-to-note.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "0uIZG9uuICk0",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"0uIZG9uuICk0"
+							],
+							"isClone": false,
+							"title": "cut-to-subnote.gif",
+							"notePosition": 70,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "cut-to-subnote.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "cut-to-subnote.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "6uEnNED6hEle",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"6uEnNED6hEle"
+							],
+							"isClone": false,
+							"title": "drag-and-drop.gif",
+							"notePosition": 80,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "drag-and-drop.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "drag-and-drop.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "FlNqQoEnN7tc",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"FlNqQoEnN7tc"
+							],
+							"isClone": false,
+							"title": "jump-to.gif",
+							"notePosition": 90,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "jump-to.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "jump-to.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "AtphKMEUTNNJ",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"AtphKMEUTNNJ"
+							],
+							"isClone": false,
+							"title": "markdown-export-note.gif",
+							"notePosition": 100,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "markdown-export-note.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "markdown-export-note.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "sxD7eWlt5YIU",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"sxD7eWlt5YIU"
+							],
+							"isClone": false,
+							"title": "markdown-export-subtree.gif",
+							"notePosition": 110,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "markdown-export-subtree.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "markdown-export-subtree.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "k9bBzgYd9G64",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"k9bBzgYd9G64"
+							],
+							"isClone": false,
+							"title": "markdown-file-import.gif",
+							"notePosition": 120,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "markdown-file-import.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "markdown-file-import.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "Y0eZPZ83EzKl",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"Y0eZPZ83EzKl"
+							],
+							"isClone": false,
+							"title": "markdown-inline-import.gif",
+							"notePosition": 130,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "markdown-inline-import.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "markdown-inline-import.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "aCormOajMfkS",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"aCormOajMfkS"
+							],
+							"isClone": false,
+							"title": "math.gif",
+							"notePosition": 140,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "math.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "math.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "sMGqNXeoA9yK",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"sMGqNXeoA9yK"
+							],
+							"isClone": false,
+							"title": "move-note-with-keyboard.gif",
+							"notePosition": 150,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "move-note-with-keyboard.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "move-note-with-keyboard.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "CFCnTNUTWzSY",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"CFCnTNUTWzSY"
+							],
+							"isClone": false,
+							"title": "note-hoisting.gif",
+							"notePosition": 160,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "note-hoisting.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "note-hoisting.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "RqrNb0OmJU7X",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"RqrNb0OmJU7X"
+							],
+							"isClone": false,
+							"title": "protecting-note.gif",
+							"notePosition": 170,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "protecting-note.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "protecting-note.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "5JAvLPMcEWnb",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"5JAvLPMcEWnb"
+							],
+							"isClone": false,
+							"title": "recent-notes.gif",
+							"notePosition": 180,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "recent-notes.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "recent-notes.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "YvZXSKH0Ws6C",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"YvZXSKH0Ws6C"
+							],
+							"isClone": false,
+							"title": "relation-map-dev-process-demo.gif",
+							"notePosition": 190,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "relation-map-dev-process-demo.",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "relation-map-dev-process-demo.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "BPBOOfez2Wm5",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"BPBOOfez2Wm5"
+							],
+							"isClone": false,
+							"title": "relation-map-family-demo.gif",
+							"notePosition": 200,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "relation-map-family-demo.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "relation-map-family-demo.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "TEnnhSMjxPi6",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"TEnnhSMjxPi6"
+							],
+							"isClone": false,
+							"title": "saved-search.gif",
+							"notePosition": 210,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "saved-search.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "saved-search.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "BmoOqlbwCeKx",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"xX8OwHoKg1JC",
+								"BmoOqlbwCeKx"
+							],
+							"isClone": false,
+							"title": "upload-image.gif",
+							"notePosition": 220,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/gif",
+							"dataFileName": "upload-image.gif",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "upload-image.gif",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						}
+					]
+				},
+				{
+					"noteId": "YphvzCwdxEcz",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"YphvzCwdxEcz"
+					],
+					"isClone": false,
+					"title": "images",
+					"notePosition": 790,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "markdown",
+					"dirFileName": "images",
+					"noImport": false,
+					"attributes": [],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "qxoKOEJyTN8E",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"qxoKOEJyTN8E"
+							],
+							"isClone": false,
+							"title": "about-trilium-data-dir.png",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "about-trilium-data-dir.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "about-trilium-data-dir.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "Nz5ReVCxbzpy",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"Nz5ReVCxbzpy"
+							],
+							"isClone": false,
+							"title": "anonymization.png",
+							"notePosition": 20,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "anonymization.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "anonymization.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "3BQhpLDwZUoT",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"3BQhpLDwZUoT"
+							],
+							"isClone": false,
+							"title": "app-css.png",
+							"notePosition": 30,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "app-css.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "app-css.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "vu84xHzMpzYh",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"vu84xHzMpzYh"
+							],
+							"isClone": false,
+							"title": "attribute-definitions.png",
+							"notePosition": 40,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "attribute-definitions.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "attribute-definitions.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "K7xC6ILu8Rqz",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"K7xC6ILu8Rqz"
+							],
+							"isClone": false,
+							"title": "attributes.png",
+							"notePosition": 50,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "attributes.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "attributes.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "hv5Fhhi0ztcz",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"hv5Fhhi0ztcz"
+							],
+							"isClone": false,
+							"title": "block-toolbar-insert-image.png",
+							"notePosition": 60,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "block-toolbar-insert-image.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "block-toolbar-insert-image.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "i1TraI4QJvC0",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"i1TraI4QJvC0"
+							],
+							"isClone": false,
+							"title": "book-note-pictures.png",
+							"notePosition": 70,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "book-note-pictures.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "book-note-pictures.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "OopRUVrrXv3B",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"OopRUVrrXv3B"
+							],
+							"isClone": false,
+							"title": "book-note.png",
+							"notePosition": 80,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "book-note.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "book-note.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "XedorAooSPRR",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"XedorAooSPRR"
+							],
+							"isClone": false,
+							"title": "bookmark-folder.png",
+							"notePosition": 90,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "bookmark-folder.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "bookmark-folder.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "aA4BDddWAS07",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"aA4BDddWAS07"
+							],
+							"isClone": false,
+							"title": "button-script.png",
+							"notePosition": 100,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "button-script.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "button-script.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "rfYqMs3MYFQ6",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"rfYqMs3MYFQ6"
+							],
+							"isClone": false,
+							"title": "chrome-trilium-web-clipper.png",
+							"notePosition": 110,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "chrome-trilium-web-clipper.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "chrome-trilium-web-clipper.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "8wLqZEEbEAtk",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"8wLqZEEbEAtk"
+							],
+							"isClone": false,
+							"title": "code-block.png",
+							"notePosition": 120,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "code-block.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "code-block.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "tU6KGfyvnh4o",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"tU6KGfyvnh4o"
+							],
+							"isClone": false,
+							"title": "code-note.png",
+							"notePosition": 130,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "code-note.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "code-note.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "n1j7DOyMvZFd",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"n1j7DOyMvZFd"
+							],
+							"isClone": false,
+							"title": "dark-theme.png",
+							"notePosition": 140,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "dark-theme.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "dark-theme.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "5eO7WPg0UvBi",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"5eO7WPg0UvBi"
+							],
+							"isClone": false,
+							"title": "day-notes.png",
+							"notePosition": 150,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "day-notes.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "day-notes.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "w0c6RyEyUF1h",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"w0c6RyEyUF1h"
+							],
+							"isClone": false,
+							"title": "error-logs-dev-tools.png",
+							"notePosition": 160,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "error-logs-dev-tools.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "error-logs-dev-tools.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "Cbhmgg10UqNe",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"Cbhmgg10UqNe"
+							],
+							"isClone": false,
+							"title": "error-logs-export-subtree.png",
+							"notePosition": 170,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "error-logs-export-subtree.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "error-logs-export-subtree.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "6pwGTJGlzqgR",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"6pwGTJGlzqgR"
+							],
+							"isClone": false,
+							"title": "error-logs-firefox-context-menu.png",
+							"notePosition": 180,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "error-logs-firefox-context-men.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "error-logs-firefox-context-menu.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "vvSmMuYBQLoH",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"vvSmMuYBQLoH"
+							],
+							"isClone": false,
+							"title": "link-map.png",
+							"notePosition": 190,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "link-map.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "link-map.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "LvH5LAl8XuzR",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"LvH5LAl8XuzR"
+							],
+							"isClone": false,
+							"title": "mobile-smartphone.png",
+							"notePosition": 200,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "mobile-smartphone.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "mobile-smartphone.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "zXXpN9sIPiTk",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"zXXpN9sIPiTk"
+							],
+							"isClone": false,
+							"title": "mobile-tablet.png",
+							"notePosition": 210,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "mobile-tablet.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "mobile-tablet.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "uucFLBUI87SU",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"uucFLBUI87SU"
+							],
+							"isClone": false,
+							"title": "note-revisions.png",
+							"notePosition": 220,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "note-revisions.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "note-revisions.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "Ja1W0HDp7Evr",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"Ja1W0HDp7Evr"
+							],
+							"isClone": false,
+							"title": "promoted-attributes-queen.png",
+							"notePosition": 230,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "promoted-attributes-queen.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "promoted-attributes-queen.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "pR7hktRs96D9",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"pR7hktRs96D9"
+							],
+							"isClone": false,
+							"title": "promoted-attributes.png",
+							"notePosition": 240,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "promoted-attributes.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "promoted-attributes.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "KpPfbbl50829",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"KpPfbbl50829"
+							],
+							"isClone": false,
+							"title": "relation-map-dev-process.png",
+							"notePosition": 250,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "relation-map-dev-process.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "relation-map-dev-process.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "TLJG2ADwU8DS",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"TLJG2ADwU8DS"
+							],
+							"isClone": false,
+							"title": "relation-map-family.png",
+							"notePosition": 260,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "relation-map-family.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "relation-map-family.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "Wtb17bzq5kR1",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"Wtb17bzq5kR1"
+							],
+							"isClone": false,
+							"title": "screenshot.png",
+							"notePosition": 270,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "screenshot.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "screenshot.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "laeDtAj5VypU",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"laeDtAj5VypU"
+							],
+							"isClone": false,
+							"title": "share-multiple-notes-web.png",
+							"notePosition": 280,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "share-multiple-notes-web.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "share-multiple-notes-web.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "UPVyQSR1duQC",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"UPVyQSR1duQC"
+							],
+							"isClone": false,
+							"title": "share-single-note-web.png",
+							"notePosition": 290,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "share-single-note-web.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "share-single-note-web.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "kBm0GG4thG8E",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"kBm0GG4thG8E"
+							],
+							"isClone": false,
+							"title": "share-single-note.png",
+							"notePosition": 300,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "share-single-note.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "share-single-note.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "MTm3GhriQqS8",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"MTm3GhriQqS8"
+							],
+							"isClone": false,
+							"title": "shared-list.png",
+							"notePosition": 310,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "shared-list.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "shared-list.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "Vy3l286PfXgK",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"Vy3l286PfXgK"
+							],
+							"isClone": false,
+							"title": "star-topology.png",
+							"notePosition": 320,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "star-topology.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "star-topology.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "pJU2qdCt4OBA",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"pJU2qdCt4OBA"
+							],
+							"isClone": false,
+							"title": "steel-blue.png",
+							"notePosition": 330,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "steel-blue.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "steel-blue.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "oBLNSRRSA89b",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"oBLNSRRSA89b"
+							],
+							"isClone": false,
+							"title": "sync-config.png",
+							"notePosition": 340,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "sync-config.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "sync-config.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "xpP3JFMFHIbS",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"xpP3JFMFHIbS"
+							],
+							"isClone": false,
+							"title": "sync-in-progress.png",
+							"notePosition": 350,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "sync-in-progress.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "sync-in-progress.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "tjXU2i0orP7C",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"tjXU2i0orP7C"
+							],
+							"isClone": false,
+							"title": "sync-init.png",
+							"notePosition": 360,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "sync-init.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "sync-init.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "fzRYCnCZKt7a",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"fzRYCnCZKt7a"
+							],
+							"isClone": false,
+							"title": "task-manager.png",
+							"notePosition": 370,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "task-manager.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "task-manager.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "V88V0A5eitLc",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"V88V0A5eitLc"
+							],
+							"isClone": false,
+							"title": "template-create-instance-note.png",
+							"notePosition": 380,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "template-create-instance-note.",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "template-create-instance-note.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "2dbgV4vqc2nD",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"2dbgV4vqc2nD"
+							],
+							"isClone": false,
+							"title": "template.png",
+							"notePosition": 390,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "template.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "template.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "bZOXGTdsZSF7",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"bZOXGTdsZSF7"
+							],
+							"isClone": false,
+							"title": "text-notes-formatting-block.png",
+							"notePosition": 400,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "text-notes-formatting-block.pn",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "text-notes-formatting-block.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "vDLTW1CQH9mV",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"vDLTW1CQH9mV"
+							],
+							"isClone": false,
+							"title": "text-notes-formatting-inline.png",
+							"notePosition": 410,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "text-notes-formatting-inline.p",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "text-notes-formatting-inline.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "wD1SmlhieKZF",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"wD1SmlhieKZF"
+							],
+							"isClone": false,
+							"title": "tree-map.png",
+							"notePosition": 420,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "tree-map.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "tree-map.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "Nc1DcsUbzN4c",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"Nc1DcsUbzN4c"
+							],
+							"isClone": false,
+							"title": "weight-tracker.png",
+							"notePosition": 430,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "weight-tracker.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "weight-tracker.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "VN1HmU9w8QZ4",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"YphvzCwdxEcz",
+								"VN1HmU9w8QZ4"
+							],
+							"isClone": false,
+							"title": "hide-archived.png",
+							"notePosition": 440,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "hide-archived.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "hide-archived.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						}
+					]
+				},
+				{
+					"noteId": "F5ZJCRaisYX9",
+					"notePath": [
+						"B1uwZAQD5SQd",
+						"F5ZJCRaisYX9"
+					],
+					"isClone": false,
+					"title": "relnotes48",
+					"notePosition": 800,
+					"prefix": null,
+					"isExpanded": false,
+					"type": "text",
+					"mime": "text/html",
+					"format": "markdown",
+					"dirFileName": "relnotes48",
+					"noImport": false,
+					"attributes": [],
+					"attachments": [],
+					"children": [
+						{
+							"noteId": "uc86DbSi388E",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"F5ZJCRaisYX9",
+								"uc86DbSi388E"
+							],
+							"isClone": false,
+							"title": "bookmarks.png",
+							"notePosition": 10,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "bookmarks.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "bookmarks.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "1IQhyrS5Bhyq",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"F5ZJCRaisYX9",
+								"1IQhyrS5Bhyq"
+							],
+							"isClone": false,
+							"title": "mermaid.png",
+							"notePosition": 20,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "mermaid.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "mermaid.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "NKS9XVOQxbeR",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"F5ZJCRaisYX9",
+								"NKS9XVOQxbeR"
+							],
+							"isClone": false,
+							"title": "note-map.png",
+							"notePosition": 30,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "note-map.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "note-map.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "IKNKQLr73XOb",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"F5ZJCRaisYX9",
+								"IKNKQLr73XOb"
+							],
+							"isClone": false,
+							"title": "screenshot.png",
+							"notePosition": 40,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "screenshot.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "screenshot.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						},
+						{
+							"noteId": "0GV4Q1Atx50a",
+							"notePath": [
+								"B1uwZAQD5SQd",
+								"F5ZJCRaisYX9",
+								"0GV4Q1Atx50a"
+							],
+							"isClone": false,
+							"title": "split.png",
+							"notePosition": 50,
+							"prefix": null,
+							"isExpanded": false,
+							"type": "image",
+							"mime": "image/png",
+							"dataFileName": "split.png",
+							"noImport": false,
+							"attributes": [
+								{
+									"type": "label",
+									"name": "originalFileName",
+									"value": "split.png",
+									"isInheritable": false,
+									"position": 10
+								}
+							],
+							"attachments": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
