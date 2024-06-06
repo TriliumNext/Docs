@@ -3135,7 +3135,7 @@
 							"role": "image",
 							"mime": "image/png",
 							"position": 10,
-							"dataFileName": "Theme-Gallery_trilium-velvet2."
+							"dataFileName": "Theme-Gallery_trilium-velvet2.png"
 						},
 						{
 							"attachmentId": "kYUTwxGuFFy1",
@@ -3199,7 +3199,7 @@
 							"role": "image",
 							"mime": "image/png",
 							"position": 10,
-							"dataFileName": "Theme-Gallery_lightslategray.p"
+							"dataFileName": "Theme-Gallery_lightslategray.png"
 						},
 						{
 							"attachmentId": "htipT1Dv1vtW",
@@ -4275,7 +4275,7 @@
 							"isExpanded": false,
 							"type": "image",
 							"mime": "image/gif",
-							"dataFileName": "relation-map-dev-process-demo.",
+							"dataFileName": "relation-map-dev-process-demo.gif",
 							"noImport": false,
 							"attributes": [
 								{
@@ -5403,7 +5403,7 @@
 							"isExpanded": false,
 							"type": "image",
 							"mime": "image/png",
-							"dataFileName": "template-create-instance-note.",
+							"dataFileName": "template-create-instance-note.png",
 							"noImport": false,
 							"attributes": [
 								{
@@ -5457,7 +5457,7 @@
 							"isExpanded": false,
 							"type": "image",
 							"mime": "image/png",
-							"dataFileName": "text-notes-formatting-block.pn",
+							"dataFileName": "text-notes-formatting-block.png",
 							"noImport": false,
 							"attributes": [
 								{
@@ -5484,7 +5484,7 @@
 							"isExpanded": false,
 							"type": "image",
 							"mime": "image/png",
-							"dataFileName": "text-notes-formatting-inline.p",
+							"dataFileName": "text-notes-formatting-inline.png",
 							"noImport": false,
 							"attributes": [
 								{
