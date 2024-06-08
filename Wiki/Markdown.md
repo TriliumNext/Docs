@@ -8,7 +8,7 @@ Import
 
 If you want to import just a chunk of markdown from clipboard, you can do it from editor block menu:
 
-![](gifs/markdown-inline-import.gif)
+![](images/markdown-inline-import.gif)
 
 ### File import
 
@@ -21,7 +21,7 @@ You can also import Markdown files from files:
 
 \[\[gifs/markdown-file-import.gif\]\]
 
-![](gifs/markdown-file-import.gif)
+![](images/markdown-file-import.gif)
 
 Export
 ------
@@ -30,13 +30,13 @@ Export
 
 You can export whole subtree to ZIP archive which will have directory structured modelled after subtree structure:
 
-![](gifs/markdown-export-subtree.gif)
+![](images/markdown-export-subtree.gif)
 
 ### Single note export
 
 If you want to export just single note without its subtree, you can do it from Note actions menu:
 
-![](gifs/markdown-export-note.gif)
+![](images/markdown-export-note.gif)
 
 ### Exporting protected notes
 

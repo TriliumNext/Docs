@@ -1,7 +1,7 @@
 # Bookmarks
 To easily access selected notes, you can bookmark them. See demo:
 
-![](gifs/bookmarks.gif)
+![](images/bookmarks.gif)
 
 Bookmark folder
 ---------------

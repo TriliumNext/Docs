@@ -8,11 +8,11 @@ Trilium text note interface doesn't show any toolbars or formatting options by d
 
 1.  selecting text will bring up an inline toolbar:
 
-![](images/text-notes-formatting-inline.p)
+![](api/images/voFa4y9vMkRi/text-notes-formatting-inline.p)
 
 1.  clicking on the block toolbar:
 
-![](images/text-notes-formatting-block.pn)
+![](api/images/aQT4C1G1rjUk/text-notes-formatting-block.pn)
 
 Read only vs. editing mode
 --------------------------
@@ -65,7 +65,7 @@ Markdown & Autoformat
 
 CKEditor supports markdown-like editing experience. It recognizes syntax and automatically converts it to rich text. See it in action:
 
-![](gifs/autoformat.gif)
+![](images/autoformat.gif)
 
 Complete documentation for this feature is available in [CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html).
 
@@ -78,7 +78,7 @@ Math support
 
 Trilium provides Math support with the help of KaTex:
 
-![](gifs/math.gif)
+![](images/math.gif)
 
 Cut selection to sub-note
 -------------------------
@@ -91,7 +91,7 @@ One of the common situations in Trilium is when you're editing a document, and i
 
 Trilium provides a way to automate this:
 
-![](gifs/cut-to-subnote.gif)
+![](images/cut-to-subnote.gif)
 
 You can notice how heading "Formatting" is automatically detected and new sub-note is named "Formatting".
 
@@ -104,4 +104,4 @@ Text notes can "include" another note as a read only widget. This can be useful 
 
 This functionality is available in the block toolbar icon.
 
-![image](Text-notes_image.png)
+![image](images/Text-notes%20image.png)

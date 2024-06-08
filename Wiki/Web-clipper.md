@@ -1,5 +1,5 @@
 # Web-clipper
-![](Web-clipper_chrome-trilium-web.png)
+![](images/Web-clipper%20chrome-trilium-web.png)
 
 Trilium Web Clipper is a web browser extension which allows user to clip text, screenshots, whole pages and short notes and save them directly to Trilium Notes.
 

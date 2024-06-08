@@ -16,7 +16,7 @@ How to use protected notes
 
 Notes are by default unprotected. If you want your note to be protected, click on shield icon next to the note title as seen here:
 
-![](gifs/protecting-note.gif)
+![](images/protecting-note.gif)
 
 What is encrypted
 -----------------

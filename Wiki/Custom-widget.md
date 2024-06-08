@@ -94,4 +94,4 @@ After you make changes it is necessary to restart Trilium so that the layout can
 
 On the bottom you can see the resulting widget:
 
-![](Custom-widget_image.png)
+![](images/Custom-widget%20image.png)

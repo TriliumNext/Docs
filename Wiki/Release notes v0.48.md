@@ -4,7 +4,7 @@
 Major frontend redesign
 -----------------------
 
-![](relnotes48/screenshot.png)
+![](images/1_screenshot.png)
 
 *   right panel is no more, most of these widgets have been moved to the new ribbon-style widget under note title
     *   right panel is still possible to activate for scripts
@@ -13,26 +13,26 @@ Major frontend redesign
 Vertical split window
 ---------------------
 
-![](relnotes48/split.png)
+![](images/split.png)
 
 Link map re-implemented
 -----------------------
 
 Now supports also hierarchical view of the notes:
 
-![](relnotes48/note-map.png)
+![](images/note-map.png)
 
 Mermaid diagrams
 ----------------
 
 Thanks to [@abitofevrything](https://github.com/abitofevrything) for this contribution!
 
-![](relnotes48/mermaid.png)
+![](images/mermaid.png)
 
 Basic bookmark support
 ----------------------
 
-![](relnotes48/bookmarks.png)
+![](images/bookmarks.png)
 
 Other changes
 -------------

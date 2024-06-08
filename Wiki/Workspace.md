@@ -6,11 +6,11 @@ So far workspace consists of these features:
 *   [note hoisting](Note%20hoisting.md) - you can "zoom" into a workspace subtree to focus only on the relevant notes
 *   easy entering of workspace:
 
-![](1_Workspace_image.png)
+![](images/1%20Workspace%20image.png)
 
 *   visual identification of workspace in tabs:
 
-![](Workspace_image.png)
+![](images/Workspace%20image.png)
 
 ### How to use workspaces
 

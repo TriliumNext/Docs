@@ -9,6 +9,7 @@ I've assumed you have created a DNS A record for `trilium.yourdomain.com` that y
     ```
     
 2.  Configure Apache proxy and websocket proxy
+    
     1.  Enable apache proxy modules
         
         ```text-plain
@@ -56,8 +57,11 @@ I've assumed you have created a DNS A record for `trilium.yourdomain.com` that y
         ```
         
     4.  Enable the virtual host with `sudo a2ensite trilium.yourdomain.com.conf`
+        
     5.  Reload apache2 with `sudo systemctl reload apache2`
+        
 3.  Create and enable a systemd service to start the docker container on boot
+    
     1.  Create a new empty file called `/lib/systemd/system/trilium.service` with the contents
         
         ```text-plain

@@ -29,7 +29,7 @@ Choose the setup
 
 1.  [Server installation](Server-installation.md)
 2.  [Mobile frontend](Mobile-frontend.md) (optional)
-3.  [![Deploy](Home_button.svg)](https://heroku.com/deploy?template=https://github.com/feilongfl/trilium-heroku)
+3.  [![Deploy](images/Home%20button.svg)](https://heroku.com/deploy?template=https://github.com/feilongfl/trilium-heroku)
 4.  [3rd party paid service to host a Trilium instance for you](https://trilium.cc/paid-hosting)
 
 **Combination of server and desktop/laptop** - Install the application on both a server, for web access and data synchronization, and desktop instance(s). This allows all the data to be stored on the server and either accessed from the web browser, or the desktop application. The desktop application will sync and store the data locally so that it can be used when offline.

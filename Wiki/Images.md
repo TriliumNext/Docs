@@ -8,7 +8,7 @@ Uploading images
 
 To add an image to the note, simply drag it from file explorer onto the note editor inside Trilium and the image will be uploaded.
 
-![](gifs/upload-image.gif)
+![](images/upload-image.gif)
 
 Alternatively you can click on block toolbar and then on "Insert image":
 

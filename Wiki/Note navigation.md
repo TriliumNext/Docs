@@ -8,14 +8,14 @@ You can use alt-left and alt-right to move back and forward in history of viewed
 
 This works identically to browser backwards / forwards, it's actually using built-in browser support for this.
 
-![](gifs/back-and-forwards.gif)
+![](images/back-and-forwards.gif)
 
 Jump to note
 ------------
 
 This is useful to quickly find and view arbitrary note - click on `Jump to` button on the top or press `CTRL-J`. Then type part of the note name and autocomplete will help you pick the desired note.
 
-![](gifs/jump-to.gif)
+![](images/jump-to.gif)
 
 ### Recent notes
 
@@ -25,4 +25,4 @@ To access this functionality, click on `Jump to` button on the top. By default, 
 
 Alternatively you can click on the "time" icon on the right.
 
-![](gifs/recent-notes.gif)
+![](images/recent-notes.gif)

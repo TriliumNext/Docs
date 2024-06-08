@@ -6,7 +6,7 @@ Drag and drop
 
 You can manipulate the tree simply by dragging and dropping notes as you can see in the demo:
 
-![](gifs/drag-and-drop.gif)
+![](images/drag-and-drop.gif)
 
 Keyboard manipulation
 ---------------------
@@ -18,7 +18,7 @@ Trilium provides fast keyboard based manipulation with following [shortcuts](Key
 *   `CTRL-RIGHT` - move note downwards in the hierarchy by setting parent to the note currently above (this is a bit hard to explain - it's best to see a demo or try it for yourself)
 *   `LEFT` and `RIGHT` expands and collapses a sub-tree
 
-![](gifs/move-note-with-keyboard.gif)
+![](images/move-note-with-keyboard.gif)
 
 Context menu
 ------------

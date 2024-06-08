@@ -26,7 +26,7 @@ And then we have instance note - this note has a [relation](Attributes.md) to th
 
 You can create an instance note (i.e. note which uses a template) through the UI like this:
 
-![](images/template-create-instance-note.)
+![](api/images/qGovjbsV4FPX/template-create-instance-note.)
 
 For the template to appear in the menu, the template note needs to have `#template` label (don't mistake it with `~template` relation which points from the instance note to the template note). If you use [workspaces](Workspace.md), you can alternatively mark templates with `#workspaceTemplate` which will display them only in the workspace.
 
