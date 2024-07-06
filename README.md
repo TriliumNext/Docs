@@ -1,21 +1,77 @@
-# Trilium Next documentation
+# TriliumNext Documentation
 
-This is an export of the upsteam [Zadam Wiki][0] for Trilium Notes. It's been converted from Github wiki format to markdown with some light rearranging to make for better presentation when imported into Trilium. It's anticipdated that in time this will supercede Zadam Wiki.
+To import this documentation into your own instance of Trilium, [follow these instructions](Wiki/import-docs.md) 
 
-## Importing
+## Table of Contents
 
-To import these docs into your own Trilium instance:
-
-1. Download archive from main branch of this repo:
-https://github.com/TriliumNext/Docs/archive/refs/heads/main.zip
-2. In Trilim create a new note to act as branch for the docs
-3. Right-click >> Import into note >> select downloaded `Docs-main.zip`
-  a. optionally uncheck "Shrink images"
-
-### Optional cleanup
-- delete `!!!meta.json`
-- Move `images` node down to the bottom (instead of dragging, it's easier to move out to parent node than back into Wiki. It will go to end of list automatically).
-
-For new releases delete the old docs note tree and start fresh, or you'll get duplicates.
-
-[0]: https://github.com/zadam/trilium/wiki
+- [Quick Start](Wiki/quick-start.md)
+- [Screenshot Tour](Wiki/screenshot-tour.md)
+- Basic Concepts
+    - [Documents](Wiki/document.md)
+    - [Note](Wiki/note.md)
+        - [Text Notes](Wiki/text-notes.md)
+        - [Links](Wiki/links.md)
+        - [Images](Wiki/images.md)
+        - [Attachments](Wiki/attachments.md)
+        - [Cloning notes](Wiki/cloning-notes.md)
+        - [Protected Notes](Wiki/protected-notes.md)
+        - [Archived Notes](Wiki/archived-notes.md)
+        - [Note Revisions](Wiki/note-revisions.md)
+    - Navigation
+        - [Tree Concepts](Wiki/tree-concepts.md)
+        - [Tree Manipulation](Wiki/tree-manipulation.md)
+        - [Note Navigation](Wiki/note-navigation.md)
+        - [Search](Wiki/search.md)
+        - [Bookmarks](Wiki/bookmarks.md)
+        - [Note Hoisting](Wiki/note-hoisting.md)
+        - [Workspace](Wiki/workspace.md)
+    - [Keyboard Shortcuts](Wiki/keyboard-shortcuts.md)
+    - [Themes](Wiki/themes.md)
+        - [Theme Gallery](Wiki)
+    - Import & Export
+        - [Markdown](Wiki/markdown.md)
+        - [Evernote](Wiki/evernote-import.md)
+        - [OneNote](Wiki/onenote.md)
+- Installation & Setup
+    - [Desktop Installation](Wiki/desktop-installation.md)
+    - [Server Installation](Wiki/server-installation.md)
+        - [Packaged Server Installation](Wiki/packaged-server-installation.md)
+        - [Docker Server Installation](Wiki/docker-server-installation.md)
+        - [NixOS Server Installation](Wiki/nixos-server-installation.md)
+        - [Manual Server Installation](Wiki/manual-server-installation.md)
+        - [Kubernettes Server Installation](Wiki/kubernetes-server-installation.md)
+        - [Apache Proxy Setup](Wiki/apache-proxy-setup.md)
+        - [Nginx Proxy Setup](Wiki/nginx-proxy-setup.md)
+        - [TLS Configuration](Wiki/tls-configuration.md)
+    - [Synchronization](Wiki/synchronization.md)
+    - [Mobile Frontend](Wiki/mobile-frontend.md)
+    - [Web Clipper](Wiki/web-clipper.md)
+    - [Upgrading Trilium](Wiki/upgrading-trilium.md)
+    - [Backup](Wiki/backup.md)
+    - [Data Directory](Wiki/data-directory.md)
+- Advanced Usage 
+    - [Attributes](Wiki/attributes.md)
+        - [Attribute Inheritance](Wiki/attribute-inheritance.md)
+        - [Promoted Attributes](Wiki/promoted-attributes.md)
+        - [Template](Wiki/template.md)
+    - [Relation Map](Wiki/relation-map.md)
+    - [Note Map](Wiki/note-map.md)
+    - [Book Note](Wiki/book-note.md)
+    - [Sharing](Wiki/sharing.md)
+    - [Code Notes](Wiki/code-notes.md)
+        - [Scripts](Wiki/scripts.md)
+        - [Script API](Wiki/script-api.md)
+        - [Custom Request handler](Wiki/custom-request-handler.md)
+        - [Events](Wiki/events.md)
+        - [Custom Widgets](Wiki/custom-widget.md)
+    - [Advanced Showcase](Wiki/advanced-showcases.md)
+        - [Day Notes](Wiki/day-notes.md)
+        - [Weight Tracker](Wiki/weight-tracker.md)
+        - [Task Manager](Wiki/task-manager.md)
+    - [ETAPI (Rest API)](Wiki/etapi.md)
+    - [Default Note Title](Wiki/default-note-title.md)
+- Developer Guides
+    - [Frontend Basics](Wiki/frontend-basics.md)
+    - [Widget Basics](Wiki/widget-basics.md)
+- [FAQ](Wiki/faq.md)
+- [Troubleshooting](Wiki/troubleshooting.md)
