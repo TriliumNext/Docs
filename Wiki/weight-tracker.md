@@ -9,9 +9,9 @@ By adding `weight` as a [promoted attribute](promoted-attributes.md) to the [Day
 
 ## Implementation
 
-Note `Weight Tracker` in the screenshot above is of type `Render Note`. That type of note doesn't have any useful content itself, the only purpose of it is to provide a place where a [script](scripts.md) can render its output. 
+The `Weight Tracker` Note in the screenshot above is of type `Render Note`. That type of note doesn't have any useful content itself, the only purpose of it is to provide a place where a [script](scripts.md) can render its output.
 
-Scripts for `Render Notes` are defined in a [relation](attributes.md) called `~renderNote`.  In this example, it's the `Weight Tracker`'s child `Implementation`. The Implementation is a [code note](code-notes.md) that contains some HTML and JavaScript which loads all the notes with `weight` attribute and displays them in a chart.
+Scripts for `Render Notes` are defined in a [relation](attributes.md) called `~renderNote`.  In this example, it's the `Weight Tracker`'s child `Implementation`. The Implementation consists of two [code notes](code-notes.md) that contain some HTML and JavaScript which loads all the notes with a `weight` attribute and displays their values in a chart.
 
 To actually render the chart, we're using a third party library called [chart.js](https://www.chartjs.org/) which is imported as an attachment since it's not built into Trilium.
 
