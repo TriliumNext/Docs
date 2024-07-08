@@ -67,6 +67,6 @@ new chartjs.Chart(ctx, {
 });
 ```
 
-## How to remove Weight Tracker button from the top bar
+## How to remove the Weight Tracker button from the top bar
 
-In the link map of Weight Tracker, there is a note "Button". Open it and delete or comment out its contents. The Weight Tracker button will disappear after you restart Trilium.
+In the link map of the `Weight Tracker`, there is a note called `Button`. Open it and delete or comment out its contents. The `Weight Tracker` button will disappear after you restart Trilium.
