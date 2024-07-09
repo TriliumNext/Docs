@@ -3,21 +3,21 @@
 
 The `Weight Tracker` is a [Script API](script-api.md) showcase present in the [demo document](document.md).
 
-By adding `weight` as a [promoted attribute](promoted-attributes.md) to the [Day notes](day-notes.md) through its [template](template.md), you can aggregate the data and plot weight change over time.
+By adding `weight` as a [promoted attribute](promoted-attributes.md) in the [template](template.md) from which [day notes](day-notes.md) are created, you can aggregate the data and plot weight change over time.
 
 ![](images/weight-tracker.png)
 
 ## Implementation
 
-The `Weight Tracker` Note in the screenshot above is of type `Render Note`. That type of note doesn't have any useful content itself, rahter it provides a place where a [script](scripts.md) can render its output.
+The `Weight Tracker` note in the screenshot above is of the type `Render Note`. That type of note doesn't have any useful content itself. Instead it is a placeholder where a [script](scripts.md) can render its output.
 
-Scripts for `Render Notes` are defined in a [relation](attributes.md) called `~renderNote`. In this example, it's the `Weight Tracker`'s child `Implementation`. The Implementation consists of two [code notes](code-notes.md) that contain some HTML and JavaScript respectively, which load all the notes with a `weight` attribute and displays their values in a chart.
+Scripts for `Render Notes` are defined in a [relation](attributes.md) called `~renderNote`. In this example, it's the `Weight Tracker`'s child `Implementation`. The Implementation consists of two [code notes](code-notes.md) that contain some HTML and JavaScript respectively, which load all the notes with a `weight` attribute and display their values in a chart.
 
 To actually render the chart, we're using a third party library called [chart.js](https://www.chartjs.org/) which is imported as an attachment, since it's not built into Trilium.
 
 ### Code
 
-Here's the content of the script Note of type `JS Frontend`:
+Here's the content of the script which is placed in a [code note](code-notes.md) of type `JS Frontend`:
 
 ```js
 async function getChartData() {
