@@ -6,8 +6,7 @@ To import this documentation into your own instance of Trilium, [follow these in
 
 - [Quick Start](Wiki/quick-start.md)
 - [Screenshot Tour](Wiki/screenshot-tour.md)
-- Basic Concepts
-    - [Documents](Wiki/document.md)
+- Basic Concepts    
     - [Note](Wiki/note.md)
         - [Text Notes](Wiki/text-notes.md)
         - [Links](Wiki/links.md)
@@ -70,6 +69,7 @@ To import this documentation into your own instance of Trilium, [follow these in
         - [Task Manager](Wiki/task-manager.md)
     - [ETAPI (Rest API)](Wiki/etapi.md)
     - [Default Note Title](Wiki/default-note-title.md)
+    - [Database](Wiki/database.md)
 - Developer Guides
     - [Frontend Basics](Wiki/frontend-basics.md)
     - [Widget Basics](Wiki/widget-basics.md)

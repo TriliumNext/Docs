@@ -37,6 +37,6 @@ Other remarks
 
 From the visual perspective, template can define a `#iconClass` and `#cssClass` attributes so that all e.g. books are shown with a particular icon and CSS style.
 
-You can check out the concept in the [demo document](document.md)| in e.g. [Relation map](relation-map.md), [Task manager](task-manager.md) or [Day notes](day-notes.md).
+You can check out the concept in the [demo notes](database.md)| in e.g. [Relation map](relation-map.md), [Task manager](task-manager.md) or [Day notes](day-notes.md).
 
 See also [default note title](default-note-title.md) which allows you to create templates for note titles. Note templates and title templates can be combined by creating a `#titleTemplate` for a template note.

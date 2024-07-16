@@ -1,5 +1,5 @@
 # Advanced showcases
-Trilium provides some advanced functionality in the form of [Scripts](scripts.md) and [promoted attributes](promoted-attributes.md). To explain and visualize these features we've prepared few showcases which are also available in the [demo document](document.md):
+Trilium provides some advanced functionality in the form of [Scripts](scripts.md) and [promoted attributes](promoted-attributes.md). To explain and visualize these features we've prepared few showcases which are also available in the [demo notes](database.md):
 
 *   [Relation map](relation-map.md)
 *   [Day notes](day-notes.md)

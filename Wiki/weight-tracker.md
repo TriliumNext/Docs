@@ -1,5 +1,5 @@
 # Weight-tracker
-Weight Tracker is a [Script API](script-api.md) showcase present in the [demo document](document.md).
+Weight Tracker is a [Script API](script-api.md) showcase present in the [demo notes](database.md).
 
 [Day notes](day-notes.md) shows (among others) how we have "weight" [promoted attribute](promoted-attributes.md) in the day note [template](template.md). This then aggregates the data and shows a nice chart of weight change in time.
 
