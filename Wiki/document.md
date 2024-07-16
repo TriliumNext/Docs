@@ -1,46 +1,36 @@
-# Document
-Document is [SQLite](https://www.sqlite.org) database which contains all notes, tree structure, metadata and most of the configuration.
+# Database
+Your Trilium data is stored in a [SQLite](https://www.sqlite.org) database which contains all notes, tree structure, metadata, and most of the configuration. The database file is named `document.db` and is stored in the application's default [data directory](data-directory.md).
 
-Location
---------
+## Demo Notes
 
-Document is stored in the [data directory](data-directory.md).
+When you run Trilium for the first time, it will generate a new database containing demo notes. These notes showcase its many features, such as:
 
-Demo document
--------------
+*   [Relation Map](relation-map.md)
+*   [Day Notes](day-notes.md)
+*   [Weight Tracker](weight-tracker.md)
+*   [Task Manager](task-manager.md)
+*   [Custom CSS Themes](themes.md)
 
-When you run Trilium for the first time, it will generate a demo document for you as a starting point. It's also pretty useful for demonstration of some of Trilium's features, e.g.:
+### Restoring Demo Notes
 
-*   [Relation map](relation-map.md)
-*   [Day notes](day-notes.md)
-*   [Weight tracker](weight-tracker.md)
-*   [Task manager](task-manager.md)
-*   [Custom CSS theme](themes.md)
+There are some cases in which you may want to restore the original demo notes. For example, if you experimented with some of the more advanced features and want to see the original reference, or if you simply want to explore the latest version of the demo notes, which might showcase new features.
 
-### Restoring demo document
+You can easily restore the demo notes by using Trilium's built-in import feature by importing them:
+- Download [this .zip archive](https://github.com/TriliumNext/Notes/raw/stable/db/demo.zip) with the latest version of the demo notes
+- Right click on any note in your tree under which you would like the demo notes to be imported
+- Click "Import into note"
+- Select the .zip archive to import it
 
-In some cases you might want to take a look at the demo document after you deleted it. Or you might want to see if there was something added (sometimes we add a new feature demonstration into demo document). In such case you can just [download .zip archive](https://github.com/TriliumNext/Notes/raw/stable/db/demo.zip) %%{WARNING}%% of the latest document and import it somewhere into the tree (right-click on a note where you want to import the demo document and choose "Import").
+## Manually Modifying the Database
 
-Manually modifying the document
--------------------------------
+Trilium provides a lot of flexibility, and with it, opportunities for advanced users to tweak it. If you need to explore or modify the database directly, you can use a tool such as [SQLite Browser](https://sqlitebrowser.org/) to work directly on the database file.
 
-Trilium provides a lot of flexibility, but with that you can also potentially shoot yourself in the foot (e.g. with startup script which blanks the app view).
+If you are doing any advanced development or troubleshooting where you manually modify the database, you might want to consider creating backups of your `document.db` file.
 
-In such cases you can manually fix notes on the database layer - you can use e.g. [https://sqlitebrowser.org/](https://sqlitebrowser.org/) to open `document.db` file, find problematic notes and manually fix them. Don't forget to commit / write changes after you're done.
+## How to Reset the Database
 
-How to reset the document
--------------------------
+If you are experimenting with Trilium and want to return it to its original state, you can do that by deleting the current database. When you restart the application, it will generate a new database containing the original demo notes.
 
-If you previously just experimented with Trilium and want to get it to the initial state, you can do that by deleting the `document.db*` files, e.g. like this:
+To delete the database, simply go to the [data directory](data-directory.md) and delete the `document.db` file (and any other files starting with `document.db`).
 
-```text-plain
-rm document.db*
-```
-
-If you don't need to preserve e.g. the `config.ini`, then you can also delete the whole [data directory](data-directory.md) like this:
-
-```text-plain
-rm -r ./trilium-data
-```
-
-After starting next time, Trilium will create a new initial document.
+If you do not need to preserve any configurations that might be stored in the `config.ini` file, you can just delete all of the [data directory's](data-directory.md) contents to fully restore the application to its original state.
