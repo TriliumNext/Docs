@@ -1,9 +1,10 @@
-# Advanced showcases
-Trilium provides some advanced functionality in the form of [Scripts](scripts.md) and [promoted attributes](promoted-attributes.md). To explain and visualize these features we've prepared few showcases which are also available in the [demo notes](database.md):
+# Advanced Showcases
 
-*   [Relation map](relation-map.md)
-*   [Day notes](day-notes.md)
-*   [Weight Tracker](weight-tracker.md)
-*   [Task Manager](task-manager.md)
+Trilium offers advanced functionality through [Scripts](scripts.md) and [Promoted Attributes](promoted-attributes.md). To illustrate these features, we've prepared several showcases available in the [demo document](document.md):
 
-An important thing to keep in mind is that above showcases and demoed functionality are not built-in into Trilium - these are just examples of Trilium's extensibility.
+* [Relation Map](relation-map.md)
+* [Day Notes](day-notes.md)
+* [Weight Tracker](weight-tracker.md)
+* [Task Manager](task-manager.md)
+
+It's important to note that these examples are not natively supported by Trilium out of the box; instead, they demonstrate what you can build within Trilium.
