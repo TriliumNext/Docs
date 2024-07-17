@@ -32,7 +32,7 @@ Trilium needs a directory where it can store its data, this then needs to be mou
 Run image
 ---------
 
-These commands mount the volume to the host system so that trilium's data (most importantly [document](document.md)) is persisted and not cleared after container stops.
+These commands mount the volume to the host system so that trilium's data (most importantly [database](database.md)) is persisted and not cleared after container stops.
 
 ### Local only
 

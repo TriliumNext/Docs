@@ -12,7 +12,7 @@ Trilium does not have a built-in auto upgrade - all upgrades have to be done man
 Document compatibility and migration
 ------------------------------------
 
-During Trilium startup, [document](document.md) will be checked whether it conforms to the version supported by the application. In case the document is in the old version, Trilium will automatically migrate it to the new version. This will then mean that the document will not be readable anymore by the older versions of Trilium. In case you want to go back to the old version of the document and Trilium, you can restore the [backed up](backup.md) `backup-before-migration.db` which is created before every migration.
+During Trilium startup, [database](database.md) will be checked whether it conforms to the version supported by the application. In case the document is in the old version, Trilium will automatically migrate it to the new version. This will then mean that the document will not be readable anymore by the older versions of Trilium. In case you want to go back to the old version of the document and Trilium, you can restore the [backed up](backup.md) `backup-before-migration.db` which is created before every migration.
 
 Sync compatibility
 ------------------

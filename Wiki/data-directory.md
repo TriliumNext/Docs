@@ -1,7 +1,7 @@
 # Data-directory
 Data directory contains:
 
-*   `document.db` - [document](document.md)
+*   `document.db` - [database](database.md)
 *   `config.ini` - instance level settings like port on which the Trilium application runs
 *   `backup` - contains automatically [backup](backup.md) of documents
 *   `log` - contains application log files
@@ -66,7 +66,7 @@ Here is a pre-defined template, where you just need to add your path to:
 
 ### Create a script to run with specific data directory
 
-An alternative to globally setting environment variable is to run only the Trilium Notes with this environment variable. This then allows for different setup styles like two [document](document.md) instances or "portable" installation.
+An alternative to globally setting environment variable is to run only the Trilium Notes with this environment variable. This then allows for different setup styles like two [database](database.md) instances or "portable" installation.
 
 To do this in unix based systems simply run trilium like this:
 

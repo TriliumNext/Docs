@@ -38,7 +38,7 @@ There are several steps here:
 *   we create another note for Princess Diana and create "isPartnerOf" relation from Charles. Again notice how the relation has arrows both ways - this is because "isPartnerOf" definition specifies its inverse relation as again "isPartnerOf" so the opposite relation is created automatically.
 *   as the last step we pan & zoom the map to fit better to window dimensions.
 
-Relation definitions mentioned above come from "Person template" note which is assigned to any child of "My Family Tree" relation note. You can play with the whole thing in the [demo document](document.md).
+Relation definitions mentioned above come from "Person template" note which is assigned to any child of "My Family Tree" relation note. You can play with the whole thing in the [demo notes](database.md).
 
 Details
 -------

@@ -62,7 +62,7 @@ In case you forgot your password, this means that:
 *   your protected notes are forever lost - they cannot be decrypted without the password
 *   normal (unprotected) notes are recoverable. Read below to see how.
 
-To be able to change username/password and thus recover your unprotected notes, you need to get access to the [document](document.md) file in a [data directory](data-directory.md). You then need to open the `document.db` file with SQLite client (command line or e.g. [DB Browser](https://sqlitebrowser.org/)) and execute following queries:
+To be able to change username/password and thus recover your unprotected notes, you need to get access to the [database](database.md) file in a [data directory](data-directory.md). You then need to open the `document.db` file with SQLite client (command line or e.g. [DB Browser](https://sqlitebrowser.org/)) and execute following queries:
 
 ```text-plain
 UPDATE options SET value = 'your_username' WHERE name = 'username'; -- feel free to change 'your_username' to your desired username

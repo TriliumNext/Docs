@@ -14,7 +14,7 @@ So we have frontend and backend, each with their own set of responsibilities, bu
 Button use case
 ---------------
 
-Let's take a look at our demo script (shipped with default Trilium [document](document.md)) - Task manager. One of the things this script does is adding a button to the Trilium interface which will allow user to easily add new Task (TODO item).
+Let's take a look at our demo script (shipped with default Trilium [database](database.md)) - Task manager. One of the things this script does is adding a button to the Trilium interface which will allow user to easily add new Task (TODO item).
 
 ![](images/button-script.png)
 
