@@ -1,9 +1,9 @@
-# Saved-search
-Trilium provides a way to save common search as a note in the note tree. Search results will then appear as sub-notes of this "saved search" note. You can see how this works in action:
+# Saved Searches
 
-![save-search](images/Saved-search%20image.gif)
+Trilium allows you to save common searches as notes within the note tree. The search results will appear as sub-notes under these "saved search" notes. Here is an example of how it works:
 
-Location
---------
+![save-search](images/saved-search-image.gif)
 
-Saved search is by default stored in the day note. You can also mark some note with `#searchHome` label, all saved searches will be then saved there. There's also `#workspaceSearchHome` variant for \[\[workspaces|workspace\]\].
+## Location
+
+By default, saved searches are stored in the day note. However, you can designate a different note to store saved searches by marking it with the `#searchHome` label. Additionally, for [workspaces](workspace.md), you can use the `#workspaceSearchHome` label to specify a storage location for saved searches within that workspace.
