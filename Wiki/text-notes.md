@@ -1,107 +1,94 @@
-# Text-notes
-Trilium uses awesome [CKEditor 5](https://ckeditor.com/ckeditor-5/) as its editing component.
+# Text Notes
 
-Formatting
-----------
+Trilium utilizes the powerful [CKEditor 5](https://ckeditor.com/ckeditor-5/) as its text editing component.
 
-Trilium text note interface doesn't show any toolbars or formatting options by default, these needs to be brought up by:
+## Formatting Options
 
-1.  selecting text will bring up an inline toolbar:
+The Trilium text note interface does not display toolbars or formatting options by default. These can be accessed by:
 
-![](api/images/voFa4y9vMkRi/text-notes-formatting-inline.p)
+%%{WARNING}%% Image does not exist in repo
+![](api/images/aQT4C1G1rjUk/text-notes-formatting-inline.p)
 
-1.  clicking on the block toolbar:
+1. Selecting text to bring up an inline toolbar.
 
+%%{WARNING}%% Image does not exist in repo
 ![](api/images/aQT4C1G1rjUk/text-notes-formatting-block.pn)
 
-Read only vs. editing mode
---------------------------
+2. Clicking on the block toolbar.
 
-Text notes are normally opened in edit mode, however there are two cases when they are open in read-only mode:
 
-*   they are long and thus would take time to load so by default we open them as read only which is much quicker
-*   or the note has `readOnly` [label](attributes.md)
+## Read-Only vs. Editing Mode
 
-In both cases, it is possible to switch to editable mode again.
+Text notes are usually opened in edit mode. However, they may open in read-only mode under the following circumstances:
 
-General Formatting
-------------------
+- The note is long and would take time to load, so it is opened in read-only mode by default for quicker access.
+- The note has a `readOnly` [label](attributes.md).
 
-Trilium uses the CKEditor, so any formatting that the CKEditor supports should be available in Trilium. For example:
+In both cases, it is possible to switch back to editable mode.
 
-**Bold** – Type `**text**` or `__text__`
+## General Formatting
 
-_Italic_ – Type `*text*` or `_text_`
+Since Trilium uses CKEditor, any formatting supported by CKEditor is available. Examples include:
 
-`Code` – Type \`text\`
-
-~Strikethrough~ – Type `~~text~~`
+- **Bold**: Type `**text**` or `__text__`
+- _Italic_: Type `*text*` or `_text_`
+- `Code`: Type \`text\`
+- ~Strikethrough~: Type `~~text~~`
 
 ### Lists
 
-*   Bulleted list – Start a line with `*` or `-` followed by a space
-
-1.  Numbered list – Start a line with `1.` or `1)` followed by a space
-
-\[ \] To-do list – Start a line with `[ ]` or `[x]` followed by a space to insert an unchecked or checked list item, respectively
+- Bulleted list: Start a line with `*` or `-` followed by a space
+- Numbered list: Start a line with `1.` or `1)` followed by a space
+- To-do list: Start a line with `[ ]` for an unchecked item or `[x]` for a checked item
 
 ### Blocks
 
-> Block quote – Start a line with `>` followed by a space
+- Block quote: Start a line with `>` followed by a space
 
-`Multi-line Code block` – Start a line with \`\`\`
+### Multi-Line Code Blocks
 
-### Other
+To create a multi-line code block, start a line with "\`\`\`[lang]", for example:
 
-Headings – Start a line with `##` or `###` followed by a space to create a heading 1, heading 2, or heading 3 (up to heading 6 if options defines more headings)
+```js
+if (1 > 2) {
+    console.log("Error in the matrix");
+}
+```
 
-Note: Trilium only accepts headings with `##` and more because `#` is reserved for the title
+### Headings
 
-Horizontal line – Start a line with `---`
------------------------------------------
+Create headings by starting a line with `##` for heading 2, `###` for heading 3, and so on up to heading 6. Note that `#` is reserved for the title.
 
-Markdown & Autoformat
----------------------
+### Horizontal Line
 
-CKEditor supports markdown-like editing experience. It recognizes syntax and automatically converts it to rich text. See it in action:
+Insert a horizontal line by starting a line with `---`.
 
-![](images/autoformat.gif)
+## Markdown & Autoformat
 
-Complete documentation for this feature is available in [CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html).
+CKEditor supports a markdown-like editing experience, recognizing syntax and automatically converting it to rich text.
 
-If the autoformat is not desirable for what you just wrote, you can press `CTRL-Z` which will un-autoformat the text to its original form.
+Complete documentation for this feature is available in the [CKEditor documentation](https://ckeditor.com/docs/ckeditor5/latest/features/autoformat.html).
 
-Note that the use of `#` for Heading1 style is not supported because the editor assumes that is used for the title, start with `##` for Heading2. Explanation [here](https://ckeditor.com/docs/ckeditor5/latest/features/headings.html#heading-levels).
+If autoformatting is not desirable, press `CTRL-Z` to revert the text to its original form.
 
-Math support
-------------
+Note: The use of `#` for Heading 1 is not supported because it is reserved for the title. Start with `##` for Heading 2. More information is available [here](https://ckeditor.com/docs/ckeditor5/latest/features/headings.html#heading-levels).
 
-Trilium provides Math support with the help of KaTex:
+## Math Support
 
-![](images/math.gif)
+Trilium provides math support through KaTeX.
 
-Cut selection to sub-note
--------------------------
+## Cutting Selection to Sub-Note
 
-One of the common situations in Trilium is when you're editing a document, and it gets somewhat large, so you start splitting it up into sub-notes - the process is essentially like this:
+When editing a document that becomes too large, you can split it into sub-notes:
 
-*   select the desired piece of text and cut it into clipboard
-*   create new sub-note & give it name
-*   paste the content from clipboard into sub-note
+1. Select the desired text and cut it to the clipboard.
+2. Create a new sub-note and name it.
+3. Paste the content from the clipboard into the sub-note.
 
-Trilium provides a way to automate this:
+Trilium can automate this process. The heading is automatically detected and the new sub-note is named accordingly. You can also assign a keyboard shortcut for this action.
 
-![](images/cut-to-subnote.gif)
+## Including a Note
 
-You can notice how heading "Formatting" is automatically detected and new sub-note is named "Formatting".
+Text notes can include another note as a read-only widget. This feature is useful for including dynamically generated charts (from scripts & "render HTML" notes) or other advanced use cases.
 
-It is also possible to assign a keyboard shortcut for this action.
-
-Include note
-------------
-
-Text notes can "include" another note as a read only widget. This can be useful for e.g. including a dynamically generated chart (from scripts & "render HTML" note) or other more advanced use cases.
-
-This functionality is available in the block toolbar icon.
-
-![image](images/Text-notes%20image.png)
+This functionality is available through the block toolbar icon.
