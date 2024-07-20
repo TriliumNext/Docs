@@ -1,28 +1,25 @@
-# Tree concepts
-This page describes some basic concepts related to the tree structure of notes in Trilium.
+# Tree Concepts
 
-Note
-----
+This page explains the basic concepts related to the tree structure of notes in TriliumNext.
 
-Note is a central entity in Trilium. See [Note](note.md) for details.
+## Note
 
-Branch
-------
+A note is the central entity in TriliumNext. For more details, see [Note](note.md).
 
-Branch describes note placement in the note tree - in essence it's a tuple of parentNoteId and noteId which says that given note is placed as a child into this parent note.
+## Branch
 
-Each note can have more than one such branches, in other words any note can have multiple placements in the tree. For lack of better word we call this "[cloning](cloning-notes.md)".
+A branch describes the placement of a note within the note tree. Essentially, it is a tuple of `parentNoteId` and `noteId`, indicating that the given note is placed as a child under the specified parent note.
 
-Prefix
-------
+Each note can have multiple branches, meaning any note can be placed in multiple locations within the tree. This concept is referred to as "[cloning](cloning-notes.md)."
 
-Prefix is branch (placement) specific title prefix for the note. Let's say you have your note placed into two different places in the tree, but you want to change the title a bit in one of the placements. For this you can use prefix.
+## Prefix
 
-To edit prefix, right-click on a note in the tree pane and choose "Edit branch prefix".
+A prefix is a branch-specific title modifier for a note. If you place your note in two different locations within the tree and want to alter the title slightly in one of those placements, you can use a prefix.
 
-Prefix is not part of the note itself and thus is not encrypted when the note is protected. That can be useful when you want to keep part of the title in the tree visible even when protected for easier orientation.
+To edit a prefix, right-click on the note in the tree pane and select "Edit branch prefix."
 
-Subtree
--------
+The prefix is not part of the note itself and is not encrypted when the note is protected. This can be useful if you want part of the title to remain visible in the tree for easier navigation, even when the note is protected.
 
-Subtree is a set of notes consisting of a particular note (subtree root) and all its children, children of these children (= all its descendants). Some operations work on subtrees (e.g. export).
+## Subtree
+
+A subtree consists of a particular note (the subtree root) and all its children and descendants. Some operations, such as exporting, work on entire subtrees.
