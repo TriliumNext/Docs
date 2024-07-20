@@ -1,90 +1,72 @@
 # Troubleshooting
-Trilium is currently beta quality software, so it's quite expected there will be some bugs.
 
-General quickfix
-----------------
+As TriliumNext is currently in beta, encountering bugs is to be expected.
 
-You guessed it - it's restart.
+## General Quick Fix
 
-If there's a UI problem, it usually means that the Trilium frontend got into an inconsistent state and is acting up. The easiest way to fix it is to reload the application - just press `CTRL-R` and frontend will be reloaded.
+The first step in troubleshooting is often a restart.
 
-If this still doesn't help, or you suspect it's actually a backend issue, you can restart the whole application - in case of desktop (Electron) build, you just close the window and re-open it again.
+If you experience an UI issue, the frontend may have entered an inconsistent state. Reload the application by pressing `CTRL-R`. This will reload the frontend.
 
-Broken note crashes Trilium
----------------------------
+If the issue persists or appears to be a backend problem, restart the entire application. For the desktop (Electron) build, simply close and reopen the window. If you're using a Docker build, restart the container.
 
-Sometimes a particular problem can cause issues for Trilium (e.g. render note with faulty script) and causes Trilium to crash. But since Trilium will normally try to load previously open notes, it will attempt to load again the note, causing the crash again.
+## Broken Note Crashes Trilium
 
-To break out of this vicious cycle, you can specify `TRILIUM_START_NOTE_ID` environment variable, which will reset the open tabs to only one with the specified note ID (just use `root`). In linux you could use it like this:
+Certain problems, such as rendering a note with a faulty script, can cause Trilium to crash. If Trilium attempts to reload the problematic note upon restart, it will continue to crash.
 
-```text-plain
+To resolve this, use the `TRILIUM_START_NOTE_ID` environment variable to reset the open tabs to a single specified note ID (e.g., `root`). In Linux, you can set it as follows:
+
+```sh
 TRILIUM_START_NOTE_ID=root ./trilium
 ```
 
-Alternatively, you can also start up Trilium in a "safe mode" which will reset the current note to root:
+## Broken Script Prevents Application Startup
 
-```text-plain
+If a custom script causes TriliumNext to crash, and it is set as a startup script or in an active [custom widget](custom-widget.md), start TriliumNext in "safe mode" to prevent any custom scripts from executing:
+
+```sh
 TRILIUM_SAFE_MODE=true ./trilium
 ```
 
-Broken script prevents application startup
-------------------------------------------
+Depending on your Trilium distribution, you may have pre-made scripts available: `trilium-safe-mode.bat` and `trilium-safe-mode.sh`.
 
-If you experiment with scripting, it might happen that you create a script which crashes the whole Trilium. That's even worse if you set it as a startup script or in an active [custom widget](custom-widget.md).
+Once Trilium starts, locate and fix or delete the problematic note.
 
-In such cases you can start Trilium in "safe mode" which will not execute any custom scripts:
+## Sync and Consistency Checks
 
-```text-plain
-TRILIUM_SAFE_MODE=true ./trilium
-```
+Trilium periodically verifies the logical consistency of the database (e.g., ensuring every note has a parent). If inconsistencies are detected, you will be notified via the UI.
 
-Depending on the Trilium distribution, there are also ready made scripts for this: `trilium-safe-mode.bat` and `trilium-safe-mode.sh`.
+In such cases, file a bug report and attach an anonymized database if necessary.
 
-Once Trilium starts up, find the note which caused the crash and fix it/delete it.
+## Restoring Backup
 
-Sync and consistency checks
----------------------------
+Trilium makes regular automatic backups. If issues become severe, you can [restore from a backup](backup.md).
 
-Trilium periodically checks logical consistency of the database (e.g. that every note should have a parent). If some inconsistency is detected, the user is notified on the UI about the inconsistency.
+## Forgotten Password
 
-In such case, it is recommended to file a bug report and attach anonymized database (see below).
+If you forget your password:
 
-Restoring backup
-----------------
+- Protected notes are irretrievable without the password.
+- Unprotected notes can be recovered. Follow these steps:
 
-Trilium makes regular automatic backup, so When things go really bad we might need the last option - [restore backup](backup.md).
+Access the [database](database.md) file in the [data directory](data-directory.md). Open the `document.db` file with an SQLite client (e.g., [DB Browser](https://sqlitebrowser.org/)) and execute the following queries:
 
-Forgotten username/password
----------------------------
-
-In case you forgot your password, this means that:
-
-*   your protected notes are forever lost - they cannot be decrypted without the password
-*   normal (unprotected) notes are recoverable. Read below to see how.
-
-To be able to change username/password and thus recover your unprotected notes, you need to get access to the [database](database.md) file in a [data directory](data-directory.md). You then need to open the `document.db` file with SQLite client (command line or e.g. [DB Browser](https://sqlitebrowser.org/)) and execute following queries:
-
-```text-plain
-UPDATE options SET value = 'your_username' WHERE name = 'username'; -- feel free to change 'your_username' to your desired username
+```sql
 UPDATE options SET value = '77/twC5O00cuQgNC63VK32qOKKYwj21ev3jZDXoytVU=' WHERE name = 'passwordVerificationSalt';
 UPDATE options SET value = '710BMasZCAgibzIc07X4P9Q4TeBd4ONnqJOho+pWcBM=' WHERE name = 'passwordDerivedKeySalt';
 UPDATE options SET value = 'Eb8af1/T57b89lCRuS97tPEl4CwxsAWAU7YNJ77oY+s=' WHERE name = 'passwordVerificationHash';
 UPDATE options SET value = 'QpC8XoiYYeqHPtHKRtbNxfTHsk+pEBqVBODYp0FkPBa22tlBBKBMigdLu5GNX8Uu' WHERE name = 'encryptedDataKey';
 ```
 
-After executing the changes, don't forget to commit/write the changes!
+After executing the changes, commit/write the changes. **This sets the password to "password," allowing you to log in again.**
 
-This will set the password to "password". You can use that to login to the application again.
+For pre-existing protected notes (now unrecoverable), consider deleting them or exporting the unprotected notes. Then, delete `document.db` and start fresh.
 
-If you already had protected notes (which are not unrecoverable), I recommend deleting them or alternatively export the unprotected notes, delete the document.db and start anew.
+If you continue using the existing document file, change your password (Options -> Change Password).
 
-If you decide to continue using the existing document file, don't forget to change your password (Options -> Change password).
+## Reporting Bugs
 
-Reporting bugs
---------------
+Reporting bugs is highly valuable. Here are some tips:
 
-It's a great help to send bug reports. Here are some tips where to look at:
-
-Trilium uses GitHub issues - so please send your reports here: [https://github.com/TriliumNext/Notes/issues](https://github.com/TriliumNext/Notes/issues)
-
-Check [error logs](error-logs.md) page for info how to provide the necessary info.
+- Use GitHub issues for reporting: [https://github.com/TriliumNext/Notes/issues](https://github.com/TriliumNext/Notes/issues)
+- Refer to the [error logs](error-logs.md) page for information on providing necessary details.
