@@ -1,14 +1,13 @@
-# Read only note
-[Text](text-notes.md) or [code](code-notes.md) can be set to be read-only. In such case only read view is presented to the user with the option of editing the note if needed.
+# Read-Only Notes
 
-Setting read only view with label
----------------------------------
+Both [text](text-notes.md) and [code](code-notes.md) notes in Trilium can be set to read-only. When a note is in read-only mode, it is presented to the user in a non-editable view, with the option to switch to editing mode if needed.
 
-You can set the note as read only by adding [label](attributes.md) `readOnly`.
+## Setting Read-Only Mode with a Label
 
-Auto read only
---------------
+To set a note as read-only, add the `readOnly` [label](attributes.md) to the note.
 
-If the note is too large then Trilium will automatically set the note as readOnly as an optimization - displaying such long notes can take a long time in editing mode and this might unnecessarily slow down operation even if editing is not necessary.
+## Automatic Read-Only Mode
 
-If you want to keep specific note automatically editable, you can add [label](attributes.md) `autoReadOnlyDisabled`.
+For optimization purposes, Trilium will automatically set very large notes to read-only. Displaying such lengthy notes in editing mode can slow down performance, especially when editing is unnecessary.
+
+If you want to ensure that a specific note remains editable regardless of its size, you can add the `autoReadOnlyDisabled` [label](attributes.md) to the note.
