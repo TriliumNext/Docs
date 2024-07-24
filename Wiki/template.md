@@ -23,8 +23,7 @@ This relationship means the instance note's content is initialized from the temp
 
 To create an instance note through the UI:
 
-%%{WARNING}%% Image not in Repo
-![](api/images/qGovjbsV4FPX/template-create-instance-note.)
+![show child note templates](images/template-create-instance-note.png)
 
 For the template to appear in the menu, the template note must have the `#template` label.
 Do not confuse this with the `~template` relation, which links the instance note to the template note.
