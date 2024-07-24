@@ -1,22 +1,18 @@
-# Upgrading Trilium
-Topic of this page is upgrading Trilium from one version to another.
+# Upgrading TriliumNext
 
-How to upgrade
---------------
+This document outlines the steps required to upgrade Triliumto a new release version.
 
-Trilium does not have a built-in auto upgrade - all upgrades have to be done manually. How to do this depends on the installation method:
+## How to Upgrade
 
-*   for [docker server installation](docker-server-installation.md) - pull the image of the newer version and restart
-*   for all others you need to download new version of the release artifact of your choice from the [release page](https://github.com/TriliumNext/Notes/releases/latest) and replace existing version of the application - i.e. rename/delete the old directory and extract the archive of the new version
+Triliumdoes not support built-in automatic upgrades; all updates must be performed manually. The upgrade process varies depending on the installation method:
 
-Document compatibility and migration
-------------------------------------
+- **[Docker Server Installation](docker-server-installation.md)**: Pull the new image and restart the container.
+- **Other Installations**: Download the latest version from the [release page](https://github.com/TriliumNext/Notes/releases/latest) and replace the existing application files.
 
-During Trilium startup, [database](database.md) will be checked whether it conforms to the version supported by the application. In case the document is in the old version, Trilium will automatically migrate it to the new version. This will then mean that the document will not be readable anymore by the older versions of Trilium. In case you want to go back to the old version of the document and Trilium, you can restore the [backed up](backup.md) `backup-before-migration.db` which is created before every migration.
+## Database Compatibility and Migration
 
-Sync compatibility
-------------------
+Upon startup, Triliumwill automatically migrate the [database](database.md) to the new version. Note that after migration, older versions of Trilium will be unable to read the database. If you need to revert to a previous version of Triliumand its database, you can restore the [backup](backup.md) that is created prior to migration.
 
-[Synchronization](synchronization.md) protocol is versioned and all members of the sync cluster need to talk in the same protocol version. Therefore, when you are upgrading from one version to another, it might be necessary to upgrade all instances in the cluster.
+## Sync Compatibility
 
-Change in protocol version is usually indicated on a release page.
+The [synchronization](synchronization.md) protocol used by Triliumis versioned, requiring all members of the sync cluster to use the same protocol version. Therefore, when upgrading to a new version, you may need to upgrade all instances in the sync cluster. Changes to the sync protocol version are typically indicated on the release page.

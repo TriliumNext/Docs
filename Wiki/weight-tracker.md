@@ -1,10 +1,10 @@
 # Weight-tracker
 
+![screenshot of weight tracker](images/weight-tracker.png)
+
 The `Weight Tracker` is a [Script API](script-api.md) showcase present in the [demo notes](database.md).
 
 By adding `weight` as a [promoted attribute](promoted-attributes.md) in the [template](template.md) from which [day notes](day-notes.md) are created, you can aggregate the data and plot weight change over time.
-
-![](images/weight-tracker.png)
 
 ## Implementation
 

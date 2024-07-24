@@ -1,85 +1,71 @@
 # Synchronization
-Trilium is offline-first note-taking application - when you use the desktop application, all the data is stored locally, but you also have an option to set up synchronization to the server instance. When you add another desktop client, you can get to star-shaped topology:
 
-![](images/star-topology.png)
+Trilium is an offline-first note-taking application that stores all data locally on the desktop client. However, it also offers the option to set up synchronization with a server instance, allowing multiple desktop clients to sync with a central server. This creates a star-shaped topology:
 
-This means that there's one central server (we'll call this instance _sync server_) and several _client_ (sometimes called _desktop_) instances which all point to this sync server and synchronize against it.
+![topology visualization](images/star-topology.png)
 
-Once sync is set up, synchronization is automatic and ongoing - you don't need to trigger it manually. It should "just work".
+In this setup, a central server (referred to as the _sync server_) and multiple _client_ (or _desktop_) instances synchronize with the sync server. Once configured, synchronization is automatic and ongoing, requiring no manual intervention.
 
-How to set up synchronization
------------------------------
+## Setting Up Synchronization
 
-### Security
+### Security Considerations
 
-Please note that setting up server securely is not easy and far reaching mistakes can be made. It is especially important to use a valid TLS certificate (https) instead of unencrypted/unauthenticated HTTP.
+Setting up the server securely is critical and can be complex. It is crucial to use a valid [TLS certificate](tls-configuration.md) (HTTPS) rather than an unencrypted HTTP connection to ensure security and avoid potential vulnerabilities.
 
-### Setup synchronization from desktop instance to sync server
+### Synchronizing a Desktop Instance with a Sync Server
 
-This approach is used when you already have a desktop instance of Trilium and you want to [setup sync server on your web host](server-installation.md).
+This method is used when you already have a desktop instance of Trilium and want to set up a sync server on your web host.
 
-So let's assume your server instance is already deployed, but it's uninitialized (no data). Then open your desktop instance, click on Options -> Sync tab -> Sync configuration and set "Server instance address" to point to your sync server. Click Save.
+1. **Server Deployment**: Ensure your server instance is deployed but uninitialized.
+2. **Desktop Configuration**: Open your desktop instance, navigate to Options -> Sync tab -> Sync configuration, and set the "Server instance address" to your sync server's address. Click Save.
 
-![](images/sync-config.png)
+![screenshot of the sync settings options modal](images/sync-config.png)
 
-Now click on "Test sync" button which will tell you if the handshake with sync server succeeded. If yes, sync with sync server started - client started pushing all the data towards the server instance. This might take some time to finish, but you can close the Options dialog and keep using Trilium.
+3. **Testing Sync**: Click the "Test sync" button to verify the connection to the sync server. If successful, the client will start pushing all data to the server instance. This process may take some time, but you can continue using Trilium. Periodically check the server instance to confirm when the sync is complete. Once finished, you should see the login screen on the server.
 
-You can also check the server instance periodically to see if the sync finished. Once it's finished, you should see the login screen.
+### Synchronizing a Desktop Instance from a Sync Server
 
-### Setup synchronization from sync server to desktop instance
+This method is used when you already have a sync server and want to configure a new desktop instance to sync with it.
 
-This is used when you already have sync server, and you want to set up a desktop instance to sync with (from) it.
+1. **Desktop Setup**: Follow the [desktop installation page](desktop-installation.md).
+2. **Initial Configuration**: When prompted, choose the option to set up sync with a sync server.
 
-Here we assume that you downloaded [the most recent release](https://github.com/TriliumNext/Notes/releases/latest) for your platform, unzipped it and ran it.
+![screenshot of the sync from server setup page](images/sync-init.png)
 
-Since the desktop instance is completely empty, it will first ask if you want to create an initial document, or you want to set up sync with sync server - you need to choose the second option.
+3. **Server Details**: Configure the Trilium server address and enter the correct username and password for authentication.
+4. **Finish Setup**: Click the "Finish setup" button. If successful, you will see the following screen:
 
-![](images/sync-init.png)
+![screenshot of the sync page](images/sync-in-progress.png)
 
-You'll need to configure Trilium server address and importantly also correct username / password (sync setup requires authentication).
+Once synchronization is complete, you will be automatically redirected to the Trilium application.
 
-Click on "Finish setup" button and if everything went fine, you'll see this screen:
+## Proxy Configuration
 
-![](images/sync-in-progress.png)
+Two proxy setups are supported:
 
-Once the sync is finished, you'll be automatically redirected to the Trilium application.
+- **Explicit Proxy Configuration**: Set the proxy server in Options / Sync. Only unauthenticated proxy servers are supported.
+- **System Proxy Settings**: If no proxy server is explicitly configured, Trilium will use the system proxy settings.
 
-Proxy setup
------------
+## Troubleshooting
 
-Two different setups are supported:
+### Date/Time Synchronization
 
-*   you can explicitly set proxy server to be used in Options / Sync. Only unauthenticated proxy servers are currently supported.
-*   if no proxy server is explicitly configured, then Trilium will use system proxy settings
+For successful synchronization, both client and server must have the same date and time, with a tolerance of up to five minutes.
 
-Troubleshooting
----------------
+### Certificate Issues
 
-### Different date/time on client and server
+When using TLS, Trilium will verify the server certificate. If verification fails (e.g., due to self-signed certificates or certain corporate proxies), you can run the Trilium client with the `NODE_TLS_REJECT_UNAUTHORIZED` environment variable set to `0`:
 
-For a successful sync, both client and server need to have save date time, with a tolerance of maximum 5 minutes difference.
-
-Certificate issues
-------------------
-
-When TLS is in use, Trilium client will attempt to verify the server certificate. In some cases (self-signed certs, some corporate proxy servers), the verification will be unsuccessful and sync will fail. In those cases, you can run the Trilium client with environment variable `NODE_TLS_REJECT_UNAUTHORIZED` set to `0`:
-
-```text-plain
+```sh
 export NODE_TLS_REJECT_UNAUTHORIZED=0
 ```
 
-TLS certificate won't be verified and simply accepted as it is. **You need to be aware that this will degrade the security of sync process significantly and open your setup to MITM attacks. It's strongly recommended to use a valid signed server certificate.**
+This will disable TLS certificate verification, significantly reducing security and exposing the setup to MITM attacks. It is strongly recommended to use a valid signed server certificate. Newer Trilium versions include a script called `trilium-no-cert-check.sh` for this purpose.
 
-Newer Trilium versions contain this in a script called `trilium-no-cert-check.sh`.
+### Conflict Resolution
 
-Conflict resolution
--------------------
+If you edit the same note on multiple instances before synchronization, Trilium resolves conflicts by retaining the newer change and discarding the older one. The older version remains accessible in [note revisions](note-revisions.md), allowing data recovery if needed.
 
-You can sometimes encounter a situation where you edit the same note in multiple instances before the note changes are synchronized.
+### Hash Check
 
-Trilium handles this situation by just picking up the newer change and discarding the older change. The older change should still be visible in [note revisions](note-revisions.md), so it should be possible to recover any data lost in conflict resolution.
-
-Hash check
-----------
-
-After each completed sync, Trilium computes a hash of all synced data on both client and sync server. If there's a difference, something went wrong and Trilium will run an automatic recovery mechanism.
+After each synchronization, Trilium computes a hash of all synced data on both the client and the sync server. If there is a discrepancy, Trilium will automatically initiate a recovery mechanism to resolve the issue.

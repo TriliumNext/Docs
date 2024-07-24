@@ -1,42 +1,40 @@
 # Template
-Template is a note which serves as a kind of "template" for other kind of notes (let's call them instance notes).
 
-Assignment of a template relation to a note brings these three effects:
+A template in Trilium serves as a predefined structure for other notes, referred to as instance notes. Assigning a template to a note brings three main effects:
 
-*   all attributes from the template note are [inherited](attribute-inheritance.md) to the instance notes
-    *   note that even attributes with `#isInheritable=false` are inherited to the instance notes, but only inheritable attributes are then inherited to the children of instance notes
-*   note content is copied from the template note to the instance note (if the instance note content is empty at the time of template attribute assignment)
-*   all template's children notes are deep-duplicated to the instance note
+1. **Attribute Inheritance**: All attributes from the template note are [inherited](attribute-inheritance.md) by the instance notes. Even attributes with `#isInheritable=false` are inherited by the instance notes, although only inheritable attributes are further inherited by the children of the instance notes.
+2. **Content Duplication**: The content of the template note is copied to the instance note, provided the instance note is empty at the time of template assignment.
+3. **Child Note Duplication**: All child notes of the template are deep-duplicated to the instance note.
 
-Example
--------
+## Example
 
-A typical example would be a "Book" template note, which will:
+A typical example would be a "Book" template note, which might include:
 
-*   define some [promoted attributes](promoted-attributes.md) - e.g. publication year, author etc
-*   you can also create kind of outline of the book review in the note text - e.g. themes, conclusion etc. ..
-*   you can also create child notes for e.g. highlights, summary etc.
+- **Promoted Attributes**: Such as publication year, author, etc. (see [promoted attributes](promoted-attributes.md)).
+- **Outline**: An outline for a book review, including sections like themes, conclusion, etc.
+- **Child Notes**: Additional notes for highlights, summary, etc.
 
-![](images/template.png)
+![Template Example](images/template.png)
 
-Instance note
--------------
+## Instance Note
 
-And then we have instance note - this note has a [relation](attributes.md) to the "Book" template note which will cause that the template note text is used to initialize the instance note text and all attributes from the template note are inherited to the instance note.
+An instance note is a note related to a template note.
+This relationship means the instance note's content is initialized from the template, and all attributes from the template are inherited. 
 
-You can create an instance note (i.e. note which uses a template) through the UI like this:
+To create an instance note through the UI:
 
-![](api/images/qGovjbsV4FPX/template-create-instance-note.)
+![show child note templates](images/template-create-instance-note.png)
 
-For the template to appear in the menu, the template note needs to have `#template` label (don't mistake it with `~template` relation which points from the instance note to the template note). If you use [workspaces](workspace.md), you can alternatively mark templates with `#workspaceTemplate` which will display them only in the workspace.
+For the template to appear in the menu, the template note must have the `#template` label.
+Do not confuse this with the `~template` relation, which links the instance note to the template note.
+If you use [workspaces](workspace.md), you can also mark templates with `#workspaceTemplate` to display them only in the workspace.
 
-You can also add/change template notes after the note is created, simply create a relation `~template` pointing to the desired template note.
+Templates can also be added or changed after note creation by creating a `~template` relation pointing to the desired template note.
 
-Other remarks
--------------
+## Additional Notes
 
-From the visual perspective, template can define a `#iconClass` and `#cssClass` attributes so that all e.g. books are shown with a particular icon and CSS style.
+From a visual perspective, templates can define `#iconClass` and `#cssClass` attributes, allowing all instance notes (e.g., books) to display a specific icon and CSS style.
 
-You can check out the concept in the [demo notes](database.md)| in e.g. [Relation map](relation-map.md), [Task manager](task-manager.md) or [Day notes](day-notes.md).
+Explore the concept further in the [demo notes](database.md), including examples like the [Relation Map](relation-map.md), [Task Manager](task-manager.md), and [Day Notes](day-notes.md).
 
-See also [default note title](default-note-title.md) which allows you to create templates for note titles. Note templates and title templates can be combined by creating a `#titleTemplate` for a template note.
+Additionally, see [default note title](default-note-title.md) for creating title templates. Note templates and title templates can be combined by creating a `#titleTemplate` for a template note.

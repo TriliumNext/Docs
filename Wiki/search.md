@@ -1,192 +1,138 @@
-# Search
-*   local search - searches within currently displayed note. Press `CTRL-F` to open the search dialog. In server version this is handled by the browser, in desktop (electron) version there's a separate dialog.
-*   note search - you can find notes by search for text in the title, note's content or note's [attributes](attributes.md). You can also [save search](saved-search.md).
-    *   You can activate note search by clicking on magnifier icon on the left or pressing `CTRL-S` keyboard [shortcut](keyboard-shortcuts.md).
+# Search Functionality
 
-Simple note search examples
----------------------------
+## Local Search
 
-`rings tolkien` - fulltext search, this will try to find notes which have anywhere words "rings" and "tolkien"
+Local search allows you to search within the currently displayed note. To initiate a local search, press CTRL-F. If using a web browser, this will be handled by the browser's native search functionality. In the desktop (electron) version, a separate dialog will apear.
 
-`"The Lord of the Rings" Tolkien` - same as above, but "The Lord of the Rings" must be exact match
+## Note Search
 
-`note.content *=* rings OR note.content *=* tolkien` to find notes which contain "rings" or "tolkien"
+Note search enables you to find notes by searching for text in the title, content, or [attributes](attributes.md) of the notes. You also have the option to save your searches, which will create a special search note which is visible on your navigation tree and contains the search results as sub-items.
 
-`towers #book` - combination of fulltext search with attribute search - this looks for notes containing "towers" word anywhere, and they also need to have "book" label
+To search for notes, click on the magnifying glass icon on the toolbar or press the `CTRL-S` keyboard [shortcut](keyboard-shortcuts.md).
 
-`towers #book or #author` - searches notes containing "towers" word anywhere and matching note must have either "book" or "author" label
+### Simple Note Search Examples
 
-`towers #!book` - searches notes containing "towers" word anywhere and which do **not** have "book" label
+- `rings tolkien`: Full-text search to find notes containing both "rings" and "tolkien".
+- `"The Lord of the Rings" Tolkien`: Full-text search where "The Lord of the Rings" must match exactly.
+- `note.content *=* rings OR note.content *=* tolkien`: Find notes containing "rings" or "tolkien" in their content.
+- `towers #book`: Combine full-text and attribute search to find notes containing "towers" and having the "book" label.
+- `towers #book or #author`: Search for notes containing "towers" and having either the "book" or "author" label.
+- `towers #!book`: Search for notes containing "towers" and not having the "book" label.
+- `#book #publicationYear = 1954`: Find notes with the "book" label and "publicationYear" set to 1954.
+- `#genre *=* fan`: Find notes with the "genre" label containing the substring "fan". Additional operators include `*=*` for "contains", `=*` for "starts with", `*=` for "ends with", and `!=` for "is not equal to".
+- `#book #publicationYear >= 1950 #publicationYear < 1960`: Use numeric operators to find all books published in the 1950s.
+- `#dateNote >= TODAY-30`: A "smart search" to find notes with the "dateNote" label within the last 30 days. Supported smart values include NOW +- seconds, TODAY +- days, MONTH +- months, YEAR +- years.
+- `~author.title *=* Tolkien`: Find notes related to an author whose title contains "Tolkien".
+- `#publicationYear %= '19[0-9]{2}'`: Use the '%=' operator to match a regular expression (regex). This feature has been available since Trilium 0.52.
 
-`#book #publicationYear = 1954` - will find notes with "book" label and label "publicationYear" containing this specific value
+### Advanced Use Cases
 
-`#genre *=* fan` - matches notes with "genre" label which has value which contains "fan" substring. Besides `*=*` for "contains", there's also `=*` for "starts with", `*=` for "ends with", `!=` for "is not equal to"
+- `~author.relations.son.title = 'Christopher Tolkien'`: Search for notes with an "author" relation to a note that has a "son" relation to "Christopher Tolkien". This can be modeled with the following note structure:
+  - Books
+    - Lord of the Rings
+      - label: “book”
+      - relation: “author” points to “J. R. R. Tolkien” note
+  - People
+    - J. R. R. Tolkien
+      - relation: “son” points to "Christopher Tolkien" note
+      - Christopher Tolkien
+- `~author.title *= Tolkien OR (#publicationDate >= 1954 AND #publicationDate <= 1960)`: Use boolean expressions and parentheses to group expressions. Note that expressions starting with a parenthesis need an "expression separator sign" (# or ~) prepended.
+- `note.parents.title = 'Books'`: Find notes with a parent named "Books".
+- `note.parents.parents.title = 'Books'`: Find notes with a grandparent named "Books".
+- `note.ancestors.title = 'Books'`: Find notes with an ancestor named "Books".
+- `note.children.title = 'sub-note'`: Find notes with a child named "sub-note".
 
-`#book #publicationYear >= 1950 #publicationYear < 1960` - you can also use numeric operators - this will find all books published in the 1950s
+### Search with Note Properties
 
-`#dateNote >= TODAY-30` - special "smart search" will find notes with label "dateNote" with date corresponding to last 30 days. Complete list of smart values: NOW +- seconds, TODAY +- days, MONTH +- months, YEAR +- years
+Notes have properties that can be used in searches, such as `noteId`, `dateModified`, `dateCreated`, `isProtected`, `type`, `title`, `text`, `content`, `rawContent`, `ownedLabelCount`, `labelCount`, `ownedRelationCount`, `relationCount`, `ownedRelationCountIncludingLinks`, `relationCountIncludingLinks`, `ownedAttributeCount`, `attributeCount`, `targetRelationCount`, `targetRelationCountIncludingLinks`, `parentCount`, `childrenCount`, `isArchived`, `contentSize`, `noteSize`, and `revisionCount`. 
 
-`~author.title *=* Tolkien` - find notes which have relation "author" which points to a note with title containing word "Tolkien"
+These properties can be accessed via the `note.` prefix, e.g., `note.type = code AND note.mime = 'application/json'`.
 
-`#publicationYear %= '19[0-9]{2}'` - operator '%=' matches a regular expression (regex). Since Trilium 0.52
+### Order by and Limit
 
-Advanced use cases
-------------------
-
-`~author.relations.son.title = 'Christopher Tolkien'` - This will search for notes which have “author” relation to a note which has a “son” relation to “Christopher Tolkien” note. This situation can be modeled by this note structure:
-
-*   Books
-    *   Lord of the Rings
-        *   label: “book”
-        *   relation: “author” points to “J. R. R. Tolkien” note
-*   People
-    *   J. R. R. Tolkien
-        *   relation “son” points to "Christopher Tolkien" note
-    *   Christopher Tolkien
-
-`~author.title *= Tolkien OR (#publicationDate >= 1954 AND #publicationDate <= 1960)` - you can also use boolean expressions and parenthesis to group expressions
-
-However, if your search expression starts with a parenthesis, it needs to be prepended by an "expression separator sign", either # or ~. So the equivalent expression, just reordered, would look like:
-
-`# (#publicationDate >= 1954 AND #publicationDate <= 1960) OR ~author.title *= Tolkien`
-
-`note.parents.title = 'Books'` will find all notes which have (at least one) parent note with name “Book”.
-
-`note.parents.parents.title = 'Books'` This again works transitively, so this will find notes whose parent of parent is named ‘Book’.
-
-`note.ancestors.title = 'Books'` This is sort of extension of parents - this will find notes which have an ancestor anywhere in their note path (so parent, grandparent, grand-grand-parent …) with title ‘Book’. This is a nice way how to reduce the scope of the search to a particular subtree.
-
-`note.children.title = 'sub-note'` So this works in the other direction and will find notes which have (at least one) child called “sub-note”.
-
-### Search with note properties
-
-Note has certain properties which can be also used for searching:
-
-*   `noteId`
-*   `dateModified` - local dates are in the format "2019-05-19 16:39:47.003+0200"
-*   `dateCreated`
-*   `utcDateModified` - UTC dates are in the format "2019-05-19 14:39:47.003Z"
-*   `utcDateCreated`
-*   `isProtected` (true, false)
-*   `type` (text, code, search, relation-map, book)
-*   `title` (when you want to search specifically the title)
-*   `text` - search through note title and content
-*   `content` - search just through note content
-*   `rawContent` - search through raw note content (HTML tags are kept). Since v0.46.
-*   `ownedLabelCount`
-*   `labelCount` (includes inherited labels)
-*   `ownedRelationCount`
-*   `relationCount` (includes inherited relations)
-*   `ownedRelationCountIncludingLinks` and `relationCountIncludingLinks` - count also includes auto-generated relations `imageLink`, `internalLink`, `relationMapLink` and `includeNoteLink`
-*   `ownedAttributeCount` = `ownedLabelCount` + `ownedRelationCount`
-*   `attributeCount` = `labelCount` + `relationCount`
-*   `targetRelationCount` - number of relations targeting this note
-*   `targetRelationCountIncludingLinks` - count also includes auto-generated relations `imageLink`, `internalLink`, `relationMapLink` and `includeNoteLink`
-*   `parentCount` - essentially number of [clones](cloning-notes.md)
-*   `childrenCount`
-*   `isArchived` (true, false)
-*   `contentSize` - size of note content in bytes.
-*   `noteSize` - estimated size of complete note (chiefly note content + note revision contents). Since v0.46.
-*   `revisionCount` - number of note revisions.
-
-These are accessed through `note.`, e.g.:
-
-```text-plain
-note.type = code AND note.mime = 'application/json'
-```
-
-### Order by and limit
-
-```text-plain
+```sql
 #author=Tolkien orderBy #publicationDate desc, note.title limit 10
 ```
 
-The example above will do the following things (in this sequence):
+This example will:
 
-1.  find notes with label author having value “Tolkien”
-2.  order the results by publicationDate in descending order (so the newest first)
-3.  in case publication date is equal, use note.title as secondary ordering in ascending order (`asc` is the default and thus can be omitted)
-4.  take only the first 10 results
+1. Find notes with the author label "Tolkien".
+2. Order the results by `publicationDate` in descending order.
+3. Use `note.title` as a secondary ordering if publication dates are equal.
+4. Limit the results to the first 10 notes.
 
 ### Negation
 
-Some queries can be expressed only with negation:
+Some queries can only be expressed with negation:
 
-```text-plain
+```sql
 #book AND not(note.ancestor.title = 'Tolkien')
 ```
 
-This will find all the book notes which are not in the "Tolkien" subtree.
+This query finds all book notes not in the "Tolkien" subtree.
 
-Under the hood
---------------
+## Under the Hood
 
-### Label and relation shortcuts
+### Label and Relation Shortcuts
 
-"Full" syntax for searching by labels is the following:
+The "full" syntax for searching by labels is:
 
-`note.labels.publicationYear = 1954` or `note.relations.author.title *=* Tolkien`
-
-But given that searching by labels and relations is pretty common, there exists also a shortcut syntax:
-
-`#publicationYear = 1954` or `#author.title *=* Tolkien` respectively.
-
-### Separating fulltext and attribute parts
-
-As you may have noticed from the examples above, search syntax allows seamlessly combining fulltext search with attribute-based search. How is this done?
-
-Take `tolkien #book` as an example. It contains:
-
-1.  fulltext tokens - `tolkien`
-2.  attribute expressions - `#book`
-
-The tricky part is to find out where does the fulltext end and where the attribute expression begins. This is done by detecting certain stop-characters/words - all tokens are considered as fulltext before one of `#`, `~` or `note.` prefixes are encountered. After that, all characters/tokens are understood as attribute expression.
-
-If you want to use `#`, `~` or `note.` as part of fulltext, you need to escape them, see below for details.
-
-There are certain corner cases where this is not sufficient, e.g:
-
-```text-plain
-tolkien (#publicationYear >= 1950 AND #publicationYear < 1960) OR #book`
+```sql
+note.labels.publicationYear = 1954
 ```
 
-Here the expression starts with `(` which isn't (intentionally) a stop-character, so the query above will not actually work as intended. Instead, in these corner cases we need to add a separate extra stop character - `#` or `~` so the fixed query should look like:
+For relations:
 
-```text-plain
-tolkien # (#publicationYear >= 1950 AND #publicationYear < 1960) OR #book`
+```sql
+note.relations.author.title *=* Tolkien
 ```
 
-The extra stop character has no other effect other than separating the fulltext part from the attribute expression part.
+However, common label and relation searches have shortcut syntax:
 
-### Escaping special characters
+```sql
+#publicationYear = 1954
+#author.title *=* Tolkien
+```
 
-Symbols or values sometimes have special meaning, which might be not what you intend. This can be fixed by either enclosing the strings containing special characters into quotes or escaping individual characters with backslash:
+### Separating Full-Text and Attribute Parts
 
-`"note.txt"` - "note." is normally stop-prefix, but here it will be used for fulltext search
+Search syntax allows combining full-text search with attribute-based search seamlessly. For example, `tolkien #book` contains:
 
-`\#hash` - `#` is normally stop-character, but here it's escaped with backslash, so it's again used for fulltext
+1. Full-text tokens - `tolkien`
+2. Attribute expressions - `#book`
 
-`#myLabel = 'Say "Hello World"'`
+Trilium detects the separation between full text search and attribute/property search by looking for certain special characters or words that denote attributes and properties (e.g., #, ~, note.). If you need to include these in full-text search, escape them with a backslash so they are processed as regular text:
 
-There are three supported types of quotes - single, double and backtick.
+```sql
+"note.txt" 
+\#hash 
+#myLabel = 'Say "Hello World"'
+```
 
-### Type coercion
+### Escaping Special Characters
 
-It's important to realize that a label value is always technically a string, even if it contains logically different value. This then allows you to do things like:
+Special characters can be enclosed in quotes or escaped with a backslash to be used in full-text search:
 
-```text-plain
+```sql
+"note.txt"
+\#hash
+#myLabel = 'Say "Hello World"'
+```
+
+Three types of quotes are supported: single, double, and backtick.
+
+### Type Coercion
+
+Label values are technically strings but can be coerced for numeric comparisons:
+
+```sql
 note.dateCreated =* '2019-05'
 ```
 
-This will find notes created in May 2019 by simply doing string "starts with" operation on the date.
+This finds notes created in May 2019. Numeric operators like `#publicationYear >= 1960` convert string values to numbers for comparison.
 
-This approach does not work well with numbers though, so whenever there is a numeric operator detected, the label values will be coerced from their normal string form into a numeric value for comparison. This then allows for e.g. `#publicationYear >= 1960` work correctly.
+## Auto-Trigger Search from URL
 
-Auto trigger search from URL
-----------------------------
+You can open Trilium and automatically trigger a search by including the search [url encoded](https://meyerweb.com/eric/tools/dencoder/) string in the URL:
 
-Opening Trilium like in the example below will open the search pane and automatically trigger search for "abc":
-
-```text-plain
-http://localhost:8080/#?searchString=abc
-```
+`http://localhost:8080/#?searchString=abc`

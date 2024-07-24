@@ -1,25 +1,24 @@
-# Sorting
-One time sorting
-----------------
+# Sorting Notes
 
-You can sort notes one time by right-clicking parent note in the note tree, Advanced -> Sort notes by ...
+You can sort notes by right-clicking the parent note in the note tree and selecting Advanced -> Sort notes by ...
+This will sort existing notes, but will not automatically sort future notes added to this parent note
 
-Automatic / permanent sorting
------------------------------
+## Automatic/Permanent Sorting
 
-Child notes can be kept sorted by attaching [labels](attributes.md) to the parent note:
+Child notes can be automatically sorted by attaching specific [labels](attributes.md) to the parent note:
 
-*   `#sorted` - enables sorting, can optionally include name of the note's property/label (see details below)
-*   `#sortDirection` - by default ascending, set it to `desc` value to reverse the sort order
-*   `#sortFoldersFirst` - notes with children will be sorted on top
+- `#sorted`: Enables sorting. Can optionally include the name of the note's property/label for sorting criteria (details below).
+- `#sortDirection`: By default, sorting is ascending. Set this to `desc` to sort in descending order.
+- `#sortFoldersFirst`: Notes with children will be sorted to the top.
 
-Sorting works by comparing note property or a specific label on the child notes.
+Sorting is done by comparing note properties or specific labels on child notes. There are four sorting levels, with the first having the highest priority. Lower priority levels are applied only if higher priority comparisons result in equality.
 
-There are 4 sorting levels, where the first one has the highest priority and the lower one will be applied only if the 2 compared notes are equal based on higher priority comparison.
+1. **Top Label Sorting**: Child notes with the `#top` label will appear at the top of the folder.
+2. **Bottom Label Sorting**: (Introduced in Trilium 0.62) Child notes with the `#bottom` label will appear at the bottom of the folder.
+3. **Property/Label-Based Sorting**: Sorting is based on the parent note's `#sorted` label:
+   - **Default Sorting**: If `#sorted` has no value, notes are sorted alphabetically.
+   - **Property Sorting**: If `#sorted` is set to `title`, `dateModified`, or `dateCreated`, notes are sorted based on the specified property.
+   - **Label Sorting**: If `#sorted` has any other value, this value is treated as the name of a child note's label, and sorting is based on the values of this label. For example, setting `#sorted=myOrder` on the parent note and using `#myOrder=001`, `#myOrder=002`, etc., on child notes.
+4. **Alphabetical Sorting**: Used as a last resort when other criteria result in equality.
 
-1.  implicit sorting by `#top` label - child notes with this label will appear on the top of the folder.
-2.  implicit sorting by `#bottom` label (since Trilium 0.62) - child notes with this label will appear on the bottom of the folder.
-3.  sorting by child's property or a specific label defined on the parent note's `#sorted` label a) parent note has `#sorted` with no value - by default sorting will be done alphabetically b) parent note has `#sorted=title` or `#sorted=dateModified` or `#sorted=dateCreated` - sorting will be done based on the defined note's property c) parent note has `#sorted` label with any other value - this value is the name of the child note's label, whose value will be used for sorting. So e.g. you set `#sorted=myOrder` on the parent note and then child notes will have labels `#myOrder=001`, \`#myOrder=002" etc.
-4.  sorting of "last resort" is alphabetical
-
-All comparisons are made string-wise - e.g. "1" < "2" or "2020-10-10" < "2021-01-15" but also "2" > "10".
+All comparisons are made string-wise (e.g., "1" < "2" or "2020-10-10" < "2021-01-15", but also "2" > "10").
