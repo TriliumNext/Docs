@@ -133,6 +133,6 @@ This finds notes created in May 2019. Numeric operators like `#publicationYear >
 
 ## Auto-Trigger Search from URL
 
-You can open Trilium and automatically trigger a search by including the search string in the URL:
+You can open Trilium and automatically trigger a search by including the search [url encoded](https://meyerweb.com/eric/tools/dencoder/) string in the URL:
 
 `http://localhost:8080/#?searchString=abc`
