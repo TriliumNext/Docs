@@ -1,6 +1,6 @@
 # Troubleshooting
 
-As TriliumNext is currently in beta, encountering bugs is to be expected.
+As Triliumis currently in beta, encountering bugs is to be expected.
 
 ## General Quick Fix
 
@@ -22,7 +22,7 @@ TRILIUM_START_NOTE_ID=root ./trilium
 
 ## Broken Script Prevents Application Startup
 
-If a custom script causes TriliumNext to crash, and it is set as a startup script or in an active [custom widget](custom-widget.md), start TriliumNext in "safe mode" to prevent any custom scripts from executing:
+If a custom script causes Triliumto crash, and it is set as a startup script or in an active [custom widget](custom-widget.md), start Triliumin "safe mode" to prevent any custom scripts from executing:
 
 ```sh
 TRILIUM_SAFE_MODE=true ./trilium
@@ -36,7 +36,7 @@ Once Trilium starts, locate and fix or delete the problematic note.
 
 Trilium periodically verifies the logical consistency of the database (e.g., ensuring every note has a parent). If inconsistencies are detected, you will be notified via the UI.
 
-In such cases, file a bug report and attach an anonymized database if necessary.
+In such cases, file a bug report and attach an [anonymized database](anonymized-database.md) if necessary.
 
 ## Restoring Backup
 

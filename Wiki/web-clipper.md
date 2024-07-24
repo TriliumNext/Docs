@@ -18,20 +18,20 @@ Firefox and Chrome are supported browsers, but the chrome build should work on o
 
 Trilium will save these clippings as a new child note under a "clipper inbox" note.
 
-By default, that's the [day note](Day-notes.md) but you can override that by setting the [label](Attributes.md) `clipperInbox`, on any other note.
+By default, that's the [day note](day-notes.md) but you can override that by setting the [label](attributes.md) `clipperInbox`, on any other note.
 
 If there's multiple clippings from the same page (and on the same day), then they will be added to the same note.
 
 **Extension is available from:**
 
 * [Project release page](https://github.com/TriliumNext/web-clipper/releases) - .xpi for Firefox and .zip for Chromium based browsers.
-* %%{WARNING}%% [Chrome Web Store](https://chrome.google.com/webstore/detail/trilium-web-clipper/dfhgmnfclbebfobmblelddiejjcijbjm?hl=en&authuser=0)
+* %%{WARNING}%% [Chrome Web Store](https://chromewebstore.google.com/detail/trilium-web-clipper/dfhgmnfclbebfobmblelddiejjcijbjm)
 
 ## Configuration
 
 The extension needs to connect to a running Trilium instance. By default, it scans a port range on the local computer to find a desktop Trilium instance.
 
-It's also possible to configure the [server](Server-installation.md) address if you don't run the desktop application, or want it to work without the desktop application running.
+It's also possible to configure the [server](server-installation.md) address if you don't run the desktop application, or want it to work without the desktop application running.
 
 ## Username
 

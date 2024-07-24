@@ -10,11 +10,11 @@ In this setup, a central server (referred to as the _sync server_) and multiple 
 
 ### Security Considerations
 
-Setting up the server securely is critical and can be complex. It is crucial to use a valid TLS certificate (HTTPS) rather than an unencrypted HTTP connection to ensure security and avoid potential vulnerabilities.
+Setting up the server securely is critical and can be complex. It is crucial to use a valid [TLS certificate](tls-configuration.md) (HTTPS) rather than an unencrypted HTTP connection to ensure security and avoid potential vulnerabilities.
 
 ### Synchronizing a Desktop Instance with a Sync Server
 
-This method is used when you already have a desktop instance of Trilium and want to set up a sync server on your web host. 
+This method is used when you already have a desktop instance of Trilium and want to set up a sync server on your web host.
 
 1. **Server Deployment**: Ensure your server instance is deployed but uninitialized.
 2. **Desktop Configuration**: Open your desktop instance, navigate to Options -> Sync tab -> Sync configuration, and set the "Server instance address" to your sync server's address. Click Save.
@@ -27,7 +27,7 @@ This method is used when you already have a desktop instance of Trilium and want
 
 This method is used when you already have a sync server and want to configure a new desktop instance to sync with it.
 
-1. **Desktop Setup**: Download the [latest release](https://github.com/TriliumNext/Notes/releases/latest) for your platform, unzip it, and run it.
+1. **Desktop Setup**: Follow the [desktop installation page](desktop-installation.md).
 2. **Initial Configuration**: When prompted, choose the option to set up sync with a sync server.
 
 ![screenshot of the sync from server setup page](images/sync-init.png)

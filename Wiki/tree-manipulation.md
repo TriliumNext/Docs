@@ -19,4 +19,4 @@ Trilium offers efficient keyboard-based manipulation using the following [shortc
 
 ## Context Menu
 
-You can also move notes using the familiar cut and paste functions available in the context menu, or with the associated keyboard [shortcuts](keyboard-shortcuts.md): `CTRL-X` (cut) and `CTRL-V` (paste).
+You can also move notes using the familiar cut and paste functions available in the context menu, or with the associated keyboard [shortcuts](keyboard-shortcuts.md): `CTRL-C` ([copy](cloning-notes.md)), `CTRL-X` (cut) and `CTRL-V` (paste).

@@ -2,13 +2,13 @@
 
 ## Local Search
 
-Local search allows you to search within the currently displayed note. To initiate a local search, press `CTRL-F`. In the server version, this is handled by the browser. In the desktop (electron) version, a separate dialog is provided for this purpose.
+Local search allows you to search within the currently displayed note. To initiate a local search, press CTRL-F. If using a web browser, this will be handled by the browser's native search functionality. In the desktop (electron) version, a separate dialog will apear.
 
 ## Note Search
 
-Note search enables you to find notes by searching for text in the title, content, or [attributes](attributes.md) of the notes. You also have the option to [save your searches](saved-search.md).
+Note search enables you to find notes by searching for text in the title, content, or [attributes](attributes.md) of the notes. You also have the option to save your searches, which will create a special search note which is visible on your navigation tree and contains the search results as sub-items.
 
-To activate note search, click on the magnifier icon on the left or press the `CTRL-S` keyboard [shortcut](keyboard-shortcuts.md).
+To search for notes, click on the magnifying glass icon on the toolbar or press the `CTRL-S` keyboard [shortcut](keyboard-shortcuts.md).
 
 ### Simple Note Search Examples
 
@@ -101,7 +101,7 @@ Search syntax allows combining full-text search with attribute-based search seam
 1. Full-text tokens - `tolkien`
 2. Attribute expressions - `#book`
 
-To detect where full-text ends and attribute expressions begin, certain stop-characters/words (e.g., `#`, `~`, `note.`) are used. If you need to include these in full-text search, escape them:
+Trilium detects the separation between full text search and attribute/property search by looking for certain special characters or words that denote attributes and properties (e.g., #, ~, note.). If you need to include these in full-text search, escape them with a backslash so they are processed as regular text:
 
 ```sql
 "note.txt" 

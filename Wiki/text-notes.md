@@ -16,7 +16,6 @@ The Trilium text note interface does not display toolbars or formatting options 
 
 2. Clicking on the block toolbar.
 
-
 ## Read-Only vs. Editing Mode
 
 Text notes are usually opened in edit mode. However, they may open in read-only mode under the following circumstances:
@@ -28,7 +27,7 @@ In both cases, it is possible to switch back to editable mode.
 
 ## General Formatting
 
-Since Trilium uses CKEditor, any formatting supported by CKEditor is available. Examples include:
+Since Trilium uses CKEditor, all of its formatting options are available here. You may use the graphical toolbar shown above, or enter formatting such as markdown markdown directly in the text. Examples include:
 
 - **Bold**: Type `**text**` or `__text__`
 - _Italic_: Type `*text*` or `_text_`
@@ -75,7 +74,7 @@ Note: The use of `#` for Heading 1 is not supported because it is reserved for t
 
 ## Math Support
 
-Trilium provides math support through KaTeX.
+Trilium provides math support through [KaTeX](https://katex.org/).
 
 ## Cutting Selection to Sub-Note
 
@@ -89,6 +88,6 @@ Trilium can automate this process. The heading is automatically detected and the
 
 ## Including a Note
 
-Text notes can include another note as a read-only widget. This feature is useful for including dynamically generated charts (from scripts & "render HTML" notes) or other advanced use cases.
+Trilium can automate this process. Select some text within the note, and in the selection toolbar, click the scissors icon for the "cut & pasted selection to sub-note" action. The heading is automatically detected and the new sub-note is named accordingly. You can also assign a keyboard shortcut for this action.
 
 This functionality is available through the block toolbar icon.

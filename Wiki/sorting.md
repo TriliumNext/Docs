@@ -1,6 +1,7 @@
 # Sorting Notes
 
 You can sort notes by right-clicking the parent note in the note tree and selecting Advanced -> Sort notes by ...
+This will sort existing notes, but will not automatically sort future notes added to this parent note
 
 ## Automatic/Permanent Sorting
 
