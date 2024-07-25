@@ -1,10 +1,21 @@
-# Book note
-Book [note](note.md) is a type of note which displays all its children's content in a linear fashion, so you can read note subtree like a book. This can be useful for reading many smaller notes. Seeing an example might explain this concept better:
+# Book Notes in Trilium
 
-![](images/book-note.png)
+A **Book Note** in Trilium is a special type of [note](note.md) designed to display the contents of its child notes sequentially, creating a linear, book-like reading experience. This format is particularly useful for viewing multiple smaller notes in a cohesive, continuous manner.
 
-Notice in the tree on the left pane how "node.js" note has some children and these are then displayed on the right pane.
+![Book Note Example](images/book-note.png)
 
-You can also switch to "grid view" in the Book properties:
+In the example above, the "node.js" note on the left panel contains several child notes. The right panel displays the content of these child notes as a single continuous document.
 
-![](images/book-note-pictures.png)
+## Features
+
+### Linear Display
+
+The Book Note format compiles the contents of all child notes into one continuous view. This makes it ideal for reading extensive information broken into smaller, manageable segments.
+
+### Grid View Option
+
+Trilium also offers a "Grid View" option within the Book Note properties. This view presents the child notes in a grid format, allowing for a more visual navigation experience.
+
+![Grid View Example](images/book-note-pictures.png)
+
+Switching between these views can be easily managed through the Book Note's settings, allowing users to choose the format that best suits their reading or navigation preferences.
