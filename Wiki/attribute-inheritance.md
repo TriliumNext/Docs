@@ -1,21 +1,26 @@
-# Attribute inheritance
-Standard inheritance
---------------------
+# Attribute Inheritance in Trilium
 
-Every [attribute](attributes.md) has flag called `isInheritable`. If this is true, then this attribute (key-value) is also applied to all its children notes, children's children notes etc.
+## 1. Standard Inheritance
 
-Example how this might be useful is `archived` label which hides its note from Jump to / Add link dialogs. Often times you want to archive some specific subtree, you can do this by making the `archived` label inheritable.
+In Trilium, attributes can be automatically inherited by child notes if they have the `isInheritable` flag set to true. This means the attribute (a key-value pair) is applied to the note and all its descendants.
 
-Copying inheritance
--------------------
+### Example Use Case
 
-A different kind of inheritance is achieved using `child:` attribute name prefix. We can define that when a note is created under a certain parent note then the new child note will automatically receive defined attributes. The difference from standard inheritance is that these are real new attributes which are completely independent of the parent and will be therefore kept even if the note is moved elsewhere in the note tree.
+The `archived` label can be set to be inheritable, allowing you to hide a whole subtree of notes from searches and other dialogs by applying this label at the top level.
 
-For defining the copy-attributes we use `child:` prefix in attribute name, the rest is defined normally. So as an example, when we create a child note in a note with `#child:exampleAttribute` label, then the child note will have `#exampleAttribute` label. This can be even chained, e.g. `#child:child:exampleAttribute`, in this case `#child:exampleAttribute` will be created in the child and `#exampleAttribute` will be created in the child of the child.
+## 2. Copying Inheritance
 
-Which kind of attribute inheritance (or if any at all) should be used depends on the specific use case.
+Copying inheritance differs from standard inheritance by using a `child:` prefix in the attribute name. This prefix causes new child notes to automatically receive specific attributes from the parent note. These attributes are independent of the parent and will persist even if the note is moved elsewhere.
 
-Template inheritance
---------------------
+### How to Use
 
-[Attribute template](template.md) could be also seen as a form of inheritance.
+- **Syntax:** `#child:attributeName`
+- **Chained Inheritance:** You can chain this inheritance, such as `#child:child:attributeName`, where each child down the hierarchy receives the appropriate attribute.
+
+### Example
+
+If a parent note has the label `#child:exampleAttribute`, all newly created child notes will inherit the `#exampleAttribute` label. This can be useful for setting default properties for notes in a specific section.
+
+## 3. Template Inheritance
+
+Attributes can also be inherited from [templates](template.md). When a new note is created using a template, it inherits the attributes defined in that template. This is particularly useful for maintaining consistency across notes that follow a similar structure or function.
