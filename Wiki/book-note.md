@@ -18,4 +18,4 @@ Trilium also offers a "Grid View" option within the Book Note properties. This v
 
 ![Grid View Example](images/book-note-pictures.png)
 
-Switching between these views can be easily managed through the Book Note's settings, allowing users to choose the format that best suits their reading or navigation preferences.
+Switching between these views can be easily managed through the Book Note's settings (or `viewType` attribu), allowing users to choose the format that best suits their reading or navigation preferences.
