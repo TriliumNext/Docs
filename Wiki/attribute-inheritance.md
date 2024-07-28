@@ -2,7 +2,7 @@
 
 ## 1. Standard Inheritance
 
-In Trilium, attributes can be automatically inherited by child notes if they have the `isInheritable` flag set to true. This means the attribute (a key-value pair) is applied to the note and all its descendants.
+In Trilium, attributes can be automatically inherited by child notes if they have the `isInheritable` flag set to `true`. This means the attribute (a key-value pair) is applied to the note and all its descendants.
 
 ### Example Use Case
 
