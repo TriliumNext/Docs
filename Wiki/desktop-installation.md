@@ -19,4 +19,4 @@ Trilium offers various startup scripts to customize your experience:
 
 ## Synchronization
 
-For users running Trilium on a desktop who wish to synchronize their data with a server instance, refer to the [Synchronization Guide](synchronization.md) for detailed instructions.
+For Trilium desktp users who wish to synchronize their data with a server instance, refer to the [Synchronization Guide](synchronization.md) for detailed instructions.
