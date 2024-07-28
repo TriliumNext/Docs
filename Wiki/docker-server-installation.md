@@ -4,16 +4,15 @@ Trilium can be deployed using a Docker image, which is the recommended method fo
 
 ## Prerequisites
 
-Ensure Docker is installed on your system. Here are guides to help with installation:
+Ensure Docker is installed on your system.
 
-- [Docker Installation on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-- [DigitalOcean Guide to Docker on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+If you need help installing Docker, reference the [Docker Installation Docs](https://docs.docker.com/engine/install/)
 
 **Note:** Trilium's Docker container requires root privileges to operate correctly.
 
 ## Pulling the Docker Image
 
-To pull the Trilium image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `0.52-latest` or just `latest`:
+To pull the Trilium image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `0.90-latest` or just `latest`:
 
 %%%{WARNING}%%% zadams container
 
@@ -97,7 +96,7 @@ For a custom data directory, use:
 -v ~/YourOwnDirectory:/home/node/trilium-data zadam/trilium:[VERSION]
 ```
 
-Ensure to understand Docker's volume mapping: the first path is the host directory, and the second is the container's path. More details can be found in the [Docker Volumes Documentation](https://docs.docker.com/storage/volumes/).
+The path before the colon is the host directory, and the path after the colon is the container's path. More details can be found in the [Docker Volumes Documentation](https://docs.docker.com/storage/volumes/).
 
 ### Note on --user Directive
 
