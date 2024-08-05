@@ -7,7 +7,7 @@ For this, Trilium supports anonymization of the database - you can trigger this 
 
 ![](images/anonymization.png)
 
-This will create a copy of your document and remove all sensitive data (currently note titles, contents, revisions, history and some of the options, and non-system attributes) while leaving all structure and metadata (e.g. date of last change). After this is done, the database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. The resulting file is stored in `anonymized` directory (placed in the [data directory](data-directory.md)). You can safely attach it with your bug report or send it to [zadam.apps@gmail.com](#root/N3Zt66yETj9g) %%{WARNING}%%
+This will create a copy of your document and remove all sensitive data (currently note titles, contents, revisions, history and some of the options, and non-system attributes) while leaving all structure and metadata (e.g. date of last change). After this is done, the database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. The resulting file is stored in `anonymized` directory (placed in the [data directory](data-directory.md)). You can safely attach it to a bug report.
 
 #### Command line anonymization
 

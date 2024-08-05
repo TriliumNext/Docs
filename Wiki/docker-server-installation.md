@@ -1,7 +1,7 @@
 # Docker-server-installation
 Trilium can be run as docker image. This is recommended way to deploy Trilium on servers.
 
-Official docker images are published on docker hub for **AMD64**, **ARMv6**, **ARMv7** and **ARMv8/64**: [https://hub.docker.com/r/zadam/trilium/](https://hub.docker.com/r/zadam/trilium/)%%{WARNING}%%
+Official docker images are published on docker hub for **AMD64**, **ARMv6**, **ARMv7** and **ARMv8/64**: [https://hub.docker.com/r/triliumnext/notes/](https://hub.docker.com/r/triliumnext/notes/)
 
 Prerequisites
 -------------
@@ -17,7 +17,7 @@ Pull image
 ----------
 
 ```text-plain
-docker pull zadam/trilium:[VERSION] %%{WARNING}%%
+docker pull triliumnext/notes:[VERSION]
 ```
 
 Replace \[VERSION\] for actual latest version or use "series" tag - e.g. `0.52-latest`.
@@ -39,7 +39,7 @@ These commands mount the volume to the host system so that trilium's data (most 
 This will run the container so that it only available on the localhost. Use this to test the installation from a web browser on the same machine you run this command on, or if you are using a proxy with nginx/apache.
 
 ```text-plain
-sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION] %%{WARNING}%%
+sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data triliumnext/notes:[VERSION]
 ```
 
 1.  Test to see that the docker image is running with `docker ps`
@@ -58,20 +58,20 @@ docker network create -d macvlan -o parent=eth0 --subnet 192.168.2.0/24 --gatewa
 Secondly, you have to adjust the docker run command so it takes this network into account but keep using localhost to limit the accessibility of the ports to the outside world.
 
 ```text-plain
-docker run --net=mynet -d -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:0.52-latest
+docker run --net=mynet -d -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data triliumnext/notes:<VERSION>-latest
 ```
 
 Alternatively, if you wish to have the saved data and the application using a different UID & GID than 1000:1000, you can use the USER\_UID & USER\_GID environment variables:
 
 ```text-plain
-docker run --net=mynet -d -p 127.0.0.1:8080:8080 -e "USER_UID=1001" -e "USER_GID=1001" -v ~/trilium-data:/home/node/trilium-data zadam/trilium:0.52-latest %%{WARNING}%% 
+docker run --net=mynet -d -p 127.0.0.1:8080:8080 -e "USER_UID=1001" -e "USER_GID=1001" -v ~/trilium-data:/home/node/trilium-data triliumnext/notes:<VERSION>-latest
 ```
 
 Finally, use docker inspect to find your local IP address to connect to. You can access this from all your devices connected to the local network as such: \[local:ip\]:8080.
 
 ```text-plain
 docker ps
-docker inspect [container_name] 
+docker inspect [container_name]
 ```
 
 ### Available anywhere
@@ -79,14 +79,14 @@ docker inspect [container_name]
 This will run the container as a background process and will be available from any IP address
 
 ```text-plain
-docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION] %%{WARNING}%%
+docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/home/node/trilium-data triliumnext/notes:[VERSION]
 ```
 
 To stop this background docker process use `docker ps` to get the "CONTAINER ID" and then use `docker stop <CONTAINER ID>`
 
 ### Different data directory location
 
-If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/home/node/trilium-data zadam/trilium:[VERSION]`. It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to. [https://docs.docker.com/storage/volumes/](https://docs.docker.com/storage/volumes/)
+If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/home/node/trilium-data triliumnext/notes:<VERSION>`. It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to. [https://docs.docker.com/storage/volumes/](https://docs.docker.com/storage/volumes/)
 
 ### Note about --user directive
 
