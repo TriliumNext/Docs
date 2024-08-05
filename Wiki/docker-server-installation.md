@@ -86,7 +86,7 @@ For a custom data directory, use:
 %%%{WARNING}%%% zadams container
 
 ```sh
--v ~/YourOwnDirectory:/home/node/trilium-data zadam/trilium:[VERSION]
+-v ~/YourOwnDirectory:/home/node/trilium-data triliumnext/notes:[VERSION]
 ```
 
 If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/home/node/trilium-data triliumnext/notes:<VERSION>`. It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to. [https://docs.docker.com/storage/volumes/](https://docs.docker.com/storage/volumes/)
