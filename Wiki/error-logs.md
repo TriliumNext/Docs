@@ -29,7 +29,7 @@ Copy-paste (or screenshot) the logs. It's better to provide not just errors, but
 Providing sensitive data
 ------------------------
 
-If you don't feel comfortable attaching the logs or anything sensitive to the public GitHub issues, feel free to mail them to [zadam.apps@gmail.com](#root/N3Zt66yETj9g)
+If you don't feel comfortable attaching the logs or anything sensitive to the public GitHub issues, feel free to contact the devs in our Matrix [support channel](https://github.com/TriliumNext/Notes#-discuss-with-us).
 
 Use this email to also provide anything which could assist in analysing the bug - e.g. files/images/ZIPs being imported or [anonymized database](anonymized-database.md).
 
