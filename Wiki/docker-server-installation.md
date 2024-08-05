@@ -1,93 +1,103 @@
-# Docker-server-installation
-Trilium can be run as docker image. This is recommended way to deploy Trilium on servers.
+# Docker Server Installation for Trilium
 
-Official docker images are published on docker hub for **AMD64**, **ARMv6**, **ARMv7** and **ARMv8/64**: [https://hub.docker.com/r/zadam/trilium/](https://hub.docker.com/r/zadam/trilium/)%%{WARNING}%%
+Trilium can be deployed using a Docker image, which is the recommended method for server installations. Official Docker images for **AMD64**, **ARMv6**, **ARMv7**, and **ARMv8/64** are available on [Docker Hub](https://hub.docker.com/r/zadam/trilium/). %%%{WARNING}%%% zadams dockerhub
 
-Prerequisites
--------------
+## Prerequisites
 
-To start, you will need to have docker installed on your computer. Here are two guides that can help:
+Ensure Docker is installed on your system.
 
-*   [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
-*   [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+If you need help installing Docker, reference the [Docker Installation Docs](https://docs.docker.com/engine/install/)
 
-Trilium docker container requires running as root, check if this is possible in your environment.
+**Note:** Trilium's Docker container requires root privileges to operate correctly.
 
-Pull image
-----------
+## Pulling the Docker Image
 
-```text-plain
-docker pull zadam/trilium:[VERSION] %%{WARNING}%%
+To pull the Trilium image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `0.90-latest` or just `latest`:
+
+%%%{WARNING}%%% zadams container
+
+```sh
+docker pull zadam/trilium:[VERSION]
 ```
 
-Replace \[VERSION\] for actual latest version or use "series" tag - e.g. `0.52-latest`.
+**Warning:** Avoid using the "latest" tag, as it may automatically upgrade your instance to a new minor version, potentially disrupting sync setups or causing other issues.
 
-**It's not recommended to use "latest" tag since it may upgrade your Trilium instance to a new minor version, which may potentially break your sync setup or cause other issues.**
+## Preparing the Data Directory
 
-Prepare data directory on the host system
------------------------------------------
+Trilium requires a directory on the host system to store its data. This directory must be mounted into the Docker container with write permissions.
 
-Trilium needs a directory where it can store its data, this then needs to be mounted into the docker container. The container needs to runs as a root to be able to access it in write mode.
+## Running the Docker Container
 
-Run image
----------
+### Local Access Only
 
-These commands mount the volume to the host system so that trilium's data (most importantly [database](database.md)) is persisted and not cleared after container stops.
+Run the container to make it accessible only from the localhost. This setup is suitable for testing or when using a proxy server like Nginx or Apache.
 
-### Local only
+%%%{WARNING}%%% zadams container
 
-This will run the container so that it only available on the localhost. Use this to test the installation from a web browser on the same machine you run this command on, or if you are using a proxy with nginx/apache.
-
-```text-plain
-sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION] %%{WARNING}%%
+```sh
+sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION]
 ```
 
-1.  Test to see that the docker image is running with `docker ps`
-2.  Access the trilium by opening a browser and go to `127.0.0.1:8080`
+1. Verify the container is running using `docker ps`.
+2. Access Trilium via a web browser at `127.0.0.1:8080`.
 
-### Local network only
+### Local Network Access
 
-This command will run the container so that it is only available on your local network. This is preferable if you do not want to open ports to the rest of the internet. However, you can still access it from outside by using a VPN like WireGuard to get into your own network first. This method does assume that your local network limits outside access.
+To make the container accessible only on your local network, first create a new Docker network:
 
-First, you have to create a new network in Docker to access your local network. Here is an example, give note to "parent" and the network numbers as it may differ from your own. For more detailed information, [click here](https://blog.oddbit.com/post/2018-03-12-using-docker-macvlan-networks/).
+%%%{WARNING}%%% zadams container
 
-```text-plain
+```sh
 docker network create -d macvlan -o parent=eth0 --subnet 192.168.2.0/24 --gateway 192.168.2.254 --ip-range 192.168.2.252/27 mynet
 ```
 
-Secondly, you have to adjust the docker run command so it takes this network into account but keep using localhost to limit the accessibility of the ports to the outside world.
+Then, run the container with the network settings:
 
-```text-plain
+%%%{WARNING}%%% zadams container
+
+```sh
 docker run --net=mynet -d -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:0.52-latest
 ```
 
-Alternatively, if you wish to have the saved data and the application using a different UID & GID than 1000:1000, you can use the USER\_UID & USER\_GID environment variables:
+To set a different user ID (UID) and group ID (GID) for the saved data, use the `USER_UID` and `USER_GID` environment variables:
 
-```text-plain
-docker run --net=mynet -d -p 127.0.0.1:8080:8080 -e "USER_UID=1001" -e "USER_GID=1001" -v ~/trilium-data:/home/node/trilium-data zadam/trilium:0.52-latest %%{WARNING}%% 
+%%%{WARNING}%%% zadams container
+
+```sh
+docker run --net=mynet -d -p 127.0.0.1:8080:8080 -e "USER_UID=1001" -e "USER_GID=1001" -v ~/trilium-data:/home/node/trilium-data zadam/trilium:0.52-latest
 ```
 
-Finally, use docker inspect to find your local IP address to connect to. You can access this from all your devices connected to the local network as such: \[local:ip\]:8080.
+Find the local IP address using `docker inspect [container_name]` and access the service from devices on the local network.
 
-```text-plain
-docker ps
-docker inspect [container_name] 
+#### Reverse Proxy
+
+1. [Nginx](nginx-proxy-setup.md)
+2. [Apache](apache-proxy-setup.md)
+
+### Global Access
+
+To allow access from any IP address, run the container as follows:
+
+%%%{WARNING}%%% zadams container
+
+```sh
+docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION]
 ```
 
-### Available anywhere
+Stop the container with `docker stop <CONTAINER ID>`, where the container ID is obtained from `docker ps`.
 
-This will run the container as a background process and will be available from any IP address
+### Custom Data Directory
 
-```text-plain
-docker run -d -p 0.0.0.0:8080:8080 -v ~/trilium-data:/home/node/trilium-data zadam/trilium:[VERSION] %%{WARNING}%%
+For a custom data directory, use:
+
+%%%{WARNING}%%% zadams container
+
+```sh
+-v ~/YourOwnDirectory:/home/node/trilium-data zadam/trilium:[VERSION]
 ```
 
-To stop this background docker process use `docker ps` to get the "CONTAINER ID" and then use `docker stop <CONTAINER ID>`
+The path before the colon is the host directory, and the path after the colon is the container's path. More details can be found in the [Docker Volumes Documentation](https://docs.docker.com/storage/volumes/).
 
-### Different data directory location
+### Note on --user Directive
 
-If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/home/node/trilium-data zadam/trilium:[VERSION]`. It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to. [https://docs.docker.com/storage/volumes/](https://docs.docker.com/storage/volumes/)
-
-### Note about --user directive
-
-Please note, the --user directive is not supported and the container will not run without root. Instead please use the USER\_UID & USER\_GID environment variables as shown above.
+The `--user` directive is unsupported. Instead, use the `USER_UID` and `USER_GID` environment variables to set the appropriate user and group IDs.

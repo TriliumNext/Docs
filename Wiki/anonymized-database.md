@@ -1,20 +1,17 @@
-# Anonymized database
-### Anonymized database
+# Anonymized Database
 
-In some cases, it's necessary to see the database structure to be able to debug the problem. Of course, we can't ask you to send us [Document](document.md) file with your notes.
+![screenshot of advanced settings](images/anonymization.png)
 
-For this, Trilium supports anonymization of the database - you can trigger this in Options -> Advanced tab.
+In certain scenarios, understanding the structure of a database is crucial for troubleshooting issues. However, sharing your actual [database](database.md) file with personal notes is not advisable. To address this, Trilium offers a feature to anonymize the database. This feature can be accessed via Menu -> Options -> Advanced tab.
 
-![](images/anonymization.png)
+This feature creates a copy of your database with all sensitive data removed. Specifically, it strips out note titles, contents, revisions, history, and some non-system attributes while retaining the overall structure and metadata, such as modification dates. After anonymization, the database undergoes a [vacuuming process](https://sqlite.org/lang_vacuum.html) to ensure no sensitive data remnants remain in the file. The anonymized database is saved in the `anonymized` directory within the [data directory](data-directory.md), making it safe to share with bug reports.
 
-This will create a copy of your document and remove all sensitive data (currently note titles, contents, revisions, history and some of the options, and non-system attributes) while leaving all structure and metadata (e.g. date of last change). After this is done, the database is [VACUUMed](https://sqlite.org/lang_vacuum.html) to make sure there's no stale sensitive data in the document file. The resulting file is stored in `anonymized` directory (placed in the [data directory](data-directory.md)). You can safely attach it with your bug report or send it to [zadam.apps@gmail.com](#root/N3Zt66yETj9g) %%{WARNING}%%
+## Command Line Anonymization
 
-#### Command line anonymization
+If your [database](database.md) is corrupted to the point where Trilium cannot start, the anonymization process can still be executed via the command line:
 
-If the database is corrupted in a way which prevents Trilium to start up, you won't be able to trigger the anonymization from the UI. For such a case, anonymization is also available from command line:
-
-```text-plain
+```sh
 node src/anonymize.js
 ```
 
-This needs to be executed in the directory with Trilium source files, for desktop builds this in `resources/app` directory.
+Run this command from the directory containing Trilium's source files, typically found in the `resources/app` directory for desktop builds.

@@ -1,17 +1,22 @@
-# Desktop-installation
-If you want to use Trilium on the desktop, download binary release for your platform from [latest release](https://github.com/TriliumNext/Notes/releases/latest), unzip the package and run `trilium` executable.
+# Desktop Installation Guide for Trilium
 
-Startup scripts
----------------
+To install Trilium on your desktop, follow these steps:
 
-There are also some other options to start Trilium:
+1. **Download the Latest Release**: Obtain the appropriate binary release for your operating system from the [latest release page](https://github.com/TriliumNext/Notes/releases/latest) on GitHub.
+2. **Extract the Package**: Unzip the downloaded package to a location of your choice.
+3. **Run the Application**: Launch Trilium by executing the `trilium` executable found within the unzipped folder.
 
-*   `trilium-no-cert-check` - Trilium will not validate the certificates, useful e.g. when you're syncing against a sync server with self-signed certificate
-    *   Alternatively you can set `NODE_TLS_REJECT_UNAUTHORIZED=0` environment variable to the Trilium process.
-*   `trilium-portable` - Trilium will try to create [data directory](data-directory.md) in the trilium's directory
-*   `trilium-safe-mode` - start up in "safe mode" which disables any startup scripts which might e.g. crash the application
+## Startup Scripts
 
-Synchronization
----------------
+Trilium offers various startup scripts to customize your experience:
 
-If you are using a desktop instance and would like to sync with your server instance: [Synchronization](synchronization.md)
+- **`trilium-no-cert-check`**: Starts Trilium without validating [TLS certificates](tls-configuration.md), useful if connecting to a server with a self-signed certificate.
+  - Alternatively, set the `NODE_TLS_REJECT_UNAUTHORIZED=0` environment variable before starting Trilium.
+
+- **`trilium-portable`**: Launches Trilium in portable mode, where the [data directory](data-directory.md) is created within the application's directory, making it easy to move the entire setup.
+
+- **`trilium-safe-mode`**: Boots Trilium in "safe mode," disabling any startup scripts that might cause the application to crash.
+
+## Synchronization
+
+For Trilium desktp users who wish to synchronize their data with a server instance, refer to the [Synchronization Guide](synchronization.md) for detailed instructions.
