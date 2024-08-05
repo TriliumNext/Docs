@@ -83,8 +83,6 @@ Stop the container with `docker stop <CONTAINER ID>`, where the container ID is 
 
 For a custom data directory, use:
 
-%%%{WARNING}%%% zadams container
-
 ```sh
 -v ~/YourOwnDirectory:/home/node/trilium-data triliumnext/notes:[VERSION]
 ```
