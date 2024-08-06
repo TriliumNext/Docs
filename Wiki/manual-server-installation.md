@@ -30,7 +30,7 @@ Installation
 You can either download source code zip/tar from [https://github.com/TriliumNext/Notes/releases/latest\]\]](https://github.com/TriliumNext/Notes/releases/latest%5D%5D) %%{WARNING}%%or clone git repository **from stable branch** with
 
 ```text-plain
-git clone -b stable https://github.com/zadam/trilium.git %%{WARNING}%%
+git clone -b stable https://github.com/triliumnext/notes.git %%{WARNING}%%
 ```
 
 Installation

@@ -39,14 +39,14 @@ Widgets
 
 Conversely to scripts, widgets do have some specific requirements in order to work. A widget must:
 
-*   Extend [BasicWidget](https://zadam.github.io/trilium/frontend_api/BasicWidget.html) or one of it's subclasses.
+*   Extend [BasicWidget](https://triliumnext.github.io/Notes/frontend_api/BasicWidget.html) or one of it's subclasses.
 *   Create a new instance and assign it to `module.exports`.
 *   Define a `parentWidget` member to determine where it should be displayed.
 *   Define a `position` (integer) that determines the location via sort order.
 *   Have a `#widget` attribute on the containing note.
 *   Create, render, and return your element in the render function.
-    *   For [BasicWidget](https://zadam.github.io/trilium/frontend_api/BasicWidget.html) and [NoteContextAwareWidget](https://zadam.github.io/trilium/frontend_api/NoteContextAwareWidget.html) you should create `this.$widget` and render it in `doRender()`.
-    *   For [RightPanelWidget](https://zadam.github.io/trilium/frontend_api/RightPanelWidget.html) the `this.$widget` and `doRender()` are already handled and you should instead return the value in `doRenderBody()`.
+    *   For [BasicWidget](https://triliumnext.github.io/Notes/frontend_api/BasicWidget.html) and [NoteContextAwareWidget](https://triliumnext.github.io/Notes/frontend_api/NoteContextAwareWidget.html) you should create `this.$widget` and render it in `doRender()`.
+    *   For [RightPanelWidget](https://triliumnext.github.io/Notes/frontend_api/RightPanelWidget.html) the `this.$widget` and `doRender()` are already handled and you should instead return the value in `doRenderBody()`.
 
 ### parentWidget
 

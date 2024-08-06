@@ -29,7 +29,7 @@ Common request is to allow multiple users collaborate, share notes etc. So far I
 How to open multiple documents in one Trilium instance
 ------------------------------------------------------
 
-This is normally not supported - one Trilium process can open only a single instance of a [document](document.md). However, you can run two Trilium processes (from one installation), each connected to a separate document. To achieve this, you need to set a location for the [data directory](data-directory.md) in the `TRILIUM_DATA_DIR` environment variable and separate port on `TRILIUM_PORT` environment variable. How to do that depends on the platform, in Unix-based systems you can achieve that by running command such as this:
+This is normally not supported - one Trilium process can open only a single instance of a [database](database.md). However, you can run two Trilium processes (from one installation), each connected to a separate document. To achieve this, you need to set a location for the [data directory](data-directory.md) in the `TRILIUM_DATA_DIR` environment variable and separate port on `TRILIUM_PORT` environment variable. How to do that depends on the platform, in Unix-based systems you can achieve that by running command such as this:
 
 ```text-plain
 TRILIUM_DATA_DIR=/home/me/path/to/data/dir TRILIUM_PORT=12345 trilium 
@@ -51,7 +51,7 @@ The only supported way to sync Trilium's data across the network is to use a [sy
 Why database instead of flat files?
 -----------------------------------
 
-Trilium stores notes in a [document](document.md) which is an SQLite database. People often ask why doesn't Trilium rather use flat files for note storage - it's fair question since flat files are easily interoperable, work with SCM/git etc.
+Trilium stores notes in a [database](database.md) which is an SQLite database. People often ask why doesn't Trilium rather use flat files for note storage - it's fair question since flat files are easily interoperable, work with SCM/git etc.
 
 Short answer is that file systems are simply not powerful enough for what we want to achieve with Trilium. Using filesystem would mean fewer features with probably more problems.
 

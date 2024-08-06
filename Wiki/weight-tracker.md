@@ -1,30 +1,24 @@
 # Weight-tracker
-Weight Tracker is a [Script API](script-api.md) showcase present in the [demo document](document.md).
 
-[Day notes](day-notes.md) shows (among others) how we have "weight" [promoted attribute](promoted-attributes.md) in the day note [template](template.md). This then aggregates the data and shows a nice chart of weight change in time.
+![screenshot of weight tracker](images/weight-tracker.png)
 
-Demo
-----
+The `Weight Tracker` is a [Script API](script-api.md) showcase present in the [demo notes](database.md).
 
-![](images/weight-tracker.png)
+By adding `weight` as a [promoted attribute](promoted-attributes.md) in the [template](template.md) from which [day notes](day-notes.md) are created, you can aggregate the data and plot weight change over time.
 
-How to remove Weight Tracker button from the top bar
-----------------------------------------------------
+## Implementation
 
-In the link map of Weight Tracker, there is a note "Button". Open it and delete or comment out its contents. Weight Tracker button will disappear after you close and open the app.
+The `Weight Tracker` note in the screenshot above is of the type `Render Note`. That type of note doesn't have any useful content itself. Instead it is a placeholder where a [script](scripts.md) can render its output.
 
-Implementation
---------------
+Scripts for `Render Notes` are defined in a [relation](attributes.md) called `~renderNote`. In this example, it's the `Weight Tracker`'s child `Implementation`. The Implementation consists of two [code notes](code-notes.md) that contain some HTML and JavaScript respectively, which load all the notes with a `weight` attribute and display their values in a chart.
 
-Note "Weight Tracker" in the screenshot above is of type "Render HTML note". Such note doesn't have any useful content itself, the only purpose of it is to provide a place where some [script](scripts.md) can render some output. This script is defined in [relation](attributes.md) `renderNote` - coincidentally it's the Weight Tracker's child `Implementation`.
+To actually render the chart, we're using a third party library called [chart.js](https://www.chartjs.org/) which is imported as an attachment, since it's not built into Trilium.
 
-This Implementation [code note](code-notes.md) then contains some HTML and JavaScript which loads all the notes with "weight" attribute and displays them in a chart. To actually render chart we're using third party library [chart.js](https://www.chartjs.org/) which is imported as an attachment (it's not built-in into Trilium).
+### Code
 
-### JS code
+Here's the content of the script which is placed in a [code note](code-notes.md) of type `JS Frontend`:
 
-To get an idea of the script, here's the "JS code" note content:
-
-```text-plain
+```js
 async function getChartData() {
     const days = await api.runOnBackend(async () => {
         const notes = api.getNotesWithLabel('weight');
@@ -71,3 +65,7 @@ new chartjs.Chart(ctx, {
     data: await getChartData()
 });
 ```
+
+## How to remove the Weight Tracker button from the top bar
+
+In the link map of the `Weight Tracker`, there is a note called `Button`. Open it and delete or comment out its contents. The `Weight Tracker` button will disappear after you restart Trilium.

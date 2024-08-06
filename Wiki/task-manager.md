@@ -1,5 +1,5 @@
 # Task-manager
-Task Manager is a [promoted attributes](promoted-attributes.md) and [scripts](scripts.md) showcase present in the [demo document](document.md).
+Task Manager is a [promoted attributes](promoted-attributes.md) and [scripts](scripts.md) showcase present in the [demo notes](database.md).
 
 Demo
 ----
