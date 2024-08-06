@@ -7,7 +7,7 @@ Based on the information from [Frontend Basics](frontend-basics.md), the most ba
 class MyWidget extends api.BasicWidget {
     get position() {return 1;}
     get parentWidget() {return "left-pane"}
-    
+
     doRender() {
         this.$widget = $("<div id='my-widget'>");
         return this.$widget;
@@ -33,7 +33,7 @@ const template = `<div id="my-widget"><button>Click Me!</button></div>`;
 class MyWidget extends api.BasicWidget {
     get position() {return 1;}
     get parentWidget() {return "left-pane"}
-    
+
     doRender() {
         this.$widget = $(template);
         return this.$widget;
@@ -49,7 +49,7 @@ Make that change, and reload Trilium and you should see a really ugly looking bu
 const template = `<div id="my-widget"><button class="tree-floating-button bx bxs-magic-wand tree-settings-button"></button></div>`;
 ```
 
-After reloading, that already looks a little bit better. But it's still in the wrong spot. We can fix that with a little bit of css. Thankfully [BasicWidget](https://zadam.github.io/trilium/frontend_api/BasicWidget.html) allows us to do this very easily with `this.cssBlock`.
+After reloading, that already looks a little bit better. But it's still in the wrong spot. We can fix that with a little bit of css. Thankfully [BasicWidget](https://triliumnext.github.io/Notes/frontend_api/BasicWidget.html) allows us to do this very easily with `this.cssBlock`.
 
 ```text-plain
 const template = `<div id="my-widget"><button class="tree-floating-button bx bxs-magic-wand tree-settings-button"></button></div>`;
@@ -57,7 +57,7 @@ const template = `<div id="my-widget"><button class="tree-floating-button bx bxs
 class MyWidget extends api.BasicWidget {
     get position() {return 1;}
     get parentWidget() {return "left-pane"}
-    
+
     doRender() {
         this.$widget = $(template);
         this.cssBlock(`#my-widget {
@@ -85,7 +85,7 @@ const template = `<div id="my-widget"><button class="tree-floating-button bx bxs
 class MyWidget extends api.BasicWidget {
     get position() {return 1;}
     get parentWidget() {return "left-pane"}
-    
+
     doRender() {
         this.$widget = $(template);
         this.cssBlock(`#my-widget {

@@ -2,7 +2,7 @@
 Patterns-of-personal-knowledge-base
 -----------------------------------
 
-This page contains description of some of the patterns I use to organize information in my knowledge base. This is meant to give some inspiration of how one might create and structure their knowledge base in general and also specifically in [Trilium Notes](https://github.com/zadam/trilium). It also gives some background and justification for some of the design decisions.
+This page contains description of some of the patterns I use to organize information in my knowledge base. This is meant to give some inspiration of how one might create and structure their knowledge base in general and also specifically in [Trilium Notes](https://github.com/triliumnext/notes). It also gives some background and justification for some of the design decisions.
 
 Meta patterns
 -------------
