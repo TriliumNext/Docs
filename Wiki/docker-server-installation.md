@@ -28,12 +28,13 @@ docker compose up -d
 ```
 Optionally, edit the `docker-compose.yml` file to configure the container settings prior to starting it. Unless configured otherwise, the data directory will be `~/trilium-data` and the container will be accessible at port 8080.
 
+
 ## Running without Docker Compose / Further Configuration
 ### Pulling the Docker Image
 
-To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `v0.90.3` or just `latest`:
+To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `0.90-latest` or just `latest`:
 
-```sh
+```text-plain
 docker pull triliumnext/notes:[VERSION]
 ```
 
@@ -49,14 +50,14 @@ Trilium requires a directory on the host system to store its data. This director
 
 Run the container to make it accessible only from the localhost. This setup is suitable for testing or when using a proxy server like Nginx or Apache.
 
-```sh
+```text-plain
 sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data triliumnext/notes:[VERSION]
 ```
 
 1. Verify the container is running using `docker ps`.
 2. Access Trilium via a web browser at `127.0.0.1:8080`.
 
-### Local Network Access
+#### Local Network Access
 
 To make the container accessible only on your local network, first create a new Docker network:
 
@@ -82,8 +83,7 @@ Find the local IP address using `docker inspect [container_name]` and access the
 docker ps
 docker inspect [container_name]
 ```
-
-### Global Access
+#### Global Access
 
 To allow access from any IP address, run the container as follows:
 
@@ -108,6 +108,8 @@ The path before the colon is the host directory, and the path after the colon is
 
 The `--user` directive is unsupported. Instead, use the `USER_UID` and `USER_GID` environment variables to set the appropriate user and group IDs.
 
-## Reverse Proxy Setup
+## Reverse Proxy
+
 1. [Nginx](nginx-proxy-setup.md)
 2. [Apache](apache-proxy-setup.md)
+
