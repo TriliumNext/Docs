@@ -10,27 +10,46 @@ If you need help installing Docker, reference the [Docker Installation Docs](htt
 
 **Note:** Trilium's Docker container requires root privileges to operate correctly.
 
-## Pulling the Docker Image
+## Running with Docker Compose
+### Clone the repository:
+```sh
+git clone https://github.com/TriliumNext/Notes.git
+```
 
-To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `0.90-latest` or just `latest`:
+### Navigate to the cloned repository:
+```sh
+cd Notes
+```
 
-```text-plain
+### Start the container:
+Run the following command to start the container in the background:
+```sh
+docker compose up -d
+```
+Optionally, edit the `docker-compose.yml` file to configure the container settings prior to starting it. Unless configured otherwise, the data directory will be `~/trilium-data` and the container will be accessible at port 8080.
+
+## Running without Docker Compose / Further Configuration
+### Pulling the Docker Image
+
+To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `v0.90.3` or just `latest`:
+
+```sh
 docker pull triliumnext/notes:[VERSION]
 ```
 
 **Warning:** Avoid using the "latest" tag, as it may automatically upgrade your instance to a new minor version, potentially disrupting sync setups or causing other issues.
 
-## Preparing the Data Directory
+### Preparing the Data Directory
 
 Trilium requires a directory on the host system to store its data. This directory must be mounted into the Docker container with write permissions.
 
-## Running the Docker Container
+### Running the Docker Container
 
-### Local Access Only
+#### Local Access Only
 
 Run the container to make it accessible only from the localhost. This setup is suitable for testing or when using a proxy server like Nginx or Apache.
 
-```text-plain
+```sh
 sudo docker run -t -i -p 127.0.0.1:8080:8080 -v ~/trilium-data:/home/node/trilium-data triliumnext/notes:[VERSION]
 ```
 
@@ -64,11 +83,6 @@ docker ps
 docker inspect [container_name]
 ```
 
-#### Reverse Proxy
-
-1. [Nginx](nginx-proxy-setup.md)
-2. [Apache](apache-proxy-setup.md)
-
 ### Global Access
 
 To allow access from any IP address, run the container as follows:
@@ -93,3 +107,7 @@ The path before the colon is the host directory, and the path after the colon is
 ### Note on --user Directive
 
 The `--user` directive is unsupported. Instead, use the `USER_UID` and `USER_GID` environment variables to set the appropriate user and group IDs.
+
+## Reverse Proxy Setup
+1. [Nginx](nginx-proxy-setup.md)
+2. [Apache](apache-proxy-setup.md)
