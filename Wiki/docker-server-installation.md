@@ -11,23 +11,19 @@ If you need help installing Docker, reference the [Docker Installation Docs](htt
 **Note:** Trilium's Docker container requires root privileges to operate correctly.
 
 ## Running with Docker Compose
-### Clone the repository:
+
+### Grab the latest docker-compose.yml:
 ```sh
-git clone https://github.com/TriliumNext/Notes.git
+wget https://raw.githubusercontent.com/TriliumNext/Notes/master/docker-compose.yml
 ```
 
-### Navigate to the cloned repository:
-```sh
-cd Notes
-```
+Optionally, edit the `docker-compose.yml` file to configure the container settings prior to starting it. Unless configured otherwise, the data directory will be `~/trilium-data` and the container will be accessible at port 8080.
 
 ### Start the container:
 Run the following command to start the container in the background:
 ```sh
 docker compose up -d
 ```
-Optionally, edit the `docker-compose.yml` file to configure the container settings prior to starting it. Unless configured otherwise, the data directory will be `~/trilium-data` and the container will be accessible at port 8080.
-
 
 ## Running without Docker Compose / Further Configuration
 ### Pulling the Docker Image
