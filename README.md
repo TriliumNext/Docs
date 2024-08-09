@@ -16,6 +16,7 @@ To import this documentation into your own instance of Trilium, [follow these in
         - [Protected Notes](Wiki/protected-notes.md)
         - [Archived Notes](Wiki/archived-notes.md)
         - [Note Revisions](Wiki/note-revisions.md)
+        - [Sorting Notes](Wiki/sorting.md)
     - Navigation
         - [Tree Concepts](Wiki/tree-concepts.md)
         - [Tree Manipulation](Wiki/tree-manipulation.md)
