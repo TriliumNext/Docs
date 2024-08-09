@@ -1,6 +1,6 @@
 # Docker Server Installation for Trilium
 
-Official docker images are published on docker hub for **AMD64**, **ARMv6**, **ARMv7** and **ARMv8/64**: [https://hub.docker.com/r/triliumnext/notes/](https://hub.docker.com/r/triliumnext/notes/)
+Official docker images are published on docker hub for **AMD64**, **ARMv7** and **ARM64/v8**: [https://hub.docker.com/r/triliumnext/notes/](https://hub.docker.com/r/triliumnext/notes/)
 
 ## Prerequisites
 
