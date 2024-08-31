@@ -1,18 +1,20 @@
-# Themes
-Trilium by default comes with few color themes, with white being the default. To switch to dark theme, you just need to go to Options (top-left - it's the app icon) -> Appearance tab and change the theme.
+# Customizing Themes in Trilium
 
-This is what it looks like:
+## Default Themes
 
-![](images/dark-theme.png)
+Trilium comes with a couple pre-installed color themes, with the default being a light theme. To switch to a dark theme or any other available theme, navigate to the Options menu (accessible via the app icon in the top-left corner), select the Appearance tab, and choose your preferred theme.
 
-Custom CSS themes
------------------
+![Dark Theme](images/dark-theme.png)
 
-Trilium provides a concept of custom user theme. You can make yourself one by creating a CSS [code note](code-notes.md) and annotating it with `#appTheme=my-theme-name` [label](attributes.md).
+## Creating Custom CSS Themes
 
-You can see an example of what you can put there below:
+Trilium supports custom user themes, allowing you to personalize the application's appearance. To create a custom theme, follow these steps:
 
-```text-plain
+1. **Create a CSS Code Note**: Start by creating a new [code note](code-notes.md) with the `CSS` type.
+2. **Annotate with `#appTheme`**: Add the [attribute](attributes.md) `#appTheme=my-theme-name` to your note, where `my-theme-name` is the name of your custom theme.
+3. **Define Your Styles**: Write your custom CSS within the note. Below is an example of a custom theme:
+
+```css
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -68,46 +70,64 @@ body .CodeMirror {
 }
 ```
 
-We define a custom font (provided by [custom request handler](custom-request-handler.md)) and then just define a bunch of CSS variables. These variables are then used in Trilium's CSS stylesheets. You can also use standard CSS selectors for further customization (open dev tools using `CTRL-SHIFT-I` to help with that), but keep in mind that HTML structure can change in future releases which might break your selectors. For that reason it is better to restrict yourself to use CSS variables as much as possible.
+### Activating Your Custom Theme
 
-To activate your custom theme, go to Options -> Appearance. In the select box you should see all notes (themes) labeled with `appTheme`.
+Once you've created your custom theme:
 
-If you make a change to your theme, you should reload the frontend by pressing `CTRL-R` so the changes will take effect.
+1. Go to "Options" -> "Appearance."
+2. In the theme selection dropdown, you should see your custom theme listed under the name you provided with the `#appTheme` [label](attributes.md).
+3. Select your custom theme to activate it.
 
-CSS themes can be exported in .tar archive and shared to other users. Importing CSS themes from untrusted sources is not advised since the archive can also contain executable [scripts](scripts.md) which could be potentially harmful.
+If you make changes to your theme, press `CTRL-R` to reload the frontend and apply your updates.
 
-You can find an example user theme _Steel Blue_ in the [demo document](document.md)
+### Sharing and Importing Themes
 
-![](images/steel-blue.png)
+Custom themes can be exported as `.tar` archives, which can be shared with other users. However, be cautious when importing themes from untrusted sources, as they may contain executable scripts that could pose security risks.
 
-Custom CSS
-----------
+An example user theme, _Steel Blue_, is available in the [demo document](document.md).
 
-Trilium also allows you to create custom CSS not associated with a theme. This can be useful in the context of [scripting](scripts.md) where you may want to e.g. change colors of notes in the tree (as used in [Task manager](task-manager.md)).
+![Steel Blue Theme](images/steel-blue.png)
 
-To do this, just create a [code note](code-notes.md) with CSS type, put your custom CSS code into the note's content and create "appCss" [label](attributes.md). When Trilium frontend starts, all notes with "appCss" label are appended in the style element of the Trilium HTML page.
+### Using Custom CSS for Specific Purposes
 
-Once you made your changes, you can reload the Trilium frontend by pressing CTRL-R after which the changes will take effect.
+In addition to full themes, Trilium allows for custom CSS that isn't tied to a theme. This can be particularly useful in scripting contexts, where you might want to modify specific UI elements, such as changing the colors of notes in the tree view.
 
-![](images/app-css.png)
+### Applying Custom CSS
 
-Styling the tree
-----------------
+To use custom CSS:
 
-If you want to give some specific notes special styling in the tree, you can give them `cssClass` [label](attributes.md) which is then put into the node representing given note in the tree.
+1. **Create a CSS Code Note**: Create a new [code note](code-notes.md) with the `CSS` type.
+2. **Add the `appCss` Label**: Annotate the note with the `#appCss` [label](attributes.md).
+3. **Write Your CSS**: Add your custom CSS rules to the note.
 
-There's also an `iconClass` using which you can define custom icons for notes in the tree - you can either use supplied ones from [boxicons](https://boxicons.com/) (e.g. `bx bx-home`) or you can define your own CSS classes. Some of those are actually different. So you have `bx bxs-piano`for instance instead of `bx bx-piano`. On the boxicons site, you can find out, looking at the font tab, after u opened a file, how its called.
+For example:
 
-`iconClass` and `cssClass` are especially powerful when used with [template](template.md).
+```css
+/* Custom CSS to style specific elements */
+.tree-item {
+    color: #ff6347; /* Change tree item color */
+}
+```
 
-You can also create specific styling for given note types (and mime types). For example, file note containing PNG image will have these classes in the tree: `type-image mime-image-png`.
+When Trilium's frontend starts, all notes labeled with `appCss` are automatically included in the style element of the HTML page.
 
-User-provided themes
---------------------
+After making changes, press `CTRL-R` to reload the frontend and apply your new styles.
 
-Some users made their custom themes publicly available. For a gallery of user themes, see [Theme gallery](theme-gallery.md).
+![Applying Custom CSS](images/app-css.png)
 
-Asset path
-----------
+### Styling Specific Notes in the Tree
 
-In case you want to use some built-in assets like `/assets/v0.57.0-beta/images/icon-grey.png` but want to avoid specifying the version, you can use a `vX` alias - in this case `/assets/vX/images/icon-grey.png`.
+To apply specific styles to certain notes in the tree:
+
+- **Use the `cssClass` Attribute**: Add the `cssClass` [attribute](attributes.md) to a note, and assign it a value representing the desired CSS class.
+- **Define an `iconClass`**: You can also define a custom icon for a note using the `iconClass` attribute, selecting from [Box Icons](https://boxicons.com) or your own custom classes.
+
+For example, if you want to style notes of a specific type, such as notes containing PNG images, you can target them with classes like `type-image mime-image-png`.
+
+### User-Provided Themes
+
+A gallery of user-created themes is available, showcasing the variety of customizations that the Trilium community has developed. For more information, visit the [Theme Gallery](theme-gallery.md).
+
+### Asset Path Management
+
+When referencing built-in assets like images in your custom themes or CSS, you can avoid hardcoding version numbers by using the `vX` alias. For example, instead of specifying `/assets/v0.57.0-beta/images/icon-grey.png`, you can use `/assets/vX/images/icon-grey.png` to keep your theme compatible with future versions of Trilium.
