@@ -1,6 +1,4 @@
-# Creating a Basic Widget in Trilium
-
-## Introduction to Widget Development
+# Introduction to Widget Development
 
 This guide will walk you through creating a basic widget inside Trilium. By following these steps, you'll learn how to build a simple UI element that interacts with the user.
 
@@ -39,9 +37,9 @@ Next, let's improve the widget by adding a button to it.
 const template = `<div id="my-widget"><button>Click Me!</button></div>`;
 
 class MyWidget extends api.BasicWidget {
-    get position() { return 1; }
-    get parentWidget() { return "left-pane"; }
-    
+    get position() {return 1;}
+    get parentWidget() {return "left-pane"}
+
     doRender() {
         this.$widget = $(template);
         return this.$widget;

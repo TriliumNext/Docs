@@ -2,7 +2,7 @@
 Overview
 --------
 
-Basic overview of the Trilium project is available at project homepage - [https://github.com/zadam/trilium#trilium-notes](https://github.com/zadam/trilium#trilium-notes)
+Basic overview of the Trilium project is available at project homepage - [https://github.com/triliumnext/notes#trilium-notes](https://github.com/triliumnext/notes#trilium-notes)
 
 Inspiration for the name "Trilium":
 
