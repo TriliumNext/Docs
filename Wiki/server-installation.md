@@ -1,6 +1,6 @@
 # Server Installation
 
-This guide outlines the steps to install Trilium on your own server. You might consider this option if you want to set up [synchronization](synchronization.md) or use Trilium as a browser version accessible from anywhere.
+This guide outlines the steps to install Trilium on your own server. You might consider this option if you want to set up [synchronization](synchronization.md) or use Trilium in a browser - accessible from anywhere.
 
 ## Installation Options
 
