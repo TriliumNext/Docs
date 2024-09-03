@@ -74,7 +74,7 @@ body .CodeMirror {
 
 Once you've created your custom theme:
 
-1. Go to "Options" -> "Appearance."
+1. Go to "Menu" -> "Options" -> "Appearance."
 2. In the theme selection dropdown, you should see your custom theme listed under the name you provided with the `#appTheme` [label](attributes.md).
 3. Select your custom theme to activate it.
 
