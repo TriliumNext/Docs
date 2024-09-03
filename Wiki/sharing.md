@@ -8,7 +8,7 @@ To use the sharing feature, you must have a [server installation](server-install
 
 ## How to Share a Note
 
-1. **Enable Sharing**: To share a note, toggle the "shared" switch within the note's interface. Once sharing is enabled, an URL will appear, which you can click to access the shared note.
+1. **Enable Sharing**: To share a note, toggle the `Shared` switch within the note's interface. Once sharing is enabled, an URL will appear, which you can click to access the shared note.
 
    ![Share Note](images/share-single-note.png)
 
