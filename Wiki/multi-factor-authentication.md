@@ -16,12 +16,13 @@ TOTP (Time-Based One-Time Password) is a security feature that generates a uniqu
 
 ## Setup
 
-### TOTP (Easier)
+### TOTP
 
-1. Go to "Options" -> "MFA"
+1. Start Trilium Notes normally.
+1. Go to "Menu" -> "Options" -> "MFA"
 1. Click the "Generate TOTP Secret" button
 1. Copy the generated secret to your authentication app/extension
-1. The environment variables can be set with a .env file in the root directory, or by defining them in the command line
+1. Set an environment variable "TOTP_SECRET" as the generated secret. Environment variables can be set with a .env file in the root directory, by defining them in the command line, or with a docker container.
     ```SH
     # .env in the project root directory
     TOTP_ENABLED="true"
@@ -34,17 +35,21 @@ TOTP (Time-Based One-Time Password) is a security feature that generates a uniqu
     ```
     ```SH
     # Docker
-    sudo docker run -p 8080:8080 -v ~/trilium-data:/home/node/trilium-data -e TOTP_ENABLED="true" -e TOTP_SECRET="secret" triliumnext/notes:[VERSION]
+    docker run -p 8080:8080 -v ~/trilium-data:/home/node/trilium-data -e TOTP_ENABLED="true" -e TOTP_SECRET="secret" triliumnext/notes:[VERSION]
     ```
 1. Restart Trilium
 1. Go to "Options" -> "MFA"
 1. Click the "Generate Recovery Codes" button
-1. Save the recovery codes. Recovery codes can only be used once in place of TOTP and will show the unix timestamp when it was used in the MFA options tab.
+1. Save the recovery codes. Recovery codes can be used once in place of the TOTP if you loose access to your authenticator. After a rerecovery code is used, it will show the unix timestamp when it was used in the MFA options tab.
 1. Load the secret into an authentication app like google authenticator
 
 
-### OpenID (Harder)
-You will need to setup a authentication provider. Right now I have it working with Google, however I intend to have it work with other services like Authentik and Auth0. This requires a bit of extra setup. Follow [these instructions](https://developers.google.com/identity/openid-connect/openid-connect) to setup an OpenID service through google.
+### OpenID
+_Currently only compatible with Google. Other services like Authentik and Auth0 are planned on being added._
+
+In order to setup OpenID, you will need to setup a authentication provider. This requires a bit of extra setup. Follow [these instructions](https://developers.google.com/identity/openid-connect/openid-connect) to setup an OpenID service through google.
+
+Set an environment variable "SSO_ENABLED" to true and add the client ID and secret you obtained from google. Environment variables can be set with a .env file in the root directory, by defining them in the command line, or with a docker container.
 
 #### .env File
 ```sh
@@ -66,6 +71,7 @@ export SECRET=<client secret from google>
 ```sh
 docker run -d -p 8080:8080 -v ~/trilium-data:/home/node/trilium-data -e SSO_ENABLED="true" -e BASE_URL="http://localhost:8080" -e CLIENT_ID=<client ID from google> -e SECRET=<client secret from google> triliumnext/notes:[VERSION]
 ```
-You can now login and out with the service provider and should be able to login without using your password.
+After you restart Trilium Notes, you will be redirected to Google's account selection page. Login to an account and Trilium Next will bind to that account, allowing you to login with it. 
 
+You can now login using your google account. 
 
