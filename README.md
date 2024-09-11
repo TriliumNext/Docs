@@ -43,6 +43,7 @@ To import this documentation into your own instance of Trilium, [follow these in
         - [Apache Proxy Setup](Wiki/apache-proxy-setup.md)
         - [Nginx Proxy Setup](Wiki/nginx-proxy-setup.md)
         - [TLS Configuration](Wiki/tls-configuration.md)
+        - [Multi-Factor Authentication](Wiki/multi-factor-authentication.md)
     - [Synchronization](Wiki/synchronization.md)
     - [Mobile Frontend](Wiki/mobile-frontend.md)
     - [Web Clipper](Wiki/web-clipper.md)
