@@ -10,6 +10,9 @@ If you need help installing Docker, reference the [Docker Installation Docs](htt
 
 **Note:** Trilium's Docker container requires root privileges to operate correctly.
 
+> [!WARNING]
+> If you're using a SMB/CIFS share or folder as your Trilium data directory, [you'll need](https://github.com/TriliumNext/Notes/issues/415#issuecomment-2344824400) to add the mount options of `nobrl` and `noperm` when mounting your SMB share. 
+
 ## Pulling the Docker Image
 
 To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `0.90-latest` or just `latest`:
