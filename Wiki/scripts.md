@@ -41,7 +41,7 @@ We need to execute it every time Trilium starts up, but we probably don't want t
 
 The solution is marked by red circle at the bottom - this note has [label](attributes.md) `#run=frontendStartup` - this is one of the "system" labels which Trilium understands. As you might guess, this will cause all such labeled script notes to be executed once Trilium frontend starts up.
 
-(`#run=frontendStartup` does not work for \[\[mobile server frontend|Mobile frontend\]\] - if you want to have scripts running there, give the script `#run=mobileStartup` label)
+(`#run=frontendStartup` does not work for [Mobile frontend](mobile-frontend.md) - if you want to have scripts running there, give the script `#run=mobileStartup` label)
 
 ### More showcases
 
