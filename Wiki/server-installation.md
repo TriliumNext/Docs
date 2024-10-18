@@ -5,7 +5,7 @@ There are several options how to do this, each one with some advantage:
 
 *   Recommended: [Docker](docker-server-installation.md) - images for **AMD64** and **ARM**
 *   [Packaged server installation](packaged-server-installation.md)
-*   There's a [3rd party paid service to host a Trilium instance for you](https://trilium.cc/paid-hosting)
+*   [PikaPods managed hosting](https://www.pikapods.com/pods?run=trilium-next)
 *   [Manual installation](manual-server-installation.md)
 *   [Kubernetes](kubernetes-server-installation.md)
 *   [Cloudron](https://www.cloudron.io/store/com.github.trilium.cloudronapp.html)
