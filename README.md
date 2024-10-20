@@ -4,8 +4,8 @@ To import this documentation into your own instance of Trilium, [follow these in
 
 ## Table of Contents
 
-- [Quick Start](Wiki/quick-start.md)
 - [Screenshot Tour](Wiki/screenshot-tour.md)
+- [Quick Start](Wiki/quick-start.md)
 - Basic Concepts    
     - [Note](Wiki/note.md)
         - [Text Notes](Wiki/text-notes.md)
@@ -32,24 +32,6 @@ To import this documentation into your own instance of Trilium, [follow these in
         - [Markdown](Wiki/markdown.md)
         - [Evernote](Wiki/evernote-import.md)
         - [OneNote](Wiki/onenote.md)
-- Installation & Setup
-    - [Desktop Installation](Wiki/desktop-installation.md)
-    - [Server Installation](Wiki/server-installation.md)
-        - [Packaged Server Installation](Wiki/packaged-server-installation.md)
-        - [Docker Server Installation](Wiki/docker-server-installation.md)
-        - [NixOS Server Installation](Wiki/nixos-server-installation.md)
-        - [Manual Server Installation](Wiki/manual-server-installation.md)
-        - [Kubernettes Server Installation](Wiki/kubernetes-server-installation.md)
-        - [Apache Proxy Setup](Wiki/apache-proxy-setup.md)
-        - [Nginx Proxy Setup](Wiki/nginx-proxy-setup.md)
-        - [TLS Configuration](Wiki/tls-configuration.md)
-        - [Multi-Factor Authentication](Wiki/multi-factor-authentication.md)
-    - [Synchronization](Wiki/synchronization.md)
-    - [Mobile Frontend](Wiki/mobile-frontend.md)
-    - [Web Clipper](Wiki/web-clipper.md)
-    - [Upgrading Trilium](Wiki/upgrading-trilium.md)
-    - [Backup](Wiki/backup.md)
-    - [Data Directory](Wiki/data-directory.md)
 - Advanced Usage 
     - [Attributes](Wiki/attributes.md)
         - [Attribute Inheritance](Wiki/attribute-inheritance.md)
@@ -77,3 +59,22 @@ To import this documentation into your own instance of Trilium, [follow these in
     - [Widget Basics](Wiki/widget-basics.md)
 - [FAQ](Wiki/faq.md)
 - [Troubleshooting](Wiki/troubleshooting.md)
+- Installation & Setup
+    - [Desktop Installation](Wiki/desktop-installation.md)
+    - [Server Installation](Wiki/server-installation.md)
+        - [Packaged Server Installation](Wiki/packaged-server-installation.md)
+        - [Docker Server Installation](Wiki/docker-server-installation.md)
+        - [NixOS Server Installation](Wiki/nixos-server-installation.md)
+        - [Manual Server Installation](Wiki/manual-server-installation.md)
+        - [Kubernettes Server Installation](Wiki/kubernetes-server-installation.md)
+        - [Apache Proxy Setup](Wiki/apache-proxy-setup.md)
+        - [Nginx Proxy Setup](Wiki/nginx-proxy-setup.md)
+        - [TLS Configuration](Wiki/tls-configuration.md)
+        - [Multi-Factor Authentication](Wiki/multi-factor-authentication.md)
+    - [Synchronization](Wiki/synchronization.md)
+    - [Mobile Frontend](Wiki/mobile-frontend.md)
+    - [Web Clipper](Wiki/web-clipper.md)
+    - [Upgrading Trilium](Wiki/upgrading-trilium.md)
+    - [Backup](Wiki/backup.md)
+    - [Data Directory](Wiki/data-directory.md)
+
