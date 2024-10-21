@@ -22,6 +22,7 @@ Labels are also searchable, enhancing note retrieval.
 ### Common Labels for Advanced Configuration
 
 - **`disableVersioning`**: Disables automatic versioning, ideal for large, unimportant notes like script libraries
+- **`versioningLimit`**: Used to limit the number of revisions for a single note
 - **`calendarRoot`**: Marks the note as the root for [day notes](day-notes.md). Only one note should carry this label
 - **`archived`**: Hides notes from default search results and dialogs
 - **`excludeFromExport`**: Excludes notes and their subtrees from export operations
