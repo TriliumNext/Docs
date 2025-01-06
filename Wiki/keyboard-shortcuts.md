@@ -56,6 +56,9 @@ Editing notes
 
 Trilium uses CKEditor 5 for the [text notes](text-notes.md) and CodeMirror 5 for [code notes](code-notes.md). Check the documentation of these projects to see all their built-in keyboard shortcuts.
 
+*   `ALT-F10` - bring up inline formatting toolbar (arrow keys `<-`,`->` to navigate, `ENTER` to apply)
+*   `ALT-F10` - again to bring up block formatting toolbar
+
 *   `ENTER` in tree pane switches from tree pane into note title. Enter from note title switches focus to text editor. `CTRL+.` switches back from editor to tree pane.
 *   `CTRL+K` - create / edit [external link](links.md)
 *   `CTRL+L` - create [internal (note) link](links.md)
