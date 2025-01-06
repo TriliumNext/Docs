@@ -96,3 +96,7 @@ The path before the colon is the host directory, and the path after the colon is
 ### Note on --user Directive
 
 The `--user` directive is unsupported. Instead, use the `USER_UID` and `USER_GID` environment variables to set the appropriate user and group IDs.
+
+### Note on timezones
+
+If you are having timezone issues and you are not using docker-compose, you may need to add a `TZ` environment variable with the [TZ identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of your local timezone. 
