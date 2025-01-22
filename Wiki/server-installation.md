@@ -21,7 +21,7 @@ For server installations, you might want to configure e.g. port or [TLS](tls-con
 
 ### Config location
 
-`config.ini`, [database](database.md) and some other important Trilium data files are by default persisted in the [data directory](data-directory.md)\]\].
+`config.ini`, [database](database.md) and some other important Trilium data files are by default persisted in the [data directory](data-directory.md). You can also review the [configuration](configuration.md) file to provide all `config.ini` values as environment variables instead. 
 
 If this is not desired, you may change it via `TRILIUM_DATA_DIR` environment variable to some other location, e.g.:
 
