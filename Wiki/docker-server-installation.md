@@ -15,10 +15,10 @@ If you need help installing Docker, reference the [Docker Installation Docs](htt
 
 ## Pulling the Docker Image
 
-To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `0.90-latest` or just `latest`:
+To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `v0.91.6` or just `latest`. (See published tag names at https://hub.docker.com/r/triliumnext/notes/tags.):
 
 ```text-plain
-docker pull triliumnext/notes:[VERSION]
+docker pull triliumnext/notes:v0.91.6
 ```
 
 **Warning:** Avoid using the "latest" tag, as it may automatically upgrade your instance to a new minor version, potentially disrupting sync setups or causing other issues.
