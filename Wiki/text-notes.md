@@ -19,7 +19,7 @@ Text notes are usually opened in edit mode. However, they may open in read-only 
 - The note is long and would take time to load, so it is opened in read-only mode by default for quicker access.
 - The note has a `readOnly` [label](attributes.md).
 
-In both cases, it is possible to switch back to editable mode.
+In both cases, it is possible to switch back to editable mode using [Edit note] ![edit-alt icon](images/boxicons/svg/regular/bx-edit-alt.svg) at top right of page.
 
 ## General Formatting
 
