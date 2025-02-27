@@ -1,31 +1,40 @@
 # Kubernetes-server-installation
-As Trilium can be run in Docker it also can be deployed in Kubernetes. Trilium can be applied to Kubernetes manually or per helm chart.
+As Trilium can be run in Docker it also can be deployed in Kubernetes. You can either use our Helm chart, a community Helm chart, or roll your own Kubernetes deployment.
 
-The recommended way is helm.
+The recommended way is to use a Helm chart.
 
 Root privileges
 ---------------
 
-Trilium docker container needs to be run with root privileges. The node process inside the container will be started with reduced privileges (uid:gid 1000:1000) after some initialization logic. Make sure that you don't use a security context which changes the user id. To use a different uid:gid for file storage and the application, please use the USER\_UID & USER\_GID environment variables.
+> [!NOTE]  
+> The Trilium container at this time needs to be run with root privileges. It will swap to UID and GID `1000:1000` to run the `node` process after execution though, so the main process doesn't run with root privileges. 
 
-The docker image will also fix the permissions of /home/node so you don't have to use an init container.
+The Trilium docker container needs to be run with root privileges. The node process inside the container will be started with reduced privileges (uid:gid 1000:1000) after some initialization logic. Please make sure that you don't use a security context (PodSecurityContext) which changes the user ID. To use a different uid:gid for file storage and the application, please use the `USER_UID` & `USER_GID` environment variables.
 
-Helm Install
+The docker image will also fix the permissions of `/home/node` so you don't have to use an init container.
+
+Helm Charts
 ------------
 
+[Official Helm chart](https://github.com/TriliumNext/helm-charts) from TriliumNext 
 Unofficial helm chart by [ohdearaugustin](https://github.com/ohdearaugustin): [https://github.com/ohdearaugustin/charts](https://github.com/ohdearaugustin/charts)
 
-Add helm repository
+Adding a Helm repository
 -------------------
 
+Below is an example of how 
+
 ```text-plain
-helm repo add <repo_name> https://ohdearaugustin.github.io/charts/
-"<repo_name>" has been added to your repositories
+helm repo add trilium https://triliumnext.github.io/helm-charts
+"trilium" has been added to your repositories
 ```
 
 How to install a chart
 ----------------------
 
-Just `helm install <repo_name>/trilium-notes`.
+After reviewing the [`values.yaml`](https://github.com/TriliumNext/helm-charts/blob/main/charts/trilium/values.yaml) from the Helm chart, modifying as required and then creating your own:
+```
+helm install --create-namespace --namespace trilium trilium trilium/trilium -f values.yaml
+```
 
-For more information on using Helm, refer to the Helm documentation.
+For more information on using Helm, please refer to the Helm documentation, or create a Discussion in the TriliumNext GitHub Organization.
