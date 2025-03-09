@@ -33,4 +33,4 @@ If you are experimenting with Trilium and want to return it to its original stat
 
 To delete the database, simply go to the [data directory](data-directory.md) and delete the `document.db` file (and any other files starting with `document.db`).
 
-If you do not need to preserve any configurations that might be stored in the `config.ini` file, you can just delete all of the [data directory's](data-directory.md) contents to fully restore the application to its original state.
+If you do not need to preserve any configurations that might be stored in the `config.ini` file, you can just delete all of the [data directory's](data-directory.md) contents to fully restore the application to its original state. You can also review the [configuration](configuration.md) file to provide all `config.ini` values as environment variables instead. 

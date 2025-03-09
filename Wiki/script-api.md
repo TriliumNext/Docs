@@ -1,10 +1,8 @@
 # Script API
-For [Scripts](scripts.md) to do anything useful, Trilium publishes "Script API". Actually there are two such APIs:
 
-*   [Frontend API](https://triliumnext.github.io/Notes/frontend_api/FrontendScriptApi.html)
-*   [Backend API](https://triliumnext.github.io/Notes/backend_api/BackendScriptApi.html)
+Trilium offers a "Script API" that enables scripts to perform various useful functions. There are two main APIs available:
 
-Backwards compatibility
------------------------
+- [Frontend API](https://triliumnext.github.io/Notes/frontend_api/FrontendScriptApi.html)
+- [Backend API](https://triliumnext.github.io/Notes/backend_api/BackendScriptApi.html)
 
-Note that Script API is now experimental and subject to change in the future.
+Please note that the Script API is currently experimental and may undergo changes in future updates.

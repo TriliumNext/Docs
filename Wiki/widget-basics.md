@@ -1,13 +1,17 @@
-# Widget-Basics
-### The Very Basics
+# Introduction to Widget Development
 
-Based on the information from [Frontend Basics](frontend-basics.md), the most basic widget we can make looks something like this.
+This guide will walk you through creating a basic widget inside Trilium. By following these steps, you'll learn how to build a simple UI element that interacts with the user.
 
-```text-plain
+### Step 1: The Basic Widget Structure
+
+To start, we'll create the most basic widget possible. 
+Here's a simple example:
+
+```js
 class MyWidget extends api.BasicWidget {
-    get position() {return 1;}
-    get parentWidget() {return "left-pane"}
-
+    get position() { return 1; }
+    get parentWidget() { return "left-pane"; }
+    
     doRender() {
         this.$widget = $("<div id='my-widget'>");
         return this.$widget;
@@ -17,17 +21,19 @@ class MyWidget extends api.BasicWidget {
 module.exports = new MyWidget();
 ```
 
-If you put this in a `JS frontend` type code note, give it the `#widget` attribute and reload the page, you'll see that it runs fine with no errors. But how can we verify it worked? Open up devtools (`cmd`+`shift`+`i`) and check for the element using `document.querySelector("#my-widget")`. If you see an element, then you're all set. If you get `undefined`, something went wrong. Double check that you gave the note the `#widget` attribute.
+To implement this widget:
 
-Obviously, this is not the most helpful widget. It's not even a "Hello World" considering we can't actually see our element. Let's fix that.
+1. Create a new `JS Frontend` note in Trilium and paste in the code above.
+2. Assign the `#widget` [attribute](attributes.md) to the [note](note.md).
+3. Restart Trilium or reload the window.
 
-### Rendering UI
+To verify that the widget is working, open the developer tools (`Cmd` + `Shift` + `I`) and run `document.querySelector("#my-widget")`. If the element is found, the widget is functioning correctly. If `undefined` is returned, double-check that the [note](note.md) has the `#widget` [attribute](attributes.md).
 
-Let's say that we just want to make a simple button that will show us a simple message when we click it. That should be easy enough.
+### Step 2: Adding an UI Element
 
-First, we need to make our HTML a bit more complex to include the button. Thankfully this is easy with [jQuery](https://jquery.com/) because we can just pass an entire HTML string to it.
+Next, let's improve the widget by adding a button to it.
 
-```text-plain
+```js
 const template = `<div id="my-widget"><button>Click Me!</button></div>`;
 
 class MyWidget extends api.BasicWidget {
@@ -43,21 +49,26 @@ class MyWidget extends api.BasicWidget {
 module.exports = new MyWidget();
 ```
 
-Make that change, and reload Trilium and you should see a really ugly looking button at the top-left of the left pane conflicting with the search bar. We can make that look a lot better very easily because Trilium includes [Box Icons](https://boxicons.com). Find and pick one from there, and copy the class name that it gives you. For this tutorial, I'll be using `bx bxs-magic-wand`. I'm also going to add the classes Trilium uses for the floating buttons in the tree list since that will make sure it matches any theme we use. I'd also recommend removing the text now that we have a fancy icon. Now my template looks like this:
+After making this change, reload Trilium. You should now see a button in the top-left corner of the left pane.
 
-```text-plain
+### Step 3: Styling the Widget
+
+To make the button more visually appealing and position it correctly, we'll apply some custom styling. Trilium includes [Box Icons](https://boxicons.com), which we'll use to replace the button text with an icon.
+For example the `bx bxs-magic-wand` icon.
+
+Here's the updated template:
+
+```js
 const template = `<div id="my-widget"><button class="tree-floating-button bx bxs-magic-wand tree-settings-button"></button></div>`;
 ```
 
-After reloading, that already looks a little bit better. But it's still in the wrong spot. We can fix that with a little bit of css. Thankfully [BasicWidget](https://triliumnext.github.io/Notes/frontend_api/BasicWidget.html) allows us to do this very easily with `this.cssBlock`.
+Next, we'll adjust the button's position using CSS:
 
-```text-plain
-const template = `<div id="my-widget"><button class="tree-floating-button bx bxs-magic-wand tree-settings-button"></button></div>`;
-
+```js
 class MyWidget extends api.BasicWidget {
-    get position() {return 1;}
-    get parentWidget() {return "left-pane"}
-
+    get position() { return 1; }
+    get parentWidget() { return "left-pane"; }
+    
     doRender() {
         this.$widget = $(template);
         this.cssBlock(`#my-widget {
@@ -65,7 +76,7 @@ class MyWidget extends api.BasicWidget {
             bottom: 40px;
             left: 60px;
             z-index: 1;
-        }`)
+        }`);
         return this.$widget;
     }
 }
@@ -73,19 +84,17 @@ class MyWidget extends api.BasicWidget {
 module.exports = new MyWidget();
 ```
 
-With that change, the button should now appear at the bottom left of the tree panel near the other action buttons.
+After reloading Trilium, the button should now appear at the bottom left of the left pane, alongside other action buttons.
 
-### User Interaction
+### Step 4: Adding User Interaction
 
-All that's left to do is add a click listener to show that message. Thankfully the [Script API](script-api.md) has a convenient method for showing messages shown below.
+Let’s make the button interactive by showing a message when it’s clicked. We'll use the `api.showMessage` method from the [Script API](script-api.md).
 
-```text-plain
-const template = `<div id="my-widget"><button class="tree-floating-button bx bxs-magic-wand tree-settings-button"></button></div>`;
-
+```js
 class MyWidget extends api.BasicWidget {
-    get position() {return 1;}
-    get parentWidget() {return "left-pane"}
-
+    get position() { return 1; }
+    get parentWidget() { return "left-pane"; }
+    
     doRender() {
         this.$widget = $(template);
         this.cssBlock(`#my-widget {
@@ -93,8 +102,8 @@ class MyWidget extends api.BasicWidget {
             bottom: 40px;
             left: 60px;
             z-index: 1;
-        }`)
-        this.$widget.find("button").on("click", () => api.showMessage("Hello World!"))
+        }`);
+        this.$widget.find("button").on("click", () => api.showMessage("Hello World!"));
         return this.$widget;
     }
 }
@@ -102,4 +111,4 @@ class MyWidget extends api.BasicWidget {
 module.exports = new MyWidget();
 ```
 
-Reload one last time, and go ahead and click your button. You'll get that classic Trilium toast with your `Hello World` message!
+Reload the application one last time. When you click the button, a "Hello World!" message should appear, confirming that your widget is fully functional.
