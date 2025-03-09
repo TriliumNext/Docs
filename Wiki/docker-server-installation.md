@@ -1,6 +1,6 @@
 # Docker Server Installation for Trilium
 
-Official docker images are published on docker hub for **AMD64**, **ARMv6**, **ARMv7** and **ARMv8/64**: [https://hub.docker.com/r/triliumnext/notes/](https://hub.docker.com/r/triliumnext/notes/)
+Official docker images are published on docker hub for **AMD64**, **ARMv7** and **ARM64/v8**: [https://hub.docker.com/r/triliumnext/notes/](https://hub.docker.com/r/triliumnext/notes/)
 
 ## Prerequisites
 
@@ -9,6 +9,9 @@ Ensure Docker is installed on your system.
 If you need help installing Docker, reference the [Docker Installation Docs](https://docs.docker.com/engine/install/)
 
 **Note:** Trilium's Docker container requires root privileges to operate correctly.
+
+> [!WARNING]
+> If you're using a SMB/CIFS share or folder as your Trilium data directory, [you'll need](https://github.com/TriliumNext/Notes/issues/415#issuecomment-2344824400) to add the mount options of `nobrl` and `noperm` when mounting your SMB share. 
 
 ## Running with Docker Compose
 
@@ -28,10 +31,10 @@ docker compose up -d
 ## Running without Docker Compose / Further Configuration
 ### Pulling the Docker Image
 
-To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `0.90-latest` or just `latest`:
+To pull the image, use the following command, replacing `[VERSION]` with the desired version or tag, such as `v0.91.6` or just `latest`. (See published tag names at https://hub.docker.com/r/triliumnext/notes/tags.):
 
 ```text-plain
-docker pull triliumnext/notes:[VERSION]
+docker pull triliumnext/notes:v0.91.6
 ```
 
 **Warning:** Avoid using the "latest" tag, as it may automatically upgrade your instance to a new minor version, potentially disrupting sync setups or causing other issues.
@@ -100,12 +103,16 @@ For a custom data directory, use:
 If you want to run your instance in a non-default way, please use the volume switch as follows: `-v ~/YourOwnDirectory:/home/node/trilium-data triliumnext/notes:<VERSION>`. It is important to be aware of how Docker works for volumes, with the first path being your own and the second the one to virtually bind to. [https://docs.docker.com/storage/volumes/](https://docs.docker.com/storage/volumes/)
 The path before the colon is the host directory, and the path after the colon is the container's path. More details can be found in the [Docker Volumes Documentation](https://docs.docker.com/storage/volumes/).
 
-### Note on --user Directive
-
-The `--user` directive is unsupported. Instead, use the `USER_UID` and `USER_GID` environment variables to set the appropriate user and group IDs.
-
 ## Reverse Proxy
 
 1. [Nginx](nginx-proxy-setup.md)
 2. [Apache](apache-proxy-setup.md)
+
+### Note on --user Directive
+
+The `--user` directive is unsupported. Instead, use the `USER_UID` and `USER_GID` environment variables to set the appropriate user and group IDs.
+
+### Note on timezones
+
+If you are having timezone issues and you are not using docker-compose, you may need to add a `TZ` environment variable with the [TZ identifier](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of your local timezone. 
 

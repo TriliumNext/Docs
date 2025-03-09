@@ -16,7 +16,7 @@ When you run Trilium for the first time, it will generate a new database contain
 There are some cases in which you may want to restore the original demo notes. For example, if you experimented with some of the more advanced features and want to see the original reference, or if you simply want to explore the latest version of the demo notes, which might showcase new features.
 
 You can easily restore the demo notes by using Trilium's built-in import feature by importing them:
-- Download [this .zip archive](https://github.com/TriliumNext/Notes/raw/stable/db/demo.zip) with the latest version of the demo notes
+- Download [this .zip archive](https://github.com/TriliumNext/Notes/raw/develop/db/demo.zip) with the latest version of the demo notes
 - Right click on any note in your tree under which you would like the demo notes to be imported
 - Click "Import into note"
 - Select the .zip archive to import it
@@ -33,4 +33,4 @@ If you are experimenting with Trilium and want to return it to its original stat
 
 To delete the database, simply go to the [data directory](data-directory.md) and delete the `document.db` file (and any other files starting with `document.db`).
 
-If you do not need to preserve any configurations that might be stored in the `config.ini` file, you can just delete all of the [data directory's](data-directory.md) contents to fully restore the application to its original state.
+If you do not need to preserve any configurations that might be stored in the `config.ini` file, you can just delete all of the [data directory's](data-directory.md) contents to fully restore the application to its original state. You can also review the [configuration](configuration.md) file to provide all `config.ini` values as environment variables instead. 

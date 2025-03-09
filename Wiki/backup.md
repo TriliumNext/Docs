@@ -40,4 +40,6 @@ Although this is not recommended, it is possible to disable backup in `config.in
 noBackup=true
 ```
 
+You can also review the [configuration](configuration.md) file to provide all `config.ini` values as environment variables instead. 
+
 See [sample config](https://github.com/TriliumNext/Notes/blob/master/config-sample.ini). %%{WARNING}%%

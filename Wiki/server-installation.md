@@ -8,7 +8,7 @@ There are several ways to install Trilium on a server, each with its own advanta
 
 - **Recommended**: [Docker Installation](docker-server-installation.md) - Available for **AMD64** and **ARM** architectures.
 - [Packaged Server Installation](packaged-server-installation.md)
-- [Paid Hosting Service](https://trilium.cc/paid-hosting) - A third-party service that hosts a Trilium instance for you.
+- [PikaPods managed hosting](https://www.pikapods.com/pods?run=trilium-next)
 - [Manual Installation](manual-server-installation.md)
 - [Kubernetes](kubernetes-server-installation.md)
 - [Cloudron](https://www.cloudron.io/store/com.github.trilium.cloudronapp.html)
@@ -20,6 +20,8 @@ The server installation includes both web and [mobile frontends](mobile-frontend
 ## Configuration
 
 After setting up your server installation, you may want to configure settings such as the port or enable [TLS](tls-configuration.md). Configuration is managed via the Trilium `config.ini` file, which is located in the [data directory](data-directory.md) by default. To begin customizing your setup, copy the provided `config-sample.ini` file with default values to `config.ini`.
+
+You can also review the [configuration](configuration.md) file to provide all `config.ini` values as environment variables instead.
 
 ### Config Location
 

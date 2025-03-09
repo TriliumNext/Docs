@@ -26,6 +26,8 @@ certPath=/[username]/.acme.sh/[hostname]/fullchain.cer
 keyPath=/[username]/.acme.sh/[hostname]/example.com.key
 ```
 
+You can also review the [configuration](configuration.md) file to provide all `config.ini` values as environment variables instead. 
+
 The above example shows how this is set up in an environment where the certificate was generated using Let's Encrypt's ACME utility. Your paths may differ. For Docker installations, ensure these paths are within a volume or another directory accessible by the Docker container, such as `/home/node/trilium-data/[DIR IN DATA DIRECTORY]`.
 
 After configuring `config.ini`, restart Trilium and access the hostname using "https".

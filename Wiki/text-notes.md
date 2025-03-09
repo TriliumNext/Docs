@@ -80,10 +80,11 @@ When editing a document that becomes too large, you can split it into sub-notes:
 2. Create a new sub-note and name it.
 3. Paste the content from the clipboard into the sub-note.
 
-Trilium can automate this process. The heading is automatically detected and the new sub-note is named accordingly. You can also assign a keyboard shortcut for this action.
+Trilium can automate this process. Select some text within the note, and in the selection toolbar, click the scissors icon for the "cut & pasted selection to sub-note" action. The heading is automatically detected and the new sub-note is named accordingly. You can also assign a keyboard shortcut for this action.
+This functionality is available through the block toolbar icon.
 
 ## Including a Note
 
-Trilium can automate this process. Select some text within the note, and in the selection toolbar, click the scissors icon for the "cut & pasted selection to sub-note" action. The heading is automatically detected and the new sub-note is named accordingly. You can also assign a keyboard shortcut for this action.
+Text notes can "include" another note as a read only widget. This can be useful for e.g. including a dynamically generated chart (from scripts & "render HTML" note) or other more advanced use cases.
 
-This functionality is available through the block toolbar icon.
+This functionality is available in the block toolbar icon.

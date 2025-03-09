@@ -22,6 +22,7 @@ Labels are also searchable, enhancing note retrieval.
 ### Common Labels for Advanced Configuration
 
 - **`disableVersioning`**: Disables automatic versioning, ideal for large, unimportant notes like script libraries
+- **`versioningLimit`**: Used to limit the number of revisions for a single note
 - **`calendarRoot`**: Marks the note as the root for [day notes](day-notes.md). Only one note should carry this label
 - **`archived`**: Hides notes from default search results and dialogs
 - **`excludeFromExport`**: Excludes notes and their subtrees from export operations
@@ -36,7 +37,7 @@ Labels are also searchable, enhancing note retrieval.
 - **`appCss`**: Marks CSS notes used to modify Trilium’s appearance
 - **`appTheme`**: Marks full CSS themes available in Trilium's options
 - **`cssClass`**: Adds a CSS class to the note's representation in the tree
-- **`iconClass`**: Adds a CSS class to the note's icon, useful for distinguishing notes visually
+- **`iconClass`**: Adds a CSS class to the note's icon, useful for distinguishing notes visually. See [note icons](note-icons.md)
 - **`pageSize`**: Specifies the number of items per page in note listings
 - **`customRequestHandler` and `customResourceProvider`**: Refer to [Custom request handler](custom-request-handler.md)
 - **`widget`**: Marks a note as a custom widget, added to Trilium's component tree
