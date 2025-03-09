@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> The docs repo is archived while we transition to a new documentation mechanism.
+
 # TriliumNext Documentation
 
 To import this documentation into your own instance of Trilium, [follow these instructions](Wiki/import-docs.md) 
