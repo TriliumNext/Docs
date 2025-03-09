@@ -18,6 +18,6 @@ Trilium supports syntax highlighting for many languages, but by default displays
 Code blocks
 -----------
 
-An alternative to the code note is a "code block" - feature of a text note which can add short snippets of code to the text editor. The disadvantage is that code blocks don't support syntax highlighting.
+An alternative to the code note is a "code block" - feature of a text note which can add short snippets of code to the text editor. Starting with TriliumNext v0.90.12, the code blocks also support syntax highlighting.
 
 ![](images/code-block.png)
