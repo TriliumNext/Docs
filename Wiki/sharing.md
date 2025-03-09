@@ -1,61 +1,56 @@
-# Sharing
-Trilium provides a feature to share selected notes as **publicly accessible** read only documents.
+# Sharing Notes in Trilium
 
-The basic prerequisite for this feature is to have a [server installation](server-installation.md) - this is where the notes will be hosted from.
+Trilium allows you to share selected notes as **publicly accessible** read-only documents. This feature is particularly useful for publishing content directly from your Trilium notes, making it accessible to others online.
 
-Share note
-----------
+## Prerequisites
 
-Click on the "shared" switch, URL appears on which you can click.![](images/share-single-note.png)
+To use the sharing feature, you must have a [server installation](server-installation.md) of Trilium. This is necessary because the notes will be hosted from the server.
 
-And this is the opened link:
+## How to Share a Note
 
-![](images/share-single-note-web.png)
+1. **Enable Sharing**: To share a note, toggle the `Shared` switch within the note's interface. Once sharing is enabled, an URL will appear, which you can click to access the shared note.
 
-The URL refers to the localhost (127.0.0.1) because there's no configured sync server.
+   ![Share Note](images/share-single-note.png)
 
-Share a note subtree
---------------------
+2. **Access the Shared Note**: The link provided will open the note in your browser. If your server is not configured with a public IP, the URL will refer to `localhost (127.0.0.1)`.
 
-Sharing a note actually shares a whole subtree of notes, the note shown above just didn't have any children.
+   ![Shared Note Example](images/share-single-note-web.png)
 
-If I share the whole "Formatting" subtree then the page looks like this:
+## Sharing a Note Subtree
 
-![](images/share-multiple-notes-web.png)
+When you share a note, you actually share the entire subtree of notes beneath it. If the note has child notes, they will also be included in the shared content. For example, sharing the "Formatting" subtree will display a page with basic navigation for exploring all the notes within that subtree.
 
-You can see a basic navigation on the right. With this you can create small websites.
+![Shared Subtree Example](images/share-multiple-notes-web.png)
 
-Showing list of all shared notes
---------------------------------
+## Viewing All Shared Notes
 
-You can click on the "Show Shared Notes Subtree" to see the list of all shared notes
+You can view a list of all shared notes by clicking on "Show Shared Notes Subtree." This allows you to manage and navigate through all the notes you have made public.
 
-Security
---------
+## Security Considerations
 
-The notes you share are published on the open internet and can be accessed by anybody. The fact that the URLs look randomly does not provide real security guarantees. Please don't put sensitive information into shared notes.
+Shared notes are published on the open internet and can be accessed by anyone with the URL. The URL's randomness does not provide security, so it is crucial not to share sensitive information through this feature.
 
-There is an opt-in feature to require a username/password, see `#shareCredentials` below.
+### Password Protection
 
-Advanced options
-----------------
+To protect shared notes with a username and password, you can use the `#shareCredentials` attribute. Add this label to the note with the format `#shareCredentials="username:password"`. To protect an entire subtree, make sure the label is [inheritable](attribute-inheritance.md).
 
-### Styling the shared notes
+## Advanced Sharing Options
 
-The default shared page is pretty rudimentary. In case you want to style it more nicely, you can:
+### Customizing the Appearance of Shared Notes
 
-*   add a `~shareCss` relation to a CSS code note which will be linked in the shared page
-    *   in case you want this to apply to the whole subtree, don't forget to make the label inheritable
-    *   the linked CSS code note needs to be also in the shared subtree. If you want to hide it from left tree navigation, add `#shareHiddenFromTree` label to the CSS code note.
-*   if you make extensive styling changes, then it's recommended to use `#shareOmitDefaultCss` on the shared subtree so that you don't need to override the default stylesheet (this will also avoid problems in the future when the default CSS changes).
+The default shared page is basic in design, but you can customize it using your own CSS:
 
-### Scripting
+- **Custom CSS**: Link a CSS [code note](code-notes.md) to the shared page by adding a `~shareCss` relation to the note. If you want this style to apply to the entire subtree, make the label inheritable. You can hide the CSS code note from the tree navigation by adding the `#shareHiddenFromTree` label.
+  
+- **Omitting Default CSS**: For extensive styling changes, use the `#shareOmitDefaultCss` label to avoid conflicts with Trilium's [default stylesheet](themes.md).
 
-It's possible to inject a JavaScript note to the shared note using `~shareJs` relation.
+### Adding JavaScript
 
-In case you want to access e.g. attributes or traverse the tree in the linked JavaScript note, you can use the API available through global [`fetchNote(noteId = current)` function](https://github.com/TriliumNext/Notes/blob/master/src/public/app/share.js), e.g.:
+You can inject custom JavaScript into the shared note using the `~shareJs` relation. This allows you to access note attributes or traverse the note tree using the `fetchNote()` API, which retrieves note data based on its ID.
 
-```text-plain
+Example:
+
+```javascript
 const currentNote = await fetchNote();
 const parentNote = await fetchNote(currentNote.parentNoteIds[0]);
 
@@ -64,62 +59,44 @@ for (const attr of parentNote.attributes) {
 }
 ```
 
-### Creating human-readable URL aliases
+### Creating Human-Readable URL Aliases
 
-Shared notes are accessible using URLs like `http://domain/share/knvU8aJy4dJ7`, where the last part is the note's ID.
+Shared notes typically have URLs like `http://domain.tld/share/knvU8aJy4dJ7`, where the last part is the note's ID. You can make these URLs more user-friendly by adding the `#shareAlias` label to individual notes (e.g., `#shareAlias=highlighting`). This will change the URL to `http://domain.tld/share/highlighting`.
 
-You can add `#shareAlias` to individual notes to make the URLs nicer, e.g. `#shareAlias=highlighting` will make the URL look like `http://domain/share/highlighting`.
+**Important**:
 
-Note that you are responsible for keeping the aliases unique.
+1. Ensure that aliases are unique.
+2. Using slashes (`/`) within aliases to create subpaths is not supported.
 
-Using "subpaths", i. e. to declare an alias with `/` within, is not supported.
+### Viewing and Managing Shared Notes
 
-### Seeing all shared notes
+All shared notes are grouped under an automatically managed "Shared Notes" section. From here, you can view, share, or unshare notes by moving or cloning them within this section.
 
-All shared notes are grouped under automatically managed "Shared Notes" note. Besides seeing what's shared, you can also effectively share/unshare notes by cloning/moving them from/to this note.
+![Shared Notes List](images/shared-list.png)
 
-![](images/shared-list.png)
+### Setting a Custom Favicon
 
-### Favicon
+To customize the favicon for your shared pages, create a relation `~shareFavicon` pointing to a file note containing the favicon (e.g., in `.ico` format).
 
-You can define a custom favicon used for shared pages by create a relation `~shareFavicon` pointing to the file note containing the favicon (in e.g. the `ico` format).
+### Sharing a Note as the Root
 
-### Sharing a note as the root
+You can designate a specific note or folder as the root of your shared content by adding the `#shareRoot` label. This note will be linked when visiting `[http://domain.tld/share](http://domain/share)`, making it easier to use Trilium as a fully-fledged website. Consider combining this with the `#shareIndex` label, which will display a list of all shared notes.
 
-You can add the `#shareRoot` attribute to a folder or note, and it will be linked when you visit [http://domain/share](http://domain/share). This can make it easier to use Trilium as a fully-fledged website because you can create a note to act as a "home-page".
+## Additional Options
 
-Consider also combining this with `#shareIndex` which will display the list of all shared notes.
+- **Raw Note Sharing**: Use the `#shareRaw` label to share a note without any HTML wrapper.
+- **Disallow Robot Indexing**: Add the `#shareDisallowRobotIndexing` label to prevent search engines from indexing the shared page by including a `noindex, follow` meta tag and `X-Robots-Tag: noindex` header.
+- **Shared Notes Index**: For text notes with the `#shareIndex` label, the content will display a list of all shared note roots.
 
-### Protecting shared notes with a password
+## Limitations
 
-It is possible to optionally protect shared notes with credentials.
+While the sharing feature is powerful, it has some limitations:
 
-To do that, create a label in the format `#shareCredentials="username:password"` to a note which you want to protect. Typically, you want to make the whole sub-tree protected like that, so don't forget to make this label inheritable.
+- **No Relation Map Support**
+- **Book Notes**: Only show a list of child notes.
+- **Code Notes**: No syntax highlighting.
+- **Static Note Tree**
+- **Protected Notes**: Cannot be shared.
+- **Include Notes**: Not supported.
 
-Keep in mind that the default state is public, so make sure everything you need to protect has this label (either owned or inherited).
-
-Note titles of password protected notes may appear in the links and navigation from unprotected notes.
-
-Password-protecting shared notes is available since 0.54.
-
-### Other options
-
-*   if a note has `#shareRaw` label, the note will be shared raw, without HTML wrapper
-*   if a note has `#shareDisallowRobotIndexing` label, it will carry `<meta name="robots" content="noindex,follow" />` meta tag and `X-Robots-Tag: noindex` header, which will advise crawlers to skip this page
-*   if a text note has `#shareIndex` label, its content will display a list of all shared note roots (since v0.57)
-
-Limitations
------------
-
-Shared notes functionality is compared to standard functionality very limited.
-
-The not exhaustive list of **what is missing** is:
-
-*   relation map support
-*   book notes show only children note list
-*   code notes have no highlighting
-*   note tree is static
-*   Protected notes cannot be shared
-*   include notes
-
-Some of these limitations might be removed/mitigated in the future.
+Some of these limitations may be addressed in future updates.
